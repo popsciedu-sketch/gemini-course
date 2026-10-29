@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-MO">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>第一章 · 上手與介面</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap"/>
+<link rel="stylesheet" href="../css/styles.css"/>
+</head>
+<body data-page="ch01">
+<div class="overlay"></div>
+<div class="topbar">
+  <button class="menu-btn" data-menu type="button">☰ 目錄</button>
+  <strong>Gemini 使用教學</strong>
+</div>
+<div class="layout">
+<aside class="sidebar">
+  <div class="brand">
+    <div class="brand-mark">G</div>
+    <div>
+      <h1>Gemini 使用教學</h1>
+      <p>互動教材 · 繁體中文</p>
+    </div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-label"><span>學習進度</span><span data-progress-text>0%</span></div>
+    <div class="progress-bar"><span data-progress-fill></span></div>
+  </div>
+  <nav class="nav">
+<div class="nav-section">導覽</div>
+<a href="../index.html" data-page="index">總覽</a>
+<a href="../chapters/preface.html" data-page="preface">導讀・選對工具</a>
+<a href="../chapters/ch01.html" data-page="ch01">第一章・上手與介面</a>
+<a href="../chapters/ch02.html" data-page="ch02">第二章・提示詞</a>
+<a href="../chapters/ch03.html" data-page="ch03">第三章・Deep Research</a>
+<a href="../chapters/ch04.html" data-page="ch04">第四章・Canvas</a>
+<a href="../chapters/ch05.html" data-page="ch05">第五章・Gem</a>
+<a href="../chapters/ch06.html" data-page="ch06">第六章・生態系速覽</a>
+<a href="../chapters/epilogue.html" data-page="epilogue">結語・檢查清單</a>
+<div class="nav-section">動手做</div>
+<a href="../practice/index.html" data-page="practice">實作走讀</a>
+  </nav>
+</aside>
+<main class="main">
+<div class="container">
+
+<nav class="breadcrumb"><a href="../index.html">總覽</a> / 第一章</nav>
+<header class="page-head">
+  <div class="eyebrow">第一章 · 上手與介面</div>
+  <h2>打開 gemini.google.com，先摸按鈕</h2>
+  <p>目標：一般聊天節奏、多模態上傳、模型切換、匯出檔案、Live／產圖／影音入口、Guided Learning（視顯示），並建立安全底線。</p>
+</header>
+
+<section class="card">
+  <h3>最小上手路徑</h3>
+  <ol class="steps">
+    <li class="step"><h4>開站與登入</h4><p>瀏覽器前往 <span class="mono">gemini.google.com</span>，用你有權使用的 Google 帳號登入。未登入常無法保存對話與進階功能。</p></li>
+    <li class="step"><h4>新聊天</h4><p>左側或頂部找「新對話」。一個主題一串；換題就新開。</p></li>
+    <li class="step"><h4>附加檔案</h4><p>輸入框旁的「＋／附加」可上傳 PDF、圖片、試算表等（實際類型以介面為準）。上傳後先問「你讀到什麼？」再比較或摘要。</p></li>
+    <li class="step"><h4>模型與工具列</h4><p>輸入框附近可切模型、選 Deep Research／Canvas 等。找不到時掃輸入框下方工具列——更新後位置常變。</p></li>
+    <li class="step"><h4>編輯提示與多答案</h4><p>已送出的提示常可編輯重跑；有時可要求「再給另一個版本」比較語氣與結構。</p></li>
+  </ol>
+  <div class="callout tip"><p>需要落地文件時，可明講「整理成 Google 文件／試算表」；能否一鍵匯出取決於帳號方案與當前介面。</p></div>
+</section>
+
+<section class="card">
+  <h3>安全三條（必背）</h3>
+  <ul class="clean">
+    <li><strong>幻覺</strong>：模型會自信講錯。重要數字與引用要點開來源核對。</li>
+    <li><strong>勿當專業意見</strong>：醫療、法律、稅務、投資——最多當草稿，決策找合格專業人士。</li>
+    <li><strong>勿貼機密</strong>：密碼、未公開財報、個資、客戶合約原文，先問自己的資料政策。</li>
+  </ul>
+  <div class="callout warn"><p>學校／公司帳號可能被管理員關閉部分功能或記錄提示內容。先確認政策再上傳內部檔。</p></div>
+</section>
+
+<section class="card" id="multimodal">
+  <h3>多模態：圖、PDF、檔案（與影音理解）</h3>
+  <ol class="steps">
+    <li class="step"><h4>上傳圖片</h4><p>用「＋／附加」選圖片 → 先問「描述你看到什麼／讀出圖上文字」→ 再下任務（改寫、出題、對照）。</p></li>
+    <li class="step"><h4>上傳 PDF／文件</h4><p>附加後先：「用五點列出你讀到的章節與關鍵數字」；確認沒讀錯再摘要或比較。</p></li>
+    <li class="step"><h4>影音理解（視介面）</h4><p>若工具列／附加支援音訊或影片：同樣先「你聽到／看到什麼時間軸重點」，再提問。若你的帳號沒有入口，屬正常——見下方 callout。</p></li>
+  </ol>
+  <div class="callout warn"><p><strong>視帳號／地區／方案</strong>：可上傳的檔案類型、長度上限、是否支援影片／音訊理解，以當前介面與官方 Help 為準；本站不保證人人都有同一按鈕。</p></div>
+</section>
+
+<section class="card" id="model-switch">
+  <h3>模型切換／自動選模型</h3>
+  <ul class="clean">
+    <li>輸入框附近常有模型選單（名稱會改版）。較重推理／長文可選較強模型；日常草稿可用預設或「快速」取向。</li>
+    <li>若出現「自動／Auto」：讓系統依任務挑模型——仍建議重要產出人工核對。</li>
+    <li>Deep Research／Canvas／產圖有時會綁定特定模型或方案額度。</li>
+  </ul>
+</section>
+
+<section class="card" id="export-files">
+  <h3>產出檔案：Docs／Sheets／PDF／Markdown</h3>
+  <ol class="steps">
+    <li class="step"><h4>在提示裡明講格式</h4><p>例如：「輸出 Markdown 表格」「整理成可貼進試算表的 CSV 欄位」「寫成 Google 文件大綱」。</p></li>
+    <li class="step"><h4>用介面匯出</h4><p>回答下方或 Canvas「分享與匯出」常可存成 Docs／下載；Research 報告也常可開成文件。實際選項視方案而定。</p></li>
+    <li class="step"><h4>PDF</h4><p>可要求「適合列印的章節結構」再自行列印／另存 PDF；或以 Docs 匯出 PDF。</p></li>
+  </ol>
+</section>
+
+<section class="card" id="gemini-live">
+  <h3>Gemini Live／語音輸入</h3>
+  <ul class="clean">
+    <li><strong>何時用</strong>：雙手不方便、邊走邊問、想自然打斷改話題——用 Live 語音對話；細修長文、Gem、產複雜成品仍回打字／Canvas。</li>
+    <li><strong>桌面 vs 手機</strong>：手機 App 較常把 Live 放在顯眼位置；桌面網頁也可能有麥克風／Live 入口，位置因改版而異。</li>
+    <li><strong>限制（官方概述）</strong>：Live 進行中通常不走 Gem／Notebook 等創作工作流；要那些功能就結束語音回到一般視窗。</li>
+  </ul>
+  <div class="callout tip"><p>概述：<a href="https://gemini.google/overview/gemini-live/" target="_blank" rel="noopener">Gemini Live</a>。可用性、年齡與裝置限制以官方為準。</p></div>
+</section>
+
+<section class="card" id="image-gen">
+  <h3>圖像生成（介面內產圖）</h3>
+  <ol class="steps">
+    <li class="step"><h4>路徑</h4><p>在一般聊天用英文（官方目前多要求英文提示）描述畫面：主體、動作、風格（watercolor／photorealistic…）。或說「generate an image of…」。</p></li>
+    <li class="step"><h4>審圖與下載</h4><p>可瀏覽多張、更新單張；下載前檢查是否有亂字、品牌侵權、不實資訊圖。</p></li>
+  </ol>
+  <div class="callout warn"><p><strong>視地區／帳號</strong>：官方註明部分地區（如部分歐洲）可能無法產圖；且常限英文提示。公開使用前注意版權、肖像與是否允許商用——以 Google 當前條款為準。課堂提到的「Nano Banana」等影像工具名稱若與現行產品不同，以你帳號實際看到的產圖入口為準。</p></div>
+  <div class="callout tip"><p>Help：<a href="https://support.google.com/gemini/answer/14286560" target="_blank" rel="noopener">Generate images with Gemini Apps</a>。</p></div>
+</section>
+
+<section class="card" id="av-tools">
+  <h3>影片／音樂相關入口</h3>
+  <p>工具列或「建立」選單若出現影片、音樂（或連結到 Veo／其他工作室）——用途多是短片草稿、配樂實驗。請當創作草稿，不是保證額度或商用授權。</p>
+  <div class="callout warn"><p><strong>視帳號／地區／方案</strong>：沒看到按鈕就跳過；勿假設免費帳號一定有長影片或音樂生成。額度、水印、商用條款以產品頁為準。</p></div>
+</section>
+
+<section class="card" id="guided-learning">
+  <h3>Guided Learning／學習模式</h3>
+  <p>若介面出現 Guided Learning（或類似「引導學習」）：適合卡在概念時，用逐步提問帶你想，而不是直接甩答案。可搭配上傳講義照片／PDF。</p>
+  <div class="callout warn"><p><strong>視地區／帳號顯示</strong>：沒有此按鈕屬常見情況；改用一般聊天自寫「用蘇格拉底式提問教我××，先別給完整答案」亦可近似。</p></div>
+</section>
+<section class="quiz" data-quiz="c1q1" data-answer="B" data-ok="正確！" data-bad="再看一次本章重點。">
+  <h3>隨堂測驗 · C1Q1</h3>
+  <p>未登入使用網頁版 Gemini 時，常見情況是？</p>
+  <label><input type="radio" name="c1q1" value="A"/> <strong>A.</strong> 網站完全打不開</label><label><input type="radio" name="c1q1" value="B"/> <strong>B.</strong> 對話保存與進階功能常受限</label><label><input type="radio" name="c1q1" value="C"/> <strong>C.</strong> 自動取得 Workspace 管理員權限</label><label><input type="radio" name="c1q1" value="D"/> <strong>D.</strong> 只能用語音</label>
+  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
+  <div class="feedback"></div>
+</section><section class="quiz" data-quiz="c1q2" data-answer="B" data-ok="正確！" data-bad="再看一次本章重點。">
+  <h3>隨堂測驗 · C1Q2</h3>
+  <p>重要決策引用 AI 內容時，最關鍵的一步？</p>
+  <label><input type="radio" name="c1q2" value="A"/> <strong>A.</strong> 語氣愈肯定愈可信</label><label><input type="radio" name="c1q2" value="B"/> <strong>B.</strong> 交叉查核事實與來源</label><label><input type="radio" name="c1q2" value="C"/> <strong>C.</strong> 貼到社群就算驗證</label><label><input type="radio" name="c1q2" value="D"/> <strong>D.</strong> 模型最新就免查</label>
+  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
+  <div class="feedback"></div>
+</section><section class="quiz" data-quiz="c1q3" data-answer="C" data-ok="正確！" data-bad="再看一次本章重點。">
+  <h3>隨堂測驗 · C1Q3</h3>
+  <p>下列哪種做法較不安全？</p>
+  <label><input type="radio" name="c1q3" value="A"/> <strong>A.</strong> 新話題開新聊天</label><label><input type="radio" name="c1q3" value="B"/> <strong>B.</strong> 上傳前確認公司政策</label><label><input type="radio" name="c1q3" value="C"/> <strong>C.</strong> 把客戶密碼與未公開合約全文貼上</label><label><input type="radio" name="c1q3" value="D"/> <strong>D.</strong> 要求列出可點開的來源</label>
+  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
+  <div class="feedback"></div>
+</section><section class="quiz" data-quiz="c1q4" data-answer="A" data-ok="先對齊理解，再往下做。" data-bad="再看一次本章重點。">
+  <h3>隨堂測驗 · C1Q4</h3>
+  <p>附加多個檔案後，較穩的第一步是？</p>
+  <label><input type="radio" name="c1q4" value="A"/> <strong>A.</strong> 先讓模型列出「讀到什麼」再比較</label><label><input type="radio" name="c1q4" value="B"/> <strong>B.</strong> 立刻叫它「寫成法律意見書並保證正確」</label><label><input type="radio" name="c1q4" value="C"/> <strong>C.</strong> 關掉螢幕等十分鐘</label><label><input type="radio" name="c1q4" value="D"/> <strong>D.</strong> 刪除所有對話紀錄再上傳</label>
+  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
+  <div class="feedback"></div>
+</section>
+<div class="pager">
+  <a class="btn secondary" href="preface.html">← 導讀</a>
+  <a class="btn" href="ch02.html">下一章：提示詞 →</a>
+</div>
+
+<div class="footer-note">本站為自寫 Gemini 使用教學摘要，非 Google 官方文件轉載。操作畫面請以 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 與官方 Help 為準。進度存本機瀏覽器，不連 Gemini API。</div>
+</div>
+</main>
+</div>
+<script src="../js/app.js"></script>
+<script src="../js/quiz.js"></script>
+</body>
+</html>

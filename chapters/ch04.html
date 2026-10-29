@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-MO">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>第四章 · Canvas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap"/>
+<link rel="stylesheet" href="../css/styles.css"/>
+</head>
+<body data-page="ch04">
+<div class="overlay"></div>
+<div class="topbar">
+  <button class="menu-btn" data-menu type="button">☰ 目錄</button>
+  <strong>Gemini 使用教學</strong>
+</div>
+<div class="layout">
+<aside class="sidebar">
+  <div class="brand">
+    <div class="brand-mark">G</div>
+    <div>
+      <h1>Gemini 使用教學</h1>
+      <p>互動教材 · 繁體中文</p>
+    </div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-label"><span>學習進度</span><span data-progress-text>0%</span></div>
+    <div class="progress-bar"><span data-progress-fill></span></div>
+  </div>
+  <nav class="nav">
+<div class="nav-section">導覽</div>
+<a href="../index.html" data-page="index">總覽</a>
+<a href="../chapters/preface.html" data-page="preface">導讀・選對工具</a>
+<a href="../chapters/ch01.html" data-page="ch01">第一章・上手與介面</a>
+<a href="../chapters/ch02.html" data-page="ch02">第二章・提示詞</a>
+<a href="../chapters/ch03.html" data-page="ch03">第三章・Deep Research</a>
+<a href="../chapters/ch04.html" data-page="ch04">第四章・Canvas</a>
+<a href="../chapters/ch05.html" data-page="ch05">第五章・Gem</a>
+<a href="../chapters/ch06.html" data-page="ch06">第六章・生態系速覽</a>
+<a href="../chapters/epilogue.html" data-page="epilogue">結語・檢查清單</a>
+<div class="nav-section">動手做</div>
+<a href="../practice/index.html" data-page="practice">實作走讀</a>
+  </nav>
+</aside>
+<main class="main">
+<div class="container">
+
+<nav class="breadcrumb"><a href="../index.html">總覽</a> / 第四章</nav>
+<header class="page-head">
+  <div class="eyebrow">第四章 · Canvas</div>
+  <h2>先規格，再最小版，再迭代</h2>
+  <p>Canvas 是「邊對話邊改成品」的工作區：文件、簡報、小網頁、程式。不要一次超長 prompt 就收工——先規格／最小版，再一次改一類。</p>
+</header>
+
+<section class="card">
+  <h3>左右欄心智模型</h3>
+  <figure class="figure">
+    <img src="../assets/svg/canvas-layout.svg" alt="Canvas 左右欄" style="width:100%;max-width:720px"/>
+  </figure>
+  <ol class="steps">
+    <li class="step"><h4>開 Canvas</h4><p>輸入框工具列選 Canvas，用短規格描述要做什麼（類型、讀者、章節、語氣）。</p></li>
+    <li class="step"><h4>Preview／選取修改</h4><p>右側預覽。選一段再要求「短一點」「更正式」——比整篇重生成穩。</p></li>
+    <li class="step"><h4>Deep Research → Create</h4><p>研究報告可在 Canvas 裡用 Create 轉成網頁、資訊圖、測驗、語音概覽等（實際按鈕以介面為準）。</p></li>
+    <li class="step"><h4>分享前檢查資料邊界</h4><p>公開連結可能讓他人看到或編輯相關內容。分享前確認沒有內部數字、個資、未公開策略。</p></li>
+  </ol>
+  <div class="callout tip"><p>概述：<a href="https://gemini.google/overview/canvas/" target="_blank" rel="noopener">gemini.google/overview/canvas</a> · Help：<a href="https://support.google.com/gemini/answer/16047321?hl=ja" target="_blank" rel="noopener">Canvas（日文）</a>。</p></div>
+</section>
+
+<section class="card">
+  <h3>規格範例（開場用）</h3>
+  <div class="prompt-box"><span class="copy-hint">複製用</span>請在 Canvas 做「一頁企劃摘要」（先最小版）。
+讀者：部門主管，3 分鐘能讀完。
+結構：背景 → 問題 → 方案三選項比較表 → 建議 → 風險。
+約束：繁中；不捏造預算數字（沒有就標 TBD）；表格優先。
+完成後等我指示再加細節，不要一次寫成十頁。</div>
+</section>
+
+<section class="card">
+  <h3>迭代口訣</h3>
+  <ul class="clean">
+    <li>一次只改一類：結構／語氣／長度／視覺，不要同時全改。</li>
+    <li>中文視覺輸出（資訊圖、簡報字）必人工看字形與斷行。</li>
+    <li>匯出到 Google 簡報／文件後，再依公司模板微調。</li>
+  </ul>
+</section>
+
+<section class="card" id="canvas-types">
+  <h3>Canvas 可做的類型</h3>
+  <ul class="clean">
+    <li><strong>文件</strong>：企劃、報告、講義——右側 Preview，選段微調。</li>
+    <li><strong>程式／小應用</strong>：描述功能 → 預覽 → 看程式碼／主控台（視介面）。</li>
+    <li><strong>簡報／網頁</strong>：在提示明講「做成簡報／單頁網站」；或用 Create 轉換。</li>
+  </ul>
+</section>
+
+<section class="card" id="canvas-create">
+  <h3>從 Deep Research／文件按 Create</h3>
+  <ol class="steps">
+    <li class="step"><h4>報告完成後</h4><p>在 Canvas 右上找 <strong>Create</strong>。</p></li>
+    <li class="step"><h4>選產出</h4><p>常見選項：<strong>網頁</strong>、<strong>資訊圖</strong>、<strong>測驗 Quiz</strong>、<strong>語音摘要 Audio Overview</strong>；也可提示做成簡報或其他視覺。</p></li>
+    <li class="step"><h4>人工驗收</h4><p>中文資訊圖必看字形；測驗題抽查對錯；語音當複習輔助，重要數字仍回文字來源。</p></li>
+  </ol>
+</section>
+<section class="quiz" data-quiz="c4q1" data-answer="B" data-ok="正確！" data-bad="再看一次本章重點。">
+  <h3>隨堂測驗 · C4Q1</h3>
+  <p>使用 Canvas 時，較佳節奏是？</p>
+  <label><input type="radio" name="c4q1" value="A"/> <strong>A.</strong> 一則超長提示就要最終完美稿</label><label><input type="radio" name="c4q1" value="B"/> <strong>B.</strong> 先規格與最小版，再分輪迭代</label><label><input type="radio" name="c4q1" value="C"/> <strong>C.</strong> 從不預覽直接分享公開連結</label><label><input type="radio" name="c4q1" value="D"/> <strong>D.</strong> 只上傳密碼檔</label>
+  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
+  <div class="feedback"></div>
+</section><section class="quiz" data-quiz="c4q2" data-answer="C" data-ok="正確！" data-bad="再看一次本章重點。">
+  <h3>隨堂測驗 · C4Q2</h3>
+  <p>Deep Research 報告在 Canvas 常見下一步是？</p>
+  <label><input type="radio" name="c4q2" value="A"/> <strong>A.</strong> 立刻刪除報告</label><label><input type="radio" name="c4q2" value="B"/> <strong>B.</strong> 只能用英文重新搜尋</label><label><input type="radio" name="c4q2" value="C"/> <strong>C.</strong> 用 Create 轉成網頁／資訊圖／測驗／語音等</label><label><input type="radio" name="c4q2" value="D"/> <strong>D.</strong> 必須改用未登入模式</label>
+  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
+  <div class="feedback"></div>
+</section><section class="quiz" data-quiz="c4q3" data-answer="A" data-ok="正確！" data-bad="再看一次本章重點。">
+  <h3>隨堂測驗 · C4Q3</h3>
+  <p>分享 Canvas 成品前應？</p>
+  <label><input type="radio" name="c4q3" value="A"/> <strong>A.</strong> 檢查是否含內部敏感資料與錯誤事實</label><label><input type="radio" name="c4q3" value="B"/> <strong>B.</strong> 關掉所有校對</label><label><input type="radio" name="c4q3" value="C"/> <strong>C.</strong> 把 API 金鑰寫進頁腳</label><label><input type="radio" name="c4q3" value="D"/> <strong>D.</strong> 保證模型零幻覺</label>
+  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
+  <div class="feedback"></div>
+</section><section class="quiz" data-quiz="c4q4" data-answer="B" data-ok="正確！" data-bad="再看一次本章重點。">
+  <h3>隨堂測驗 · C4Q4</h3>
+  <p>修改長文時較穩的做法是？</p>
+  <label><input type="radio" name="c4q4" value="A"/> <strong>A.</strong> 每次要求「全部重寫成完全不同風格」</label><label><input type="radio" name="c4q4" value="B"/> <strong>B.</strong> 選取局部，一次改一類問題</label><label><input type="radio" name="c4q4" value="C"/> <strong>C.</strong> 貼上無關長文混淆模型</label><label><input type="radio" name="c4q4" value="D"/> <strong>D.</strong> 刪除右側預覽欄</label>
+  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
+  <div class="feedback"></div>
+</section>
+<div class="pager">
+  <a class="btn secondary" href="ch03.html">← Deep Research</a>
+  <a class="btn" href="ch05.html">下一章：Gem →</a>
+</div>
+
+<div class="footer-note">本站為自寫 Gemini 使用教學摘要，非 Google 官方文件轉載。操作畫面請以 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 與官方 Help 為準。進度存本機瀏覽器，不連 Gemini API。</div>
+</div>
+</main>
+</div>
+<script src="../js/app.js"></script>
+<script src="../js/quiz.js"></script>
+</body>
+</html>

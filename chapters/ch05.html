@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-MO">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>第五章 · Gem</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap"/>
+<link rel="stylesheet" href="../css/styles.css"/>
+</head>
+<body data-page="ch05">
+<div class="overlay"></div>
+<div class="topbar">
+  <button class="menu-btn" data-menu type="button">☰ 目錄</button>
+  <strong>Gemini 使用教學</strong>
+</div>
+<div class="layout">
+<aside class="sidebar">
+  <div class="brand">
+    <div class="brand-mark">G</div>
+    <div>
+      <h1>Gemini 使用教學</h1>
+      <p>互動教材 · 繁體中文</p>
+    </div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-label"><span>學習進度</span><span data-progress-text>0%</span></div>
+    <div class="progress-bar"><span data-progress-fill></span></div>
+  </div>
+  <nav class="nav">
+<div class="nav-section">導覽</div>
+<a href="../index.html" data-page="index">總覽</a>
+<a href="../chapters/preface.html" data-page="preface">導讀・選對工具</a>
+<a href="../chapters/ch01.html" data-page="ch01">第一章・上手與介面</a>
+<a href="../chapters/ch02.html" data-page="ch02">第二章・提示詞</a>
+<a href="../chapters/ch03.html" data-page="ch03">第三章・Deep Research</a>
+<a href="../chapters/ch04.html" data-page="ch04">第四章・Canvas</a>
+<a href="../chapters/ch05.html" data-page="ch05">第五章・Gem</a>
+<a href="../chapters/ch06.html" data-page="ch06">第六章・生態系速覽</a>
+<a href="../chapters/epilogue.html" data-page="epilogue">結語・檢查清單</a>
+<div class="nav-section">動手做</div>
+<a href="../practice/index.html" data-page="practice">實作走讀</a>
+  </nav>
+</aside>
+<main class="main">
+<div class="container">
+
+<nav class="breadcrumb"><a href="../index.html">總覽</a> / 第五章</nav>
+<header class="page-head">
+  <div class="eyebrow">第五章 · Gem</div>
+  <h2>重複指示，固化成專屬助理</h2>
+  <p>Gem 把角色、規則、風格、參考檔存起來，之後不必每週重貼長提示。偶發任務仍用一般聊天即可。</p>
+</header>
+
+<section class="card">
+  <h3>為什麼需要 Gem</h3>
+  <figure class="figure">
+    <img src="../assets/svg/gem-solidify.svg" alt="Gem 固化" style="width:100%;max-width:720px"/>
+  </figure>
+  <ul class="clean">
+    <li><strong>角色</strong>：例如「社內 FAQ 編輯」「會議紀錄助理」。</li>
+    <li><strong>規則</strong>：只依知識庫回答、缺資料就說不知道、輸出固定表格。</li>
+    <li><strong>風格</strong>：語氣、用詞、語言（繁中／口語程度）。</li>
+    <li><strong>參考檔</strong>：指南、範本、術語表（注意機密與權限）。</li>
+  </ul>
+  <div class="callout tip"><p>日文 Help：<a href="https://support.google.com/gemini/answer/15236405?hl=ja" target="_blank" rel="noopener">Gems を作成する</a>——重點就是省掉重複指示。</p></div>
+</section>
+
+<section class="card">
+  <h3>何時用 Gem vs 一般聊天</h3>
+  <table class="simple">
+    <thead><tr><th>情境</th><th>建議</th></tr></thead>
+    <tbody>
+      <tr><td>每週相同格式的會議紀錄</td><td>Gem</td></tr>
+      <tr><td>一次性腦力激盪、怪問題</td><td>一般聊天</td></tr>
+      <tr><td>要長期遵守品牌語氣＋範本</td><td>Gem（＋參考檔）</td></tr>
+      <tr><td>半日級跨網調查</td><td>Deep Research（可再把結論丟給 Gem 改寫）</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="card">
+  <h3>自訂指示草稿</h3>
+  <div class="prompt-box"><span class="copy-hint">可貼進 Gem 指示</span>你是「會議紀錄整理 Gem」。
+規則：
+1. 只根據使用者貼上或附加的內容。
+2. 輸出固定四欄：決議｜待辦｜負責人｜期限。
+3. 缺資訊寫「未提及」，禁止臆測。
+4. 語氣：簡潔繁中，不用表情符號。
+風格：條列優先；最後給「需主持人確認」清單（最多 3 條）。</div>
+</section>
+<section class="quiz" data-quiz="c5q1" data-answer="B" data-ok="正確！" data-bad="再看一次本章重點。">
+  <h3>隨堂測驗 · C5Q1</h3>
+  <p>Gem 最主要的價值是？</p>
+  <label><input type="radio" name="c5q1" value="A"/> <strong>A.</strong> 取代所有 Deep Research</label><label><input type="radio" name="c5q1" value="B"/> <strong>B.</strong> 把重複的角色／規則／風格／參考固化</label><label><input type="radio" name="c5q1" value="C"/> <strong>C.</strong> 讓你不必登入</label><label><input type="radio" name="c5q1" value="D"/> <strong>D.</strong> 保證零幻覺</label>
+  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
+  <div class="feedback"></div>
+</section><section class="quiz" data-quiz="c5q2" data-answer="C" data-ok="正確！" data-bad="再看一次本章重點。">
+  <h3>隨堂測驗 · C5Q2</h3>
+  <p>下列哪個較適合做成 Gem？</p>
+  <label><input type="radio" name="c5q2" value="A"/> <strong>A.</strong> 只會問一次的冷知識</label><label><input type="radio" name="c5q2" value="B"/> <strong>B.</strong> 每次題目完全不同的隨機創作</label><label><input type="radio" name="c5q2" value="C"/> <strong>C.</strong> 每週重複的客服回覆語氣＋範本</label><label><input type="radio" name="c5q2" value="D"/> <strong>D.</strong> 刪除帳號流程</label>
+  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
+  <div class="feedback"></div>
+</section><section class="quiz" data-quiz="c5q3" data-answer="A" data-ok="正確！" data-bad="再看一次本章重點。">
+  <h3>隨堂測驗 · C5Q3</h3>
+  <p>Gem 與一般聊天的分工？</p>
+  <label><input type="radio" name="c5q3" value="A"/> <strong>A.</strong> 重複工作用 Gem；偶發任務用一般聊天</label><label><input type="radio" name="c5q3" value="B"/> <strong>B.</strong> 永遠只用 Gem，禁止新聊天</label><label><input type="radio" name="c5q3" value="C"/> <strong>C.</strong> Gem 不能放參考檔，聊天才能</label><label><input type="radio" name="c5q3" value="D"/> <strong>D.</strong> 兩者完全無法並存</label>
+  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
+  <div class="feedback"></div>
+</section><section class="quiz" data-quiz="c5q4" data-answer="B" data-ok="權限與政策優先。" data-bad="再看一次本章重點。">
+  <h3>隨堂測驗 · C5Q4</h3>
+  <p>把內部規章放進 Gem 知識庫時應？</p>
+  <label><input type="radio" name="c5q4" value="A"/> <strong>A.</strong> 無視公司資料政策</label><label><input type="radio" name="c5q4" value="B"/> <strong>B.</strong> 確認權限與是否可上傳雲端助手</label><label><input type="radio" name="c5q4" value="C"/> <strong>C.</strong> 再把密碼寫進指示</label><label><input type="radio" name="c5q4" value="D"/> <strong>D.</strong> 公開分享給全網</label>
+  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
+  <div class="feedback"></div>
+</section>
+<div class="pager">
+  <a class="btn secondary" href="ch04.html">← Canvas</a>
+  <a class="btn" href="ch06.html">下一章：生態系 →</a>
+</div>
+
+<div class="footer-note">本站為自寫 Gemini 使用教學摘要，非 Google 官方文件轉載。操作畫面請以 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 與官方 Help 為準。進度存本機瀏覽器，不連 Gemini API。</div>
+</div>
+</main>
+</div>
+<script src="../js/app.js"></script>
+<script src="../js/quiz.js"></script>
+</body>
+</html>

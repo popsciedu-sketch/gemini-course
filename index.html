@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-MO">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Gemini 使用教學 · 互動教材</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap"/>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body data-page="index">
+<div class="overlay"></div>
+<div class="topbar">
+  <button class="menu-btn" data-menu type="button">☰ 目錄</button>
+  <strong>Gemini 使用教學</strong>
+</div>
+<div class="layout">
+<aside class="sidebar">
+  <div class="brand">
+    <div class="brand-mark">G</div>
+    <div>
+      <h1>Gemini 使用教學</h1>
+      <p>互動教材 · 繁體中文</p>
+    </div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-label"><span>學習進度</span><span data-progress-text>0%</span></div>
+    <div class="progress-bar"><span data-progress-fill></span></div>
+  </div>
+  <nav class="nav">
+<div class="nav-section">導覽</div>
+<a href="index.html" data-page="index">總覽</a>
+<a href="chapters/preface.html" data-page="preface">導讀・選對工具</a>
+<a href="chapters/ch01.html" data-page="ch01">第一章・上手與介面</a>
+<a href="chapters/ch02.html" data-page="ch02">第二章・提示詞</a>
+<a href="chapters/ch03.html" data-page="ch03">第三章・Deep Research</a>
+<a href="chapters/ch04.html" data-page="ch04">第四章・Canvas</a>
+<a href="chapters/ch05.html" data-page="ch05">第五章・Gem</a>
+<a href="chapters/ch06.html" data-page="ch06">第六章・生態系速覽</a>
+<a href="chapters/epilogue.html" data-page="epilogue">結語・檢查清單</a>
+<div class="nav-section">動手做</div>
+<a href="practice/index.html" data-page="practice">實作走讀</a>
+  </nav>
+</aside>
+<main class="main">
+<div class="container">
+
+<header class="hero">
+  <div class="eyebrow">互動教材 · 繁體中文</div>
+  <h2>把 Gemini 變成可練習的工作流</h2>
+  <p>從一般聊天、提示詞、Deep Research、Canvas 到 Gem，對齊官方 Help 與實務技巧（含日文說明重點），短段可操作。本站<strong>不</strong>自動連 Gemini API。</p>
+  <div class="hero-actions">
+    <a class="btn" href="chapters/preface.html">從導讀開始 →</a>
+    <a class="btn secondary" href="practice/index.html">實作走讀</a>
+  </div>
+</header>
+
+<section class="card">
+  <h3>本課怎麼用</h3>
+  <div class="grid-3">
+    <div class="mini-card"><strong>① 選對工具</strong><p>先懂聊天／研究／Canvas／Gem／Notebook 各適合什麼，再記按鈕位置。</p></div>
+    <div class="mini-card"><strong>② 跟章節走</strong><p>含多模態、模型、Live、產圖、Workspace 側欄、連接隱私；每章小測，進度存本機。</p></div>
+    <div class="mini-card"><strong>③ 全功能走讀</strong><p><a href="practice/index.html#full-walkthrough">實作頁 A→G</a>：checklist＋大量截圖預留，缺按鈕就註視帳號／地區／方案。</p></div>
+  </div>
+</section>
+
+<section class="card">
+  <h3>學習地圖</h3>
+  <figure class="figure">
+    <img src="assets/svg/learning-map.svg" alt="學習地圖" style="width:100%;max-width:720px"/>
+    <figcaption>導讀 → 介面 → 提示 → 研究 → Canvas → Gem → 生態系 → 結語／實作</figcaption>
+  </figure>
+  <div class="path">
+    <a class="path-item" href="chapters/preface.html"><span class="num">00</span><div><strong>導讀・選對工具</strong><span>聊天／Canvas／研究／Gem／Notebook</span></div></a>
+    <a class="path-item" href="chapters/ch01.html"><span class="num">01</span><div><strong>上手與介面</strong><span>登入、附加檔、模型、安全</span></div></a>
+    <a class="path-item" href="chapters/ch02.html"><span class="num">02</span><div><strong>提示詞</strong><span>公式、長上下文、少樣本</span></div></a>
+    <a class="path-item" href="chapters/ch03.html"><span class="num">03</span><div><strong>Deep Research</strong><span>改計畫、來源、驗收引用</span></div></a>
+    <a class="path-item" href="chapters/ch04.html"><span class="num">04</span><div><strong>Canvas</strong><span>規格→迭代→Create</span></div></a>
+    <a class="path-item" href="chapters/ch05.html"><span class="num">05</span><div><strong>Gem</strong><span>重複指示固化</span></div></a>
+    <a class="path-item" href="chapters/ch06.html"><span class="num">06</span><div><strong>生態系速覽</strong><span>Workspace／Notebook 分工</span></div></a>
+    <a class="path-item" href="chapters/epilogue.html"><span class="num">終</span><div><strong>檢查清單</strong><span>常見坑＋延伸連結</span></div></a>
+    <a class="path-item" href="practice/index.html"><span class="num">實</span><div><strong>實作走讀</strong><span>checklist × shot-slot</span></div></a>
+  </div>
+</section>
+
+<section class="card">
+  <h3>與其他站的關係</h3>
+  <ul class="clean">
+    <li>可與實體課／<strong>HCIA／AI 超神應用術</strong>配套站互補：那邊偏書本與實驗，本站專做 <strong>Gemini 網頁產品操作節奏</strong>。</li>
+    <li>內容為教學摘要，請搭配 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 與官方 Help 實操；介面若改版，以線上為準。</li>
+  </ul>
+</section>
+
+<div class="footer-note">本站為自寫 Gemini 使用教學摘要，非 Google 官方文件轉載。操作畫面請以 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 與官方 Help 為準。進度存本機瀏覽器，不連 Gemini API。</div>
+</div>
+</main>
+</div>
+<script src="js/app.js"></script>
+<script src="js/quiz.js"></script>
+</body>
+</html>

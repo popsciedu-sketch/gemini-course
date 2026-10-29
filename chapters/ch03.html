@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-MO">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>第三章 · Deep Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap"/>
+<link rel="stylesheet" href="../css/styles.css"/>
+</head>
+<body data-page="ch03">
+<div class="overlay"></div>
+<div class="topbar">
+  <button class="menu-btn" data-menu type="button">☰ 目錄</button>
+  <strong>Gemini 使用教學</strong>
+</div>
+<div class="layout">
+<aside class="sidebar">
+  <div class="brand">
+    <div class="brand-mark">G</div>
+    <div>
+      <h1>Gemini 使用教學</h1>
+      <p>互動教材 · 繁體中文</p>
+    </div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-label"><span>學習進度</span><span data-progress-text>0%</span></div>
+    <div class="progress-bar"><span data-progress-fill></span></div>
+  </div>
+  <nav class="nav">
+<div class="nav-section">導覽</div>
+<a href="../index.html" data-page="index">總覽</a>
+<a href="../chapters/preface.html" data-page="preface">導讀・選對工具</a>
+<a href="../chapters/ch01.html" data-page="ch01">第一章・上手與介面</a>
+<a href="../chapters/ch02.html" data-page="ch02">第二章・提示詞</a>
+<a href="../chapters/ch03.html" data-page="ch03">第三章・Deep Research</a>
+<a href="../chapters/ch04.html" data-page="ch04">第四章・Canvas</a>
+<a href="../chapters/ch05.html" data-page="ch05">第五章・Gem</a>
+<a href="../chapters/ch06.html" data-page="ch06">第六章・生態系速覽</a>
+<a href="../chapters/epilogue.html" data-page="epilogue">結語・檢查清單</a>
+<div class="nav-section">動手做</div>
+<a href="../practice/index.html" data-page="practice">實作走讀</a>
+  </nav>
+</aside>
+<main class="main">
+<div class="container">
+
+<nav class="breadcrumb"><a href="../index.html">總覽</a> / 第三章</nav>
+<header class="page-head">
+  <div class="eyebrow">第三章 · Deep Research</div>
+  <h2>先改計畫，再按開始</h2>
+  <p>Deep Research 適合「要掃很多分頁」的調查。流程：寫 brief → 看計畫 → Edit plan → Start → 約 5–10 分鐘 → 核對引用。可選來源，也可關掉 Google 搜尋只查私有資料。</p>
+</header>
+
+<section class="card">
+  <h3>流程圖</h3>
+  <figure class="figure">
+    <img src="../assets/svg/research-flow.svg" alt="研究流程" style="width:100%;max-width:720px"/>
+  </figure>
+  <ol class="steps">
+    <li class="step"><h4>從工具列開 Deep Research</h4><p>在 <span class="mono">gemini.google.com</span> 輸入框附近選 Deep Research（位置可能隨改版移動）。</p></li>
+    <li class="step"><h4>選來源（可選）</h4><p>預設含 Google Search。也可加入 Gmail、Drive、上傳檔、Notebook。若只要內部材料，可<strong>取消勾選 Google 搜尋</strong>。</p></li>
+    <li class="step"><h4>寫 brief：收窄範圍</h4><p>寫清目的、時間窗、地區／產業、偏好來源、輸出結構。範圍愈窄，報告愈有用。</p></li>
+    <li class="step"><h4>編輯計畫再開始</h4><p>Gemini 會先給研究計畫。用自然語言改（「加上成本比較」「去掉十年前資料」），再按開始。日文／英文官方都強調這步。</p></li>
+    <li class="step"><h4>等待與驗收</h4><p>通常約 5–10 分鐘；複雜題可能更久。期間可看 Sites browsed／思考步驟。完成後點開來源抽查，再匯出文件。</p></li>
+  </ol>
+  <div class="callout tip"><p>官方：<a href="https://support.google.com/gemini/answer/15719111?hl=ja" target="_blank" rel="noopener">Deep Research（日文 Help）</a> · <a href="https://gemini.google/overview/deep-research/" target="_blank" rel="noopener">產品概述</a>。第三方整理可參考 <a href="https://www.hklearnai.com/tutorials/google-gemini-tools-canvas-deep-research-guide" target="_blank" rel="noopener">HK Learn AI 導讀</a>（非官方）。</p></div>
+</section>
+
+<section class="card">
+  <h3>Brief 範例（可改寫後貼上）</h3>
+  <div class="prompt-box"><span class="copy-hint">複製用</span># 目的
+為內部評估：澳門／香港中小餐飲是否導入線上訂位工具。
+
+# 調查範圍
+- 地區：港澳為主，可對照 1–2 個亞太案例
+- 時間：近 18 個月資料優先
+- 對象：員工 50 人以下餐廳
+
+# 請比較的軸
+價格區間、核心功能、支援語言、導入難度、常見抱怨
+
+# 輸出
+1) 一頁結論  2) 比較表  3) 風險與下一步  4) 每段附可點開來源
+
+# 偏好來源
+官方定價頁、具名評測；少用不具名論壇八卦</div>
+</section>
+
+<section class="card">
+  <h3>常見坑</h3>
+  <ul class="clean">
+    <li>題目大到「整個 AI 產業」→ 報告空泛；請加時間窗與產業切片。</li>
+    <li>不改計畫就按開始 → 事後才發現漏了你在乎的軸。</li>
+    <li>報告直接外傳 → 未核對引用與敏感內部來源。</li>
+  </ul>
+</section>
+<section class="quiz" data-quiz="c3q1" data-answer="B" data-ok="正確！" data-bad="再看一次本章重點。">
+  <h3>隨堂測驗 · C3Q1</h3>
+  <p>Deep Research 開始前，官方與實務都建議？</p>
+  <label><input type="radio" name="c3q1" value="A"/> <strong>A.</strong> 永遠跳過計畫</label><label><input type="radio" name="c3q1" value="B"/> <strong>B.</strong> 檢視並編輯研究計畫再開始</label><label><input type="radio" name="c3q1" value="C"/> <strong>C.</strong> 先登出帳號</label><label><input type="radio" name="c3q1" value="D"/> <strong>D.</strong> 只上傳影片不寫字</label>
+  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
+  <div class="feedback"></div>
+</section><section class="quiz" data-quiz="c3q2" data-answer="C" data-ok="正確！" data-bad="再看一次本章重點。">
+  <h3>隨堂測驗 · C3Q2</h3>
+  <p>只要用公司 Drive／上傳檔、不要公開網時？</p>
+  <label><input type="radio" name="c3q2" value="A"/> <strong>A.</strong> 無法使用 Research</label><label><input type="radio" name="c3q2" value="B"/> <strong>B.</strong> 必須同時開所有社群來源</label><label><input type="radio" name="c3q2" value="C"/> <strong>C.</strong> 可取消 Google 搜尋，只留私有來源</label><label><input type="radio" name="c3q2" value="D"/> <strong>D.</strong> 把檔案密碼寫進提示</label>
+  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
+  <div class="feedback"></div>
+</section><section class="quiz" data-quiz="c3q3" data-answer="A" data-ok="正確！" data-bad="再看一次本章重點。">
+  <h3>隨堂測驗 · C3Q3</h3>
+  <p>報告完成後最重要的驗收是？</p>
+  <label><input type="radio" name="c3q3" value="A"/> <strong>A.</strong> 抽查引用來源是否真的支撐結論</label><label><input type="radio" name="c3q3" value="B"/> <strong>B.</strong> 看字數是否超過一萬</label><label><input type="radio" name="c3q3" value="C"/> <strong>C.</strong> 立刻公開分享連結給全世界</label><label><input type="radio" name="c3q3" value="D"/> <strong>D.</strong> 刪除計畫紀錄</label>
+  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
+  <div class="feedback"></div>
+</section><section class="quiz" data-quiz="c3q4" data-answer="B" data-ok="正確！" data-bad="再看一次本章重點。">
+  <h3>隨堂測驗 · C3Q4</h3>
+  <p>下列哪題較適合 Deep Research？</p>
+  <label><input type="radio" name="c3q4" value="A"/> <strong>A.</strong> 「今天星期幾」</label><label><input type="radio" name="c3q4" value="B"/> <strong>B.</strong> 「近一年亞太區三家競品功能與定價比較並附來源」</label><label><input type="radio" name="c3q4" value="C"/> <strong>C.</strong> 「把這句話改成幽默一點」</label><label><input type="radio" name="c3q4" value="D"/> <strong>D.</strong> 「畫一隻貓」</label>
+  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
+  <div class="feedback"></div>
+</section>
+<div class="pager">
+  <a class="btn secondary" href="ch02.html">← 提示詞</a>
+  <a class="btn" href="ch04.html">下一章：Canvas →</a>
+</div>
+
+<div class="footer-note">本站為自寫 Gemini 使用教學摘要，非 Google 官方文件轉載。操作畫面請以 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 與官方 Help 為準。進度存本機瀏覽器，不連 Gemini API。</div>
+</div>
+</main>
+</div>
+<script src="../js/app.js"></script>
+<script src="../js/quiz.js"></script>
+</body>
+</html>

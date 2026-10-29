@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260" role="img" aria-label="提示詞公式">
+<rect width="720" height="260" rx="16" fill="#faf8f5"/>
+<text x="360" y="30" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="15" font-weight="700" fill="#1967d2">提示公式：角色 + 任務 + 對象 + 約束 + 驗收</text>
+<g font-family="Noto Sans TC,sans-serif" font-size="13">
+<rect x="24" y="55" width="120" height="70" rx="12" fill="#e8f0fe" stroke="#1967d2"/><text x="84" y="85" text-anchor="middle" fill="#1967d2" font-weight="700">角色</text><text x="84" y="105" text-anchor="middle" fill="#4a4a5a" font-size="11">你是誰</text>
+<rect x="160" y="55" width="120" height="70" rx="12" fill="#e8f0fe" stroke="#1967d2"/><text x="220" y="85" text-anchor="middle" fill="#1967d2" font-weight="700">任務</text><text x="220" y="105" text-anchor="middle" fill="#4a4a5a" font-size="11">要做什麼</text>
+<rect x="296" y="55" width="120" height="70" rx="12" fill="#d9f5f1" stroke="#0d9488"/><text x="356" y="85" text-anchor="middle" fill="#0f766e" font-weight="700">對象</text><text x="356" y="105" text-anchor="middle" fill="#4a4a5a" font-size="11">給誰看</text>
+<rect x="432" y="55" width="120" height="70" rx="12" fill="#fff7ed" stroke="#c2410c"/><text x="492" y="85" text-anchor="middle" fill="#c2410c" font-weight="700">約束</text><text x="492" y="105" text-anchor="middle" fill="#4a4a5a" font-size="11">長度／禁區</text>
+<rect x="568" y="55" width="128" height="70" rx="12" fill="#fef3c7" stroke="#b45309"/><text x="632" y="85" text-anchor="middle" fill="#b45309" font-weight="700">驗收</text><text x="632" y="105" text-anchor="middle" fill="#4a4a5a" font-size="11">怎樣算好</text>
+<rect x="80" y="160" width="560" height="70" rx="12" fill="#0f172a"/>
+<text x="360" y="190" text-anchor="middle" fill="#94a3b8" font-size="12">長文：資料在前 → 問題在後　｜　關鍵限制放最前　｜　用 Markdown／XML 分隔</text>
+<text x="360" y="212" text-anchor="middle" fill="#7dd3fc" font-size="12">少樣本範例 &gt; 長篇空話　｜　一次一事　｜　要詳細就明講字數</text>
+</g>
+</svg>

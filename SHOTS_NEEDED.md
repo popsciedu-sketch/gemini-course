@@ -19,6 +19,12 @@
 | `f09-free-image-gen.png` | Free 產圖（建立圖像成功） | ✅ 已嵌入（個資遮黑） |
 | `f10-notebook-region.png` | Notebook splash＋無法載入 toast（地區／帳號可能不可用） | ✅ 已嵌入（個資遮黑） |
 
+| `f-plus-usage.png` | wayneleong Plus 用量（PLUS／0% used） | ✅ Plus 對照已嵌入（ch07；無側欄 PII） |
+| `f-plus-home.png` | wayneleong Plus 首屏（側欄 Plus） | ✅ Plus 對照已嵌入（個資遮黑） |
+| `f-plus-tools.png` | wayneleong ＋工具選單（側欄 Plus） | ✅ Plus 對照已嵌入（個資＋Pro 晶片遮黑） |
+| `f-plus-account.png` / `plus-account-check.png` | 帳戶選單（email／其他帳） | ✅ 已遮黑備檔（未全嵌；對照用 home／usage） |
+
+
 ## 仍待
 
 | 建議檔名 | 應出現什麼 | 優先 |
@@ -28,7 +34,6 @@
 | `f13-mobile-live.png` | 手機 Live（介紹用，非網頁實作必做） | P3 |
 | `f14-desktop-overlay.png` | 桌面 Overlay（介紹用） | P3 |
 | `f15-workspace-sidepanel.png` | Docs／Gmail 側欄（介紹用） | P3 |
-| （Plus 對照） | wayneleong 登入後：模型／工具與 FREE 差異 | P1 |
 | （Pro 對照） | awwgj4p65t：重模型／DR 等 | P2 |
 
 預留槽位命名：`f##-*.png`。補圖後在對應章把 `pending-shot` 換成 `figure.shot` 即可。

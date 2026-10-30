@@ -418,6 +418,10 @@ body { font-size: 1.05rem; }
   display:inline-block; font-size:.78rem; font-weight:800; padding:3px 10px; border-radius:6px;
   background:#fde8e8; color:#9b1c1c; vertical-align:middle;
 }
+.badge.plus {
+  display:inline-block; font-size:.78rem; font-weight:800; padding:3px 10px; border-radius:6px;
+  background:#e8eaf6; color:#283593; vertical-align:middle;
+}
 .badge.mixed {
   display:inline-block; font-size:.78rem; font-weight:800; padding:3px 10px; border-radius:6px;
   background:#fff3cd; color:#856404; vertical-align:middle;

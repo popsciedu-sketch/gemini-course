@@ -1,21 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-label="Gemini 學習地圖">
-<rect width="720" height="340" rx="16" fill="#faf8f5"/>
-<text x="360" y="32" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="16" font-weight="700" fill="#1967d2">Gemini 使用教學 · 學習地圖</text>
-<g font-family="Noto Sans TC,sans-serif" font-size="12" fill="#1a1a2e">
-<rect x="24" y="55" width="100" height="48" rx="10" fill="#e8f0fe" stroke="#1967d2"/><text x="74" y="84" text-anchor="middle">導讀</text>
-<rect x="140" y="55" width="100" height="48" rx="10" fill="#e8f0fe" stroke="#1967d2"/><text x="190" y="84" text-anchor="middle">01 介面</text>
-<rect x="256" y="55" width="100" height="48" rx="10" fill="#e8f0fe" stroke="#1967d2"/><text x="306" y="84" text-anchor="middle">02 提示</text>
-<rect x="372" y="55" width="110" height="48" rx="10" fill="#d9f5f1" stroke="#0d9488"/><text x="427" y="84" text-anchor="middle">03 研究</text>
-<rect x="498" y="55" width="100" height="48" rx="10" fill="#d9f5f1" stroke="#0d9488"/><text x="548" y="84" text-anchor="middle">04 Canvas</text>
-<rect x="614" y="55" width="82" height="48" rx="10" fill="#fff7ed" stroke="#c2410c"/><text x="655" y="84" text-anchor="middle">05 Gem</text>
-<path d="M74 103 v30 H360 v0" stroke="#1967d2" fill="none" stroke-width="2"/>
-<path d="M427 103 v30" stroke="#0d9488" fill="none" stroke-width="2"/>
-<path d="M548 103 v30" stroke="#0d9488" fill="none" stroke-width="2"/>
-<path d="M655 103 v20 H360" stroke="#c2410c" fill="none" stroke-width="2"/>
-<rect x="160" y="145" width="400" height="52" rx="12" fill="#fff" stroke="#1967d2" stroke-width="2"/>
-<text x="360" y="176" text-anchor="middle" font-weight="700" fill="#1967d2">06 生態系 · Workspace／Notebook 分工</text>
-<rect x="120" y="230" width="480" height="70" rx="12" fill="#174ea6"/>
-<text x="360" y="260" text-anchor="middle" fill="#fff" font-weight="700" font-size="14">結語檢查清單 → 實作走讀（shot-slot）</text>
-<text x="360" y="282" text-anchor="middle" fill="#c2e7ff" font-size="12">聊天 · Deep Research · Canvas · Gem · 查核</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-label="Gemini 學習地圖">
+<rect width="720" height="360" rx="16" fill="#faf8f5"/>
+<text x="360" y="28" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="15" font-weight="700" fill="#1967d2">Gemini 使用教學 · 學習地圖（2026）</text>
+<g font-family="Noto Sans TC,sans-serif" font-size="11" fill="#1a1a2e">
+<rect x="12" y="48" width="84" height="44" rx="10" fill="#e8f0fe" stroke="#1967d2"/><text x="54" y="74" text-anchor="middle">00 導讀</text>
+<rect x="104" y="48" width="84" height="44" rx="10" fill="#e8f0fe" stroke="#1967d2"/><text x="146" y="74" text-anchor="middle">01 介面</text>
+<rect x="196" y="48" width="84" height="44" rx="10" fill="#e8f0fe" stroke="#1967d2"/><text x="238" y="74" text-anchor="middle">02 提示</text>
+<rect x="288" y="48" width="96" height="44" rx="10" fill="#d9f5f1" stroke="#0d9488"/><text x="336" y="74" text-anchor="middle">03 研究</text>
+<rect x="392" y="48" width="90" height="44" rx="10" fill="#d9f5f1" stroke="#0d9488"/><text x="437" y="74" text-anchor="middle">04 Canvas</text>
+<rect x="490" y="48" width="84" height="44" rx="10" fill="#fff7ed" stroke="#c2410c"/><text x="532" y="74" text-anchor="middle">05 Skill</text>
+<rect x="582" y="48" width="126" height="44" rx="10" fill="#fef3c7" stroke="#b45309"/><text x="645" y="74" text-anchor="middle">06 Notebook</text>
+<path d="M54 92 v24 H360" stroke="#1967d2" fill="none" stroke-width="2"/>
+<path d="M336 92 v24" stroke="#0d9488" fill="none" stroke-width="2"/>
+<path d="M532 92 v24" stroke="#c2410c" fill="none" stroke-width="2"/>
+<rect x="120" y="128" width="480" height="48" rx="12" fill="#fff" stroke="#1967d2" stroke-width="2"/>
+<text x="360" y="157" text-anchor="middle" font-weight="700" fill="#1967d2" font-size="13">07 帳號方案與隱私 · 看設定→用量限制</text>
+<rect x="100" y="200" width="520" height="64" rx="12" fill="#174ea6"/>
+<text x="360" y="228" text-anchor="middle" fill="#fff" font-weight="700" font-size="13">結語檢查清單 → 實作走讀 A–G（含下載包）</text>
+<text x="360" y="248" text-anchor="middle" fill="#c2e7ff" font-size="11">聊天 · Research · Canvas · Skill · Notebook · 平台</text>
+<text x="360" y="300" text-anchor="middle" fill="#64748b" font-size="11">網頁為主課室｜桌面 Overlay｜手機 Live（暫非網頁）</text>
+<text x="360" y="322" text-anchor="middle" fill="#64748b" font-size="11">Skills 為主、Gems 過渡｜Gemini Notebook（前稱 NotebookLM）</text>
 </g>
 </svg>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-MO">
+<html lang="zh-Hant-HK">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -30,13 +30,14 @@
   <nav class="nav">
 <div class="nav-section">導覽</div>
 <a href="../index.html" data-page="index">總覽</a>
-<a href="../chapters/preface.html" data-page="preface">導讀・選對工具</a>
+<a href="../chapters/preface.html" data-page="preface">導讀・選對工具與平台</a>
 <a href="../chapters/ch01.html" data-page="ch01">第一章・上手與介面</a>
 <a href="../chapters/ch02.html" data-page="ch02">第二章・提示詞</a>
 <a href="../chapters/ch03.html" data-page="ch03">第三章・Deep Research</a>
 <a href="../chapters/ch04.html" data-page="ch04">第四章・Canvas</a>
-<a href="../chapters/ch05.html" data-page="ch05">第五章・Gem</a>
-<a href="../chapters/ch06.html" data-page="ch06">第六章・生態系速覽</a>
+<a href="../chapters/ch05.html" data-page="ch05">第五章・Skill</a>
+<a href="../chapters/ch06.html" data-page="ch06">第六章・Notebook 與 Workspace</a>
+<a href="../chapters/ch07.html" data-page="ch07">第七章・帳號方案與隱私</a>
 <a href="../chapters/epilogue.html" data-page="epilogue">結語・檢查清單</a>
 <div class="nav-section">動手做</div>
 <a href="../practice/index.html" data-page="practice">實作走讀</a>
@@ -49,7 +50,7 @@
 <header class="page-head">
   <div class="eyebrow">第二章 · 提示詞</div>
   <h2>寫清楚，比寫長更重要</h2>
-  <p>對齊 Google 提示策略：結構化分隔、關鍵限制放最前、長文「資料在前、問題在後」、少樣本、一次一事。要詳細就明講長度。</p>
+  <p>對齊提示策略：結構化分隔、關鍵限制放最前、長文「資料在前、問題在後」、少樣本、一次一事。</p>
 </header>
 
 <section class="card">
@@ -59,88 +60,71 @@
   </figure>
   <ul class="clean">
     <li><strong>角色</strong>：你是誰（語氣、專業邊界）。</li>
-    <li><strong>任務</strong>：要產出什麼（不是「幫幫忙」）。</li>
+    <li><strong>任務</strong>：要產出什麼。</li>
     <li><strong>對象</strong>：給誰看、什麼場合。</li>
     <li><strong>約束</strong>：字數、禁區、必須／不可。</li>
-    <li><strong>驗收</strong>：怎樣算完成（欄位、格式、檢查項）。</li>
+    <li><strong>驗收</strong>：欄位、格式、檢查項。</li>
   </ul>
-  <div class="callout tip"><p>可記 <strong>PARTS</strong>：Persona、Action、Requirements、Target audience、Style／Success——與上列公式同方向，選一套用到底即可。</p></div>
+  <div class="callout tip"><p>可記 <strong>PARTS</strong>：Persona、Action、Requirements、Target audience、Style／Success。</p></div>
 </section>
 
 <section class="card">
-  <h3>進階技巧（網上＋官方策略摘要）</h3>
+  <h3>進階技巧</h3>
   <ol class="steps">
-    <li class="step"><h4>結構化分隔</h4><p>用 Markdown 標題或 XML 風格標籤分開「指示」與「材料」，例如 <span class="mono">&lt;context&gt;…&lt;/context&gt;</span>、<span class="mono">&lt;task&gt;…&lt;/task&gt;</span>。同一則提示內格式要一致。</p></li>
-    <li class="step"><h4>關鍵限制放最前</h4><p>角色、安全邊界、輸出格式放開頭；模型較容易一直遵守。</p></li>
-    <li class="step"><h4>長上下文：資料在前、問題在後</h4><p>先貼文件／表格，最後一句才問「根據以上…」。中間可加「Based on the information above…」當錨點。</p></li>
-    <li class="step"><h4>少樣本 &gt; 空話</h4><p>貼一個「理想輸出範例」，並寫「只學格式，內容依資料」。常比長篇形容更準。</p></li>
-    <li class="step"><h4>一次一事</h4><p>先大綱→再段落→再縮短。不要一次要求「完美終稿＋翻譯＋插圖＋合規檢查」。</p></li>
-    <li class="step"><h4>要詳細就明講</h4><p>預設可能偏短。需要長答就寫「約 800 字」「至少五點並各舉例」。</p></li>
+    <li class="step"><h4>結構化分隔</h4><p>用 Markdown 或標籤分開指示與材料。</p></li>
+    <li class="step"><h4>關鍵限制放最前</h4><p>角色、安全邊界、輸出格式放開頭。</p></li>
+    <li class="step"><h4>長上下文：資料在前、問題在後</h4><p>先貼文件，最後才問「根據以上…」。</p></li>
+    <li class="step"><h4>少樣本 &gt; 空話</h4><p>貼理想輸出範例，寫「只學格式」。</p></li>
+    <li class="step"><h4>一次一事</h4><p>先大綱→再段落→再縮短。</p></li>
   </ol>
-  <div class="callout"><p>延伸：<a href="https://ai.google.dev/gemini-api/docs/prompting-strategies?hl=zh-cn" target="_blank" rel="noopener">Gemini API 提示策略</a>（概念同樣適用 App 端）。</p></div>
 </section>
 
 <section class="card">
-  <h3>可複製範例</h3>
-  <p>FAQ 草稿（可整段貼上）：</p>
+  <h3>可複製範例（科普展導賞）</h3>
   <div class="prompt-box"><span class="copy-hint">複製用</span>## 角色
-你是產品說明編輯，用國中程度中文。
+你是科學館展場導賞撰稿，用繁中、國中程度。
 
 ## 任務
-根據下方材料，寫 8 條「新客戶 FAQ」。
+寫約 200 字展品導賞稿，再附 3 個互動提問。
 
 ## 對象
-第一次接觸產品的零售店主。
+家庭觀眾（家長＋孩子）。
 
 ## 約束
-- 每答 ≤60 字
-- 不捏造價格或法規
-- 材料沒有的寫「需向客服確認」
+- 不捏造科學事實；不確定處標「需查證」
+- 不用表情符號
 
 ## 驗收
-輸出為編號清單；每條含「問／答」。
-
-## 材料
-（在此貼產品說明或附加檔）</div>
-  <p>會議紀錄整理：</p>
-  <div class="prompt-box"><span class="copy-hint">複製用</span>角色：行政助理。
-任務：把會議紀錄整理成「決議／待辦／負責人／期限」四欄表。
-約束：只根據我貼的內容；缺資訊標「未提及」。
-驗收：Markdown 表格；待辦按期限排序。
-——以下是紀錄——
-（貼上）</div>
+正文一段＋「互動提問」編號清單。</div>
+  <p>示範素材亦可見下載包內 sample 檔；會議紀錄範本見第五章 Skill。</p>
 </section>
-<section class="quiz" data-quiz="c2q1" data-answer="B" data-ok="官方策略：長上下文時問題放最後。" data-bad="再看一次本章重點。">
+<section class="quiz" data-quiz="c2q1" data-answer="B" data-ok="長上下文時問題放最後。" data-bad="再看本章。">
   <h3>隨堂測驗 · C2Q1</h3>
-  <p>長文件貼進提示時，較佳順序是？</p>
+  <p>長文件貼進提示時，較佳順序？</p>
   <label><input type="radio" name="c2q1" value="A"/> <strong>A.</strong> 先問問題，再慢慢貼資料</label><label><input type="radio" name="c2q1" value="B"/> <strong>B.</strong> 資料／上下文在前，具體問題在後</label><label><input type="radio" name="c2q1" value="C"/> <strong>C.</strong> 把限制寫在最末且用暗號</label><label><input type="radio" name="c2q1" value="D"/> <strong>D.</strong> 完全不給任何分隔</label>
   <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
   <div class="feedback"></div>
-</section><section class="quiz" data-quiz="c2q2" data-answer="C" data-ok="正確！" data-bad="再看一次本章重點。">
+</section>
+<section class="quiz" data-quiz="c2q2" data-answer="C" data-ok="少樣本有效。" data-bad="再看本章。">
   <h3>隨堂測驗 · C2Q2</h3>
-  <p>想固定輸出格式，最有效的做法之一是？</p>
+  <p>想固定輸出格式，最有效做法之一？</p>
   <label><input type="radio" name="c2q2" value="A"/> <strong>A.</strong> 只說「寫好看一點」</label><label><input type="radio" name="c2q2" value="B"/> <strong>B.</strong> 重複貼「請務必」十次</label><label><input type="radio" name="c2q2" value="C"/> <strong>C.</strong> 給少樣本範例並說明只學格式</label><label><input type="radio" name="c2q2" value="D"/> <strong>D.</strong> 關掉網路</label>
   <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
   <div class="feedback"></div>
-</section><section class="quiz" data-quiz="c2q3" data-answer="A" data-ok="正確！" data-bad="再看一次本章重點。">
+</section>
+<section class="quiz" data-quiz="c2q3" data-answer="A" data-ok="約束放前。" data-bad="再看本章。">
   <h3>隨堂測驗 · C2Q3</h3>
   <p>「關鍵行為約束」較建議放在？</p>
-  <label><input type="radio" name="c2q3" value="A"/> <strong>A.</strong> 提示最前或系統指示</label><label><input type="radio" name="c2q3" value="B"/> <strong>B.</strong> 完全不寫，靠模型猜</label><label><input type="radio" name="c2q3" value="C"/> <strong>C.</strong> 只寫在對話第五十輪</label><label><input type="radio" name="c2q3" value="D"/> <strong>D.</strong> 用表情符號代替</label>
-  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
-  <div class="feedback"></div>
-</section><section class="quiz" data-quiz="c2q4" data-answer="B" data-ok="正確！" data-bad="再看一次本章重點。">
-  <h3>隨堂測驗 · C2Q4</h3>
-  <p>一次把翻譯、改寫、合規、設計全塞同一輪，問題是？</p>
-  <label><input type="radio" name="c2q4" value="A"/> <strong>A.</strong> 一定更快更好</label><label><input type="radio" name="c2q4" value="B"/> <strong>B.</strong> 容易糊成一團，不如分輪一次一事</label><label><input type="radio" name="c2q4" value="C"/> <strong>C.</strong> 會自動開 Deep Research</label><label><input type="radio" name="c2q4" value="D"/> <strong>D.</strong> 會刪除你的 Gem</label>
+  <label><input type="radio" name="c2q3" value="A"/> <strong>A.</strong> 提示開頭</label><label><input type="radio" name="c2q3" value="B"/> <strong>B.</strong> 永遠省略</label><label><input type="radio" name="c2q3" value="C"/> <strong>C.</strong> 只放在 Skill 名稱裡</label><label><input type="radio" name="c2q3" value="D"/> <strong>D.</strong> 只能語音說一次</label>
   <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
   <div class="feedback"></div>
 </section>
 <div class="pager">
-  <a class="btn secondary" href="ch01.html">← 上手</a>
+  <a class="btn secondary" href="ch01.html">← 介面</a>
   <a class="btn" href="ch03.html">下一章：Deep Research →</a>
 </div>
 
-<div class="footer-note">本站為自寫 Gemini 使用教學摘要，非 Google 官方文件轉載。操作畫面請以 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 與官方 Help 為準。進度存本機瀏覽器，不連 Gemini API。</div>
+<div class="footer-note">本站為自寫 Gemini 使用教學摘要，非 Google 官方文件轉載。操作畫面請以 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 與官方 Help 為準（核實日 2026-10-30）。進度存本機瀏覽器，不連 Gemini API。香港／澳門可用地區以 Help 當日為準。</div>
 </div>
 </main>
 </div>

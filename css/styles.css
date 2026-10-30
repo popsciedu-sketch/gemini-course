@@ -345,3 +345,59 @@ pre.code, .code-block {
   position: relative;
 }
 .prompt-box .copy-hint { position:absolute; top:.5rem; right:.75rem; font-size:.7rem; color:#94a3b8; }
+
+/* --- remake 2026-10: real shots + pending --- */
+.shot {
+  margin: .75rem 0 1rem;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.shot figcaption {
+  margin: 0;
+  padding: .55rem .85rem .7rem;
+  font-size: .82rem;
+  color: var(--muted);
+  background: #faf8f5;
+  border-top: 1px solid var(--line);
+  text-align: left;
+}
+.shot-slot.has-shot {
+  border: none;
+  padding: 0;
+  background: transparent;
+  min-height: 0;
+  display: block;
+  text-align: left;
+}
+.pending-shot {
+  margin: .75rem 0 1rem;
+  padding: .95rem 1rem;
+  border: 1.5px dashed #f0b27a;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fff8f0, #fff);
+  color: #9a3412;
+  font-size: .9rem;
+  text-align: left;
+}
+.pending-shot strong { display: block; margin-bottom: .25rem; color: #c2410c; }
+.pending-shot span { color: #78716c; font-size: .82rem; display: block; }
+.download-banner {
+  display: flex; flex-wrap: wrap; gap: .75rem; align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.15rem; margin: 1rem 0;
+  border-radius: 14px; border: 1px solid #aecbfa;
+  background: linear-gradient(135deg, #e8f0fe, #f2fffd);
+}
+.download-banner p { margin: 0; color: var(--ink-soft); font-size: .95rem; max-width: 48ch; }
+.platform-grid { display: grid; gap: .75rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.platform-grid .mini-card h4 { margin: 0 0 .35rem; font-size: .95rem; color: var(--accent); }

@@ -1,7 +1,7 @@
 (function () {
-  const KEY = "gemini-course-progress-v1";
+  const KEY = "gemini-course-progress-v2";
   const PAGES = [
-    "index", "preface", "ch01", "ch02", "ch03", "ch04", "ch05", "ch06", "epilogue", "practice"
+    "index", "preface", "ch01", "ch02", "ch03", "ch04", "ch05", "ch06", "ch07", "epilogue", "practice"
   ];
 
   function load() {
@@ -66,7 +66,7 @@
 })();
 
 (function () {
-  const CK = "gemini-course-checklist-v1";
+  const CK = "gemini-course-checklist-v2";
   document.addEventListener("DOMContentLoaded", () => {
     let data = {};
     try { data = JSON.parse(localStorage.getItem(CK) || "{}"); } catch {}

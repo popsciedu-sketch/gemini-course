@@ -1,0 +1,17 @@
+【產圖示範提示｜教育場景｜適合課堂｜無機密／無真人肖像要求】
+
+請生成一張插畫風格圖片（非寫實照片）：
+場景：室內科學博物館的「光影與電路」互動展角；
+畫面中央有一面低矮的互動牆，牆上有簡化的電路符號（電池、燈泡、開關）以柔和霓虹線條顯示；
+兩名約 10–12 歲的學童背影（勿可辨識五官），正在按發光按鈕；
+一旁有一位導賞員剪影持平板，指向展牆；
+色彩：深藍與琥珀黃為主，明亮但不刺眼；
+構圖：橫向 16:9，預留上方少許留白方便將來加標題；
+風格：扁平插畫＋輕微紙質紋理；
+禁止：真實品牌 Logo、可辨識名人臉、血腥暴力、文字亂碼、過多小字。
+
+（英文備援，若介面較吃英文提示可改用）
+Illustrated scene inside a science museum "light and circuits" interactive corner,
+soft neon circuit symbols on a low interactive wall, two children ages ~10-12 seen from behind pressing glowing buttons,
+a docent silhouette with a tablet gesturing to the wall, deep blue and amber palette, bright but not harsh,
+16:9 flat illustration with subtle paper texture, no real brand logos, no recognizable celebrity faces, no readable garbled text.

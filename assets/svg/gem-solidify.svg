@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260" role="img" aria-label="Gem 固化重複指示">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260" role="img" aria-label="Skill 固化重複指示">
 <rect width="720" height="260" rx="16" fill="#faf8f5"/>
-<text x="360" y="30" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="15" font-weight="700" fill="#b45309">Gem：把重複指示固化成專屬助理</text>
+<text x="360" y="30" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="15" font-weight="700" fill="#b45309">Skill：把重複指示固化，用 @ 呼叫</text>
 <g font-family="Noto Sans TC,sans-serif" font-size="12">
 <rect x="40" y="55" width="200" height="150" rx="14" fill="#fee2e2" stroke="#b91c1c"/>
 <text x="140" y="95" text-anchor="middle" fill="#b91c1c" font-weight="700">每次聊天重貼</text>
@@ -10,9 +10,9 @@
 <path d="M255 130 H310" stroke="#1a1a2e" stroke-width="2"/><polygon points="310,124 322,130 310,136" fill="#1a1a2e"/>
 <text x="285" y="118" text-anchor="middle" fill="#1a1a2e" font-size="11">固化</text>
 <rect x="330" y="55" width="350" height="150" rx="14" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
-<text x="505" y="90" text-anchor="middle" fill="#b45309" font-weight="700" font-size="14">一個 Gem</text>
-<text x="505" y="120" text-anchor="middle" fill="#4a4a5a">角色／規則／風格／參考檔</text>
-<text x="505" y="145" text-anchor="middle" fill="#4a4a5a">之後只說「這份會議紀錄請整理」</text>
-<text x="505" y="175" text-anchor="middle" fill="#64748b" font-size="11">偶發任務仍用一般聊天即可</text>
+<text x="505" y="90" text-anchor="middle" fill="#b45309" font-weight="700" font-size="14">一個 Skill</text>
+<text x="505" y="120" text-anchor="middle" fill="#4a4a5a">名稱／說明／使用說明（＋檔案）</text>
+<text x="505" y="145" text-anchor="middle" fill="#4a4a5a">對話中用 @skill-name 呼叫；可疊加</text>
+<text x="505" y="175" text-anchor="middle" fill="#64748b" font-size="11">Skills 為主；設定仍可能見 Gem＝過渡</text>
 </g>
 </svg>

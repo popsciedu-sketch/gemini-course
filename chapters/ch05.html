@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-MO">
+<html lang="zh-Hant-HK">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>第五章 · Gem</title>
+<title>第五章 · Skill</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap"/>
 <link rel="stylesheet" href="../css/styles.css"/>
@@ -30,13 +30,14 @@
   <nav class="nav">
 <div class="nav-section">導覽</div>
 <a href="../index.html" data-page="index">總覽</a>
-<a href="../chapters/preface.html" data-page="preface">導讀・選對工具</a>
+<a href="../chapters/preface.html" data-page="preface">導讀・選對工具與平台</a>
 <a href="../chapters/ch01.html" data-page="ch01">第一章・上手與介面</a>
 <a href="../chapters/ch02.html" data-page="ch02">第二章・提示詞</a>
 <a href="../chapters/ch03.html" data-page="ch03">第三章・Deep Research</a>
 <a href="../chapters/ch04.html" data-page="ch04">第四章・Canvas</a>
-<a href="../chapters/ch05.html" data-page="ch05">第五章・Gem</a>
-<a href="../chapters/ch06.html" data-page="ch06">第六章・生態系速覽</a>
+<a href="../chapters/ch05.html" data-page="ch05">第五章・Skill</a>
+<a href="../chapters/ch06.html" data-page="ch06">第六章・Notebook 與 Workspace</a>
+<a href="../chapters/ch07.html" data-page="ch07">第七章・帳號方案與隱私</a>
 <a href="../chapters/epilogue.html" data-page="epilogue">結語・檢查清單</a>
 <div class="nav-section">動手做</div>
 <a href="../practice/index.html" data-page="practice">實作走讀</a>
@@ -47,79 +48,108 @@
 
 <nav class="breadcrumb"><a href="../index.html">總覽</a> / 第五章</nav>
 <header class="page-head">
-  <div class="eyebrow">第五章 · Gem</div>
-  <h2>重複指示，固化成專屬助理</h2>
-  <p>Gem 把角色、規則、風格、參考檔存起來，之後不必每週重貼長提示。偶發任務仍用一般聊天即可。</p>
+  <div class="eyebrow">第五章 · Skill（自訂指示）</div>
+  <h2>重複指示固化，用 @ 呼叫</h2>
+  <p><strong>Skills</strong> 已上線並將取代 Gems。建立名稱／說明／使用說明；對話中用 <code>@</code> 呼叫（舊教材的 <code>/</code> 心智可對照）。可自動套用、可疊加；可上傳參考檔或 SKILL.md。年齡：建立／使用現為 18+（Help）。</p>
 </header>
 
 <section class="card">
-  <h3>為什麼需要 Gem</h3>
+  <h3>為什麼需要 Skill</h3>
   <figure class="figure">
-    <img src="../assets/svg/gem-solidify.svg" alt="Gem 固化" style="width:100%;max-width:720px"/>
+    <img src="../assets/svg/skill-solidify.svg" alt="Skill 固化" style="width:100%;max-width:720px"/>
   </figure>
   <ul class="clean">
-    <li><strong>角色</strong>：例如「社內 FAQ 編輯」「會議紀錄助理」。</li>
-    <li><strong>規則</strong>：只依知識庫回答、缺資料就說不知道、輸出固定表格。</li>
-    <li><strong>風格</strong>：語氣、用詞、語言（繁中／口語程度）。</li>
-    <li><strong>參考檔</strong>：指南、範本、術語表（注意機密與權限）。</li>
+    <li><strong>角色</strong>：會議紀錄助理、FAQ 編輯等。</li>
+    <li><strong>規則</strong>：只依材料、缺資料寫「未提及」、固定表格。</li>
+    <li><strong>風格</strong>：語氣、用詞、語言。</li>
+    <li><strong>檔案</strong>：上傳參考檔或 SKILL.md（本帳建立表單未必有獨立「知識庫」欄）。</li>
   </ul>
-  <div class="callout tip"><p>日文 Help：<a href="https://support.google.com/gemini/answer/15236405?hl=ja" target="_blank" rel="noopener">Gems を作成する</a>——重點就是省掉重複指示。</p></div>
+  <div class="callout tip"><p><strong>Skills 為主、Gems 過渡中</strong>：設定仍可能有獨立 Gem 項。個人帳遷移時程以官方為準（約 2026-11 起）；Workspace 更晚。遷移後多為 draft skills，需檢視後 Activate。</p></div>
 </section>
 
 <section class="card">
-  <h3>何時用 Gem vs 一般聊天</h3>
-  <table class="simple">
-    <thead><tr><th>情境</th><th>建議</th></tr></thead>
-    <tbody>
-      <tr><td>每週相同格式的會議紀錄</td><td>Gem</td></tr>
-      <tr><td>一次性腦力激盪、怪問題</td><td>一般聊天</td></tr>
-      <tr><td>要長期遵守品牌語氣＋範本</td><td>Gem（＋參考檔）</td></tr>
-      <tr><td>半日級跨網調查</td><td>Deep Research（可再把結論丟給 Gem 改寫）</td></tr>
-    </tbody>
-  </table>
+  <h3>建立與呼叫（實拍）</h3>
+  <div class="shot-slot has-shot" data-shot="skills-list">
+<figure class="shot"><img src="../assets/shots/46-web-skills-list.png" alt="Customize → Skills 列表" loading="lazy"/><figcaption>Customize → Skills 列表</figcaption></figure>
+</div>
+  <div class="shot-slot has-shot" data-shot="skill-create">
+<figure class="shot"><img src="../assets/shots/23-web-skill-create.png" alt="建立 Skill：名稱／說明／使用說明" loading="lazy"/><figcaption>建立 Skill：名稱／說明／使用說明</figcaption></figure>
+</div>
+  <div class="shot-slot has-shot" data-shot="skill-files">
+<figure class="shot"><img src="../assets/shots/24-web-skill-files.png" alt="以上傳檔案／SKILL.md 附參考材料" loading="lazy"/><figcaption>以上傳檔案／SKILL.md 附參考材料</figcaption></figure>
+</div>
+  <div class="shot-slot has-shot" data-shot="skill-invoke">
+<figure class="shot"><img src="../assets/shots/25-web-skill-invoke.png" alt="在對話用 @ 選取 Skill 並完成任務" loading="lazy"/><figcaption>在對話用 @ 選取 Skill 並完成任務</figcaption></figure>
+</div>
+  <div class="pending-shot" data-shot="skill-from-chat">
+<strong>待補／學員自對照 · 從聊天請 Gemini 建立 skill</strong>
+<span>可對照官方流程自截。</span>
+</div>
+  <ol class="steps">
+    <li class="step"><h4>Customize → Skills → 建立</h4><p>貼上指示（見下方或下載包）。</p></li>
+    <li class="step"><h4>新聊天 <code>@</code> 呼叫</h4><p>輸入 <code>@</code> 選 skill，再貼任務材料。</p></li>
+    <li class="step"><h4>（可選）自動套用／疊加</h4><p>多個 Skill 可 stack；以 Help 當日為準。</p></li>
+  </ol>
 </section>
 
 <section class="card">
-  <h3>自訂指示草稿</h3>
-  <div class="prompt-box"><span class="copy-hint">可貼進 Gem 指示</span>你是「會議紀錄整理 Gem」。
+  <h3>指示草稿（會議紀錄）</h3>
+  <div class="prompt-box"><span class="copy-hint">可貼進 Skill</span>你是「會議紀錄整理」Skill（museum-meeting-notes）。
 規則：
 1. 只根據使用者貼上或附加的內容。
 2. 輸出固定四欄：決議｜待辦｜負責人｜期限。
 3. 缺資訊寫「未提及」，禁止臆測。
 4. 語氣：簡潔繁中，不用表情符號。
 風格：條列優先；最後給「需主持人確認」清單（最多 3 條）。</div>
+  <p>完整檔：<a href="../assets/downloads/sample-skill-instructions.md">sample-skill-instructions.md</a>、<a href="../assets/downloads/sample-meeting-notes-raw.txt">sample-meeting-notes-raw.txt</a>、<a href="../assets/downloads/sample-meeting-notes-cleaned.md">sample-meeting-notes-cleaned.md</a>。</p>
 </section>
-<section class="quiz" data-quiz="c5q1" data-answer="B" data-ok="正確！" data-bad="再看一次本章重點。">
+
+<section class="card">
+  <h3>何時用 Skill vs 一般聊天</h3>
+  <table class="simple">
+    <thead><tr><th>情境</th><th>建議</th></tr></thead>
+    <tbody>
+      <tr><td>每週相同格式的會議紀錄</td><td>Skill</td></tr>
+      <tr><td>一次性腦力激盪</td><td>一般聊天</td></tr>
+      <tr><td>要長期遵守品牌語氣＋範本</td><td>Skill（＋檔案）</td></tr>
+      <tr><td>半日級跨網調查</td><td>Deep Research（結論可再丟給 Skill 改寫）</td></tr>
+    </tbody>
+  </table>
+</section>
+<section class="quiz" data-quiz="c5q1" data-answer="B" data-ok="固化重複指示。" data-bad="再看本章。">
   <h3>隨堂測驗 · C5Q1</h3>
-  <p>Gem 最主要的價值是？</p>
-  <label><input type="radio" name="c5q1" value="A"/> <strong>A.</strong> 取代所有 Deep Research</label><label><input type="radio" name="c5q1" value="B"/> <strong>B.</strong> 把重複的角色／規則／風格／參考固化</label><label><input type="radio" name="c5q1" value="C"/> <strong>C.</strong> 讓你不必登入</label><label><input type="radio" name="c5q1" value="D"/> <strong>D.</strong> 保證零幻覺</label>
+  <p>Skill 最主要的價值？</p>
+  <label><input type="radio" name="c5q1" value="A"/> <strong>A.</strong> 取代所有 Deep Research</label><label><input type="radio" name="c5q1" value="B"/> <strong>B.</strong> 把重複的角色／規則／風格／檔案固化並可 @ 呼叫</label><label><input type="radio" name="c5q1" value="C"/> <strong>C.</strong> 讓你不必登入</label><label><input type="radio" name="c5q1" value="D"/> <strong>D.</strong> 保證零幻覺</label>
   <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
   <div class="feedback"></div>
-</section><section class="quiz" data-quiz="c5q2" data-answer="C" data-ok="正確！" data-bad="再看一次本章重點。">
+</section>
+<section class="quiz" data-quiz="c5q2" data-answer="C" data-ok="重複客服／會議適合。" data-bad="再看本章。">
   <h3>隨堂測驗 · C5Q2</h3>
-  <p>下列哪個較適合做成 Gem？</p>
+  <p>較適合做成 Skill 的是？</p>
   <label><input type="radio" name="c5q2" value="A"/> <strong>A.</strong> 只會問一次的冷知識</label><label><input type="radio" name="c5q2" value="B"/> <strong>B.</strong> 每次題目完全不同的隨機創作</label><label><input type="radio" name="c5q2" value="C"/> <strong>C.</strong> 每週重複的客服回覆語氣＋範本</label><label><input type="radio" name="c5q2" value="D"/> <strong>D.</strong> 刪除帳號流程</label>
   <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
   <div class="feedback"></div>
-</section><section class="quiz" data-quiz="c5q3" data-answer="A" data-ok="正確！" data-bad="再看一次本章重點。">
+</section>
+<section class="quiz" data-quiz="c5q3" data-answer="A" data-ok="呼叫鍵已改 @。" data-bad="再看呼叫一節。">
   <h3>隨堂測驗 · C5Q3</h3>
-  <p>Gem 與一般聊天的分工？</p>
-  <label><input type="radio" name="c5q3" value="A"/> <strong>A.</strong> 重複工作用 Gem；偶發任務用一般聊天</label><label><input type="radio" name="c5q3" value="B"/> <strong>B.</strong> 永遠只用 Gem，禁止新聊天</label><label><input type="radio" name="c5q3" value="C"/> <strong>C.</strong> Gem 不能放參考檔，聊天才能</label><label><input type="radio" name="c5q3" value="D"/> <strong>D.</strong> 兩者完全無法並存</label>
+  <p>在對話中呼叫 Skill，現行實況較常見？</p>
+  <label><input type="radio" name="c5q3" value="A"/> <strong>A.</strong> 用 @ 選取 skill 名稱</label><label><input type="radio" name="c5q3" value="B"/> <strong>B.</strong> 只能寄電子郵件啟動</label><label><input type="radio" name="c5q3" value="C"/> <strong>C.</strong> 必須先刪除所有聊天</label><label><input type="radio" name="c5q3" value="D"/> <strong>D.</strong> 只能在未登入狀態</label>
   <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
   <div class="feedback"></div>
-</section><section class="quiz" data-quiz="c5q4" data-answer="B" data-ok="權限與政策優先。" data-bad="再看一次本章重點。">
+</section>
+<section class="quiz" data-quiz="c5q4" data-answer="B" data-ok="過渡並存。" data-bad="再看 callout。">
   <h3>隨堂測驗 · C5Q4</h3>
-  <p>把內部規章放進 Gem 知識庫時應？</p>
-  <label><input type="radio" name="c5q4" value="A"/> <strong>A.</strong> 無視公司資料政策</label><label><input type="radio" name="c5q4" value="B"/> <strong>B.</strong> 確認權限與是否可上傳雲端助手</label><label><input type="radio" name="c5q4" value="C"/> <strong>C.</strong> 再把密碼寫進指示</label><label><input type="radio" name="c5q4" value="D"/> <strong>D.</strong> 公開分享給全網</label>
+  <p>關於 Gem 與 Skill，較正確的說法？</p>
+  <label><input type="radio" name="c5q4" value="A"/> <strong>A.</strong> Gem 已全面從地球消失，設定絕不可能再見到</label><label><input type="radio" name="c5q4" value="B"/> <strong>B.</strong> Skills 為主、Gems 過渡中；設定仍可能見 Gem</label><label><input type="radio" name="c5q4" value="C"/> <strong>C.</strong> 兩者完全無法並存且官方禁止遷移</label><label><input type="radio" name="c5q4" value="D"/> <strong>D.</strong> Skill 只能用在 Workspace 側欄</label>
   <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
   <div class="feedback"></div>
 </section>
 <div class="pager">
   <a class="btn secondary" href="ch04.html">← Canvas</a>
-  <a class="btn" href="ch06.html">下一章：生態系 →</a>
+  <a class="btn" href="ch06.html">下一章：Notebook 與 Workspace →</a>
 </div>
 
-<div class="footer-note">本站為自寫 Gemini 使用教學摘要，非 Google 官方文件轉載。操作畫面請以 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 與官方 Help 為準。進度存本機瀏覽器，不連 Gemini API。</div>
+<div class="footer-note">本站為自寫 Gemini 使用教學摘要，非 Google 官方文件轉載。操作畫面請以 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 與官方 Help 為準（核實日 2026-10-30）。進度存本機瀏覽器，不連 Gemini API。香港／澳門可用地區以 Help 當日為準。</div>
 </div>
 </main>
 </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-MO">
+<html lang="zh-Hant-HK">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -30,13 +30,14 @@
   <nav class="nav">
 <div class="nav-section">導覽</div>
 <a href="index.html" data-page="index">總覽</a>
-<a href="chapters/preface.html" data-page="preface">導讀・選對工具</a>
+<a href="chapters/preface.html" data-page="preface">導讀・選對工具與平台</a>
 <a href="chapters/ch01.html" data-page="ch01">第一章・上手與介面</a>
 <a href="chapters/ch02.html" data-page="ch02">第二章・提示詞</a>
 <a href="chapters/ch03.html" data-page="ch03">第三章・Deep Research</a>
 <a href="chapters/ch04.html" data-page="ch04">第四章・Canvas</a>
-<a href="chapters/ch05.html" data-page="ch05">第五章・Gem</a>
-<a href="chapters/ch06.html" data-page="ch06">第六章・生態系速覽</a>
+<a href="chapters/ch05.html" data-page="ch05">第五章・Skill</a>
+<a href="chapters/ch06.html" data-page="ch06">第六章・Notebook 與 Workspace</a>
+<a href="chapters/ch07.html" data-page="ch07">第七章・帳號方案與隱私</a>
 <a href="chapters/epilogue.html" data-page="epilogue">結語・檢查清單</a>
 <div class="nav-section">動手做</div>
 <a href="practice/index.html" data-page="practice">實作走讀</a>
@@ -46,52 +47,76 @@
 <div class="container">
 
 <header class="hero">
-  <div class="eyebrow">互動教材 · 繁體中文</div>
+  <div class="eyebrow">互動教材 · 繁體中文（香港／澳門）</div>
   <h2>把 Gemini 變成可練習的工作流</h2>
-  <p>從一般聊天、提示詞、Deep Research、Canvas 到 Gem，對齊官方 Help 與實務技巧（含日文說明重點），短段可操作。本站<strong>不</strong>自動連 Gemini API。</p>
+  <p>從平台選擇、一般聊天、提示詞、Deep Research、Canvas 到 <strong>Skill</strong> 與 <strong>Gemini Notebook</strong>，對齊 2026-10 實況介面。本站<strong>不</strong>自動連 Gemini API。</p>
   <div class="hero-actions">
     <a class="btn" href="chapters/preface.html">從導讀開始 →</a>
     <a class="btn secondary" href="practice/index.html">實作走讀</a>
+    <a class="btn secondary" href="assets/downloads/gemini-course-practice-pack.zip">下載示範包</a>
   </div>
 </header>
 
+
+<section class="card">
+  <h3>真實介面一瞥</h3>
+  <div class="shot-slot has-shot" data-shot="landing">
+  <figure class="shot"><img src="assets/shots/00-gemini-landing.png" alt="Gemini 網頁登入後首屏實拍" loading="lazy"/><figcaption>Gemini 網頁首屏實拍（2026-10）</figcaption></figure>
+  </div>
+</section>
 <section class="card">
   <h3>本課怎麼用</h3>
   <div class="grid-3">
-    <div class="mini-card"><strong>① 選對工具</strong><p>先懂聊天／研究／Canvas／Gem／Notebook 各適合什麼，再記按鈕位置。</p></div>
-    <div class="mini-card"><strong>② 跟章節走</strong><p>含多模態、模型、Live、產圖、Workspace 側欄、連接隱私；每章小測，進度存本機。</p></div>
-    <div class="mini-card"><strong>③ 全功能走讀</strong><p><a href="practice/index.html#full-walkthrough">實作頁 A→G</a>：checklist＋大量截圖預留，缺按鈕就註視帳號／地區／方案。</p></div>
+    <div class="mini-card"><strong>① 選對工具與平台</strong><p>先選網頁／桌面／手機，再選聊天、Research、Canvas、Skill、Notebook。</p></div>
+    <div class="mini-card"><strong>② 跟章節走</strong><p>含真實截圖、帳號額度（設定→用量）、Connected Apps；每章小測，進度存本機。</p></div>
+    <div class="mini-card"><strong>③ 全功能走讀</strong><p><a href="practice/index.html#full-walkthrough">實作 A→G</a>＋可下載示範結果；缺畫面標「待補／學員自對照」。</p></div>
   </div>
 </section>
+
+<div class="download-banner">
+  <p><strong>實操示範包</strong>：會議紀錄、Deep Research brief、Skill 指示、帳號／平台速查等（zip）。</p>
+  <a class="btn" href="assets/downloads/gemini-course-practice-pack.zip">下載 gemini-course-practice-pack.zip</a>
+</div>
 
 <section class="card">
   <h3>學習地圖</h3>
   <figure class="figure">
     <img src="assets/svg/learning-map.svg" alt="學習地圖" style="width:100%;max-width:720px"/>
-    <figcaption>導讀 → 介面 → 提示 → 研究 → Canvas → Gem → 生態系 → 結語／實作</figcaption>
+    <figcaption>導讀 → 介面 → 提示 → 研究 → Canvas → Skill → Notebook／Workspace → 帳號隱私 → 結語／實作</figcaption>
   </figure>
   <div class="path">
-    <a class="path-item" href="chapters/preface.html"><span class="num">00</span><div><strong>導讀・選對工具</strong><span>聊天／Canvas／研究／Gem／Notebook</span></div></a>
-    <a class="path-item" href="chapters/ch01.html"><span class="num">01</span><div><strong>上手與介面</strong><span>登入、附加檔、模型、安全</span></div></a>
+    <a class="path-item" href="chapters/preface.html"><span class="num">00</span><div><strong>導讀・選對工具與平台</strong><span>聊天／Research／Canvas／Skill／Notebook</span></div></a>
+    <a class="path-item" href="chapters/ch01.html"><span class="num">01</span><div><strong>上手・介面</strong><span>網頁為主＋三平台對照</span></div></a>
     <a class="path-item" href="chapters/ch02.html"><span class="num">02</span><div><strong>提示詞</strong><span>公式、長上下文、少樣本</span></div></a>
-    <a class="path-item" href="chapters/ch03.html"><span class="num">03</span><div><strong>Deep Research</strong><span>改計畫、來源、驗收引用</span></div></a>
-    <a class="path-item" href="chapters/ch04.html"><span class="num">04</span><div><strong>Canvas</strong><span>規格→迭代→Create</span></div></a>
-    <a class="path-item" href="chapters/ch05.html"><span class="num">05</span><div><strong>Gem</strong><span>重複指示固化</span></div></a>
-    <a class="path-item" href="chapters/ch06.html"><span class="num">06</span><div><strong>生態系速覽</strong><span>Workspace／Notebook 分工</span></div></a>
+    <a class="path-item" href="chapters/ch03.html"><span class="num">03</span><div><strong>Deep Research</strong><span>改計畫、來源至少一項</span></div></a>
+    <a class="path-item" href="chapters/ch04.html"><span class="num">04</span><div><strong>Canvas</strong><span>全頁編輯＋浮動聊天</span></div></a>
+    <a class="path-item" href="chapters/ch05.html"><span class="num">05</span><div><strong>Skill</strong><span>@ 呼叫；Gems 過渡</span></div></a>
+    <a class="path-item" href="chapters/ch06.html"><span class="num">06</span><div><strong>Notebook 與 Workspace</strong><span>Gemini Notebook（前稱 NotebookLM）</span></div></a>
+    <a class="path-item" href="chapters/ch07.html"><span class="num">07</span><div><strong>帳號方案與隱私</strong><span>Free／Plus／Pro／Ultra；看用量</span></div></a>
     <a class="path-item" href="chapters/epilogue.html"><span class="num">終</span><div><strong>檢查清單</strong><span>常見坑＋延伸連結</span></div></a>
-    <a class="path-item" href="practice/index.html"><span class="num">實</span><div><strong>實作走讀</strong><span>checklist × shot-slot</span></div></a>
+    <a class="path-item" href="practice/index.html"><span class="num">實</span><div><strong>實作走讀</strong><span>任務 0–8 × 真實截圖</span></div></a>
   </div>
+</section>
+
+<section class="card">
+  <h3>2026-10 用語提醒</h3>
+  <ul class="clean">
+    <li><strong>Skills 為主、Gems 過渡中</strong>——呼叫鍵已改 <code>@</code>（舊 <code>/</code> 心智可對照）；設定仍可能見 Gem。</li>
+    <li><strong>Gemini Notebook</strong>（前稱 NotebookLM）——獨立產品；地區／帳號可能 unsupported。</li>
+    <li><strong>Live 暫非網頁</strong>——語音 Live 請用手機 App 示範。</li>
+    <li>模型選單<strong>無 Auto</strong>：常見 Flash-Lite／Flash／Pro／Argon＋思考程度（以你畫面為準）。</li>
+  </ul>
 </section>
 
 <section class="card">
   <h3>與其他站的關係</h3>
   <ul class="clean">
-    <li>可與實體課／<strong>HCIA／AI 超神應用術</strong>配套站互補：那邊偏書本與實驗，本站專做 <strong>Gemini 網頁產品操作節奏</strong>。</li>
-    <li>內容為教學摘要，請搭配 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 與官方 Help 實操；介面若改版，以線上為準。</li>
+    <li>可與實體課／HCIA／AI 應用術配套：那邊偏書本與實驗，本站專做 <strong>Gemini 產品操作節奏</strong>。</li>
+    <li>內容為教學摘要；介面改版以線上與官方 Help 為準。</li>
   </ul>
 </section>
 
-<div class="footer-note">本站為自寫 Gemini 使用教學摘要，非 Google 官方文件轉載。操作畫面請以 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 與官方 Help 為準。進度存本機瀏覽器，不連 Gemini API。</div>
+<div class="footer-note">本站為自寫 Gemini 使用教學摘要，非 Google 官方文件轉載。操作畫面請以 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 與官方 Help 為準（核實日 2026-10-30）。進度存本機瀏覽器，不連 Gemini API。香港／澳門可用地區以 Help 當日為準。</div>
 </div>
 </main>
 </div>

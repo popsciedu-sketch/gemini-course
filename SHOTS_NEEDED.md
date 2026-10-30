@@ -23,8 +23,8 @@
 
 | 建議檔名 | 應出現什麼 | 優先 |
 |---|---|---|
-| `f11-chrome-gemini-sidebar.png` | Gemini in Chrome 側欄（Ask about tab） | P2 |
-| `f12-comet-extensions.png` | Comet／VM 擴充管理頁（AI 相關已裝列表，可打碼） | P2 |
+| `f11-chrome-gemini-sidebar.png` | ✅ DeepSider 側欄（VM；非內建 Gemini in Chrome） | 已交付 |
+| `f12-comet-extensions.png` | ✅ VM chrome://extensions（DeepSider＋Gemini Chat Sidebar） | 已交付 |
 | `f13-mobile-live.png` | 手機 Live（介紹用，非網頁實作必做） | P3 |
 | `f14-desktop-overlay.png` | 桌面 Overlay（介紹用） | P3 |
 | `f15-workspace-sidepanel.png` | Docs／Gmail 側欄（介紹用） | P3 |

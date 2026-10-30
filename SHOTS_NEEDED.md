@@ -24,6 +24,13 @@
 | `f-plus-tools.png` | wayneleong ＋工具選單（側欄 Plus） | ✅ Plus 對照已嵌入（個資＋Pro 晶片遮黑） |
 | `f-plus-account.png` / `plus-account-check.png` | 帳戶選單（email／其他帳） | ✅ 已遮黑備檔（未全嵌；對照用 home／usage） |
 
+| `f-pro-usage.png` | awwgj4p65t Pro 用量（PRO／0% used） | ✅ Pro 對照已嵌入（ch07；個資遮黑、PRO 保留） |
+| `f-pro-home.png` | awwgj4p65t Pro 首屏（側欄 Pro＋作曲列 Pro） | ✅ Pro 對照已嵌入（個資遮黑） |
+| `f-pro-model.png` | awwgj4p65t 模型選單（3.1 Pro 勾選） | ✅ Pro 對照已嵌入（個資遮黑） |
+| `f-pro-tools.png` | awwgj4p65t ＋工具選單（側欄 Pro） | ✅ Pro 對照已嵌入（個資遮黑） |
+| `f-pro-account.png` | 帳戶選單（email／其他帳＋Pro） | ✅ 已遮黑備檔（未全嵌；對照用 usage／home／model） |
+
+
 
 ## 仍待
 
@@ -34,6 +41,5 @@
 | `f13-mobile-live.png` | 手機 Live（介紹用，非網頁實作必做） | P3 |
 | `f14-desktop-overlay.png` | 桌面 Overlay（介紹用） | P3 |
 | `f15-workspace-sidepanel.png` | Docs／Gmail 側欄（介紹用） | P3 |
-| （Pro 對照） | awwgj4p65t：重模型／DR 等 | P2 |
 
 預留槽位命名：`f##-*.png`。補圖後在對應章把 `pending-shot` 換成 `figure.shot` 即可。

@@ -74,3 +74,40 @@ Synced to gemini-course/assets/shots/ and gemini-course-remake-v3/shots/.
 - account menu name @ (110, 680, 255, 702)
 - account menu email @ (110, 704, 305, 728)
 - KEEP account menu "Plus" badge
+
+## Pro contrast (awwgj4p65t / Google AI Pro) — 2026-10-30 Asia/Shanghai
+Method: Pillow solid black rectangles. Keep Pro / PRO plan badges visible.
+Synced to gemini-course/assets/shots/ and gemini-course-remake-v3/shots/.
+
+### f-pro-home.png
+- black @ (12, 1016, 58, 1064)
+- black @ (60, 1022, 205, 1040)
+- KEEP sidebar "Pro" under name; KEEP composer model chip "Pro"
+
+### f-pro-usage.png
+- black @ (12, 1016, 58, 1064)
+- black @ (60, 1022, 205, 1040)
+- KEEP header "PRO" badge next to Usage limits; KEEP sidebar "Pro"
+
+### f-pro-model.png
+- black @ (12, 1016, 58, 1064)
+- black @ (60, 1022, 205, 1040)
+- KEEP composer "Pro" chip + model picker (3.1 Pro checked); KEEP sidebar "Pro"
+
+### f-pro-tools.png
+- black @ (12, 1016, 58, 1064)
+- black @ (60, 1022, 205, 1040)
+- KEEP composer "Pro" chip; KEEP sidebar "Pro"
+
+### f-pro-account.png
+- black @ (12, 1016, 58, 1064)
+- black @ (60, 1022, 205, 1040)
+- black @ (16, 495, 110, 580)
+- black @ (110, 498, 305, 520)
+- black @ (110, 522, 315, 548)
+- black @ (16, 595, 100, 675)
+- black @ (100, 598, 305, 655)
+- black @ (16, 708, 100, 790)
+- black @ (100, 712, 315, 765)
+- KEEP account menu "Pro" badge under email; KEEP sidebar "Pro"; KEEP composer "Pro" chip
+- blacked primary name/email/avatar; POPSCIEDU + Oscar Leong rows (avatar/name/email)

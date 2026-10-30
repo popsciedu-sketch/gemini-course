@@ -12,16 +12,13 @@
 <div class="overlay"></div>
 <div class="topbar">
   <button class="menu-btn" data-menu type="button">☰ 目錄</button>
-  <strong>Gemini 使用教學</strong>
+  <strong>Gemini 使用教學 <span class="version-pill">v3</span></strong>
 </div>
 <div class="layout">
 <aside class="sidebar">
   <div class="brand">
     <div class="brand-mark">G</div>
-    <div>
-      <h1>Gemini 使用教學</h1>
-      <p>互動教材 · 繁體中文</p>
-    </div>
+    <div><h1>Gemini 使用教學</h1><p>v3 · FREE 網頁實作</p></div>
   </div>
   <div class="progress-wrap">
     <div class="progress-label"><span>學習進度</span><span data-progress-text>0%</span></div>
@@ -30,102 +27,78 @@
   <nav class="nav">
 <div class="nav-section">導覽</div>
 <a href="../index.html" data-page="index">總覽</a>
-<a href="../chapters/preface.html" data-page="preface">導讀・選對工具與平台</a>
-<a href="../chapters/ch01.html" data-page="ch01">第一章・上手與介面</a>
-<a href="../chapters/ch02.html" data-page="ch02">第二章・提示詞</a>
+<a href="../chapters/preface.html" data-page="preface">導讀・選工具與平台</a>
+<a href="../chapters/ch01.html" data-page="ch01">第一章・網頁版上手（FREE）</a>
+<a href="../chapters/ch02.html" data-page="ch02">第二章・提示詞 CASE</a>
 <a href="../chapters/ch03.html" data-page="ch03">第三章・Deep Research</a>
 <a href="../chapters/ch04.html" data-page="ch04">第四章・Canvas</a>
 <a href="../chapters/ch05.html" data-page="ch05">第五章・Skill</a>
-<a href="../chapters/ch06.html" data-page="ch06">第六章・Notebook 與 Workspace</a>
-<a href="../chapters/ch07.html" data-page="ch07">第七章・帳號方案與隱私</a>
+<a href="../chapters/ch06.html" data-page="ch06">第六章・Gemini Notebook</a>
+<a href="../chapters/ch07.html" data-page="ch07">第七章・帳號 FREE 與用量</a>
+<a href="../chapters/ch08.html" data-page="ch08">第八章・瀏覽器與 Extension</a>
 <a href="../chapters/epilogue.html" data-page="epilogue">結語・檢查清單</a>
 <div class="nav-section">動手做</div>
-<a href="../practice/index.html" data-page="practice">實作走讀</a>
+<a href="../practice/index.html" data-page="practice">實作走讀（網頁）</a>
+<a href="../downloads/index.html" data-page="downloads">下載中心</a>
   </nav>
 </aside>
-<main class="main">
-<div class="container">
+<main class="main"><div class="container">
+
 
 <nav class="breadcrumb"><a href="../index.html">總覽</a> / 導讀</nav>
 <header class="page-head">
   <div class="eyebrow">導讀 · 選對工具與平台</div>
-  <h2>先選平台，再開工具，再開對話</h2>
-  <p>同一句「幫我做市場調查」，用一般聊天、Deep Research、Canvas 或 Skill，節奏與產出完全不同。2026 還要先問：你主要在<strong>網頁、桌面 App，還是手機</strong>？</p>
+  <h2>介紹看全貌，練習開網頁</h2>
+  <p>多平台都提一下，但<strong>教學實作只集中網頁版</strong>；示範帳目前是 <strong>FREE</strong>，Pro 之後再補。</p>
+  <div class="badge-row"><span class="badge free">Free</span><span class="badge info">實作＝網頁</span><span class="badge mixed">平台僅介紹</span></div>
 </header>
-
+<div class="scene"><span class="scene-tag">CASE</span>你是展教同事：週末有「力與能量」公眾日，要用 Gemini 整理導賞稿、會議與一頁家庭單張——全程在瀏覽器打開 gemini.google.com。</div>
 <section class="card">
-  <h3>先選平台（自評）</h3>
+  <h3>平台一覽（不要求跟做桌面／手機）</h3>
   <div class="platform-grid">
-    <div class="mini-card"><h4>網頁</h4><p><code>gemini.google.com</code>——長提示、Deep Research、Canvas、Skills 管理；本課「標準課室」。</p></div>
-    <div class="mini-card"><h4>桌面 Mac／Windows</h4><p>Overlay（Option／Alt+Space）、螢幕／視窗上下文；完整 Research／Canvas 仍偏網頁或完整工作區。</p></div>
-    <div class="mini-card"><h4>手機</h4><p>Live 語音、相機最完整；<strong>Live 暫非網頁</strong>，本課 Live 必須手機示範。</p></div>
-    <div class="mini-card"><h4>Workspace 側欄</h4><p>Gmail／Docs 等眼前檔案改寫；無完整 Canvas／Deep Research。</p></div>
+    <div class="mini-card"><h4>網頁 ★實作</h4><p><code>gemini.google.com</code>——長提示、DR、Canvas、Skills；本課課室。</p></div>
+    <div class="mini-card"><h4>桌面 App</h4><p>Overlay、視窗上下文；完整 Research／Canvas 仍偏網頁。</p></div>
+    <div class="mini-card"><h4>手機</h4><p>Live／相機最完整；Live 暫非網頁——本課不強制跟做。</p></div>
+    <div class="mini-card"><h4>Workspace 側欄</h4><p>眼前郵件／文件改寫；無完整 Canvas／DR。</p></div>
   </div>
-  <div class="checklist">
-    <label><input type="checkbox"/> 我主要用網頁</label>
-    <label><input type="checkbox"/> 我主要用桌面 App</label>
-    <label><input type="checkbox"/> 我主要用手機</label>
-  </div>
-  <p>速查表：<a href="../assets/downloads/platforms-cheatsheet.md">platforms-cheatsheet.md</a></p>
+  <div class="mat-links"><a class="out" href="../outputs/platforms-cheatsheet.md">platforms-cheatsheet.md</a><a href="../downloads/index.html">下載中心</a></div>
 </section>
-
 <section class="card">
   <h3>工具選對表</h3>
-  <figure class="figure">
-    <img src="../assets/svg/tool-picker.svg" alt="工具選擇" style="width:100%;max-width:720px"/>
-  </figure>
+  <figure class="figure"><img src="../assets/svg/tool-picker.svg" alt="工具選擇" style="width:100%;max-width:720px"/></figure>
   <table class="simple">
     <thead><tr><th>工具</th><th>適合</th><th>不太適合</th></tr></thead>
     <tbody>
-      <tr><td><strong>一般聊天</strong></td><td>小問題、短草稿、腦力激盪</td><td>要掃數十來源的報告</td></tr>
-      <tr><td><strong>Deep Research</strong></td><td>跨站調查、要附來源；來源至少選一</td><td>「現在幾點」這類秒回</td></tr>
-      <tr><td><strong>Canvas</strong></td><td>長文／網頁，全頁編輯＋浮動聊天</td><td>一次性問答就結束</td></tr>
-      <tr><td><strong>Skill</strong></td><td>每週重複的指示＋風格；用 <code>@</code> 呼叫</td><td>只會用一次的怪問題</td></tr>
-      <tr><td><strong>Gemini Notebook</strong></td><td>固定來源接地、Studio 產物</td><td>完全沒材料卻要「瞎編創作」</td></tr>
+      <tr><td>一般聊天</td><td>短草稿、腦力激盪、整理導賞</td><td>要掃數十來源的長報告</td></tr>
+      <tr><td>Deep Research</td><td>公開網來源調研</td><td>Free 額度緊、只要改一句話</td></tr>
+      <tr><td>Canvas</td><td>長文／單頁邊寫邊改</td><td>只要一句回覆</td></tr>
+      <tr><td>Skill（@）</td><td>重複流程（會議紀錄）</td><td>一次性奇想問題</td></tr>
+      <tr><td>Gemini Notebook</td><td>只根據你上傳來源問答</td><td>當通用搜尋；地區 unsupported</td></tr>
     </tbody>
   </table>
-  <div class="callout tip"><p>過渡期設定仍可能看到 <strong>Gem</strong>——教材寫「Skills 為主、Gems 過渡中」，勿當成已全面取消。</p></div>
 </section>
-
 <section class="card">
-  <h3>三條心智模型</h3>
-  <ol class="steps">
-    <li class="step"><h4>新話題＝新聊天</h4><p>舊對話會帶進無關脈絡。換主題就按「新對話」。</p></li>
-    <li class="step"><h4>回答要核對</h4><p>語氣愈肯定愈要查。數字、法條、醫療、財務：當草稿。</p></li>
-    <li class="step"><h4>可要求產出檔案</h4><p>常見匯出 <strong>.md／雲端硬碟</strong>；未必見「Google 文件」按鈕——以你畫面為準。</p></li>
-  </ol>
+  <h3>本課約束（請勾）</h3>
+  <div class="checklist">
+    <label><input type="checkbox"/> 我知道介紹有多平台，但實作只跟網頁</label>
+    <label><input type="checkbox"/> 我使用／對照 FREE 帳；Pro 畫面會標 Paid</label>
+    <label><input type="checkbox"/> 練習只用 materials／無機密檔</label>
+  </div>
 </section>
-<section class="quiz" data-quiz="pq1" data-answer="B" data-ok="對：跨站調查＋來源是 Research 的主場。" data-bad="再看一次本章重點。">
-  <h3>隨堂測驗 · PQ1</h3>
-  <p>想做「國內五家競品＋來源」的半日級調查，優先選？</p>
-  <label><input type="radio" name="pq1" value="A"/> <strong>A.</strong> 只開一般聊天連問十輪</label><label><input type="radio" name="pq1" value="B"/> <strong>B.</strong> Deep Research，並先改計畫</label><label><input type="radio" name="pq1" value="C"/> <strong>C.</strong> 立刻建 Skill 但不給任何指示</label><label><input type="radio" name="pq1" value="D"/> <strong>D.</strong> 只上傳一張自拍</label>
+<section class="quiz" data-quiz="pq1" data-answer="B" data-ok="正確：實作只網頁。" data-bad="再看本課約束。">
+  <h3>隨堂 · PQ1</h3>
+  <p>本課「教學實作」要求跟做的平台是？</p>
+  <label><input type="radio" name="pq1" value="A"/> <strong>A.</strong> 必須同時完成桌面 Overlay＋手機 Live</label>
+  <label><input type="radio" name="pq1" value="B"/> <strong>B.</strong> 網頁版 gemini.google.com</label>
+  <label><input type="radio" name="pq1" value="C"/> <strong>C.</strong> 只能用未登入訪客</label>
+  <label><input type="radio" name="pq1" value="D"/> <strong>D.</strong> 只能用 Workspace 側欄</label>
   <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
   <div class="feedback"></div>
 </section>
-<section class="quiz" data-quiz="pq2" data-answer="C" data-ok="正確：重複格式用 Skill。" data-bad="再看一次本章重點。">
-  <h3>隨堂測驗 · PQ2</h3>
-  <p>每週都要把會議紀錄整理成同一格式，較省事的是？</p>
-  <label><input type="radio" name="pq2" value="A"/> <strong>A.</strong> 每次把整份長提示貼進新聊天</label><label><input type="radio" name="pq2" value="B"/> <strong>B.</strong> 永遠只用未登入訪客模式</label><label><input type="radio" name="pq2" value="C"/> <strong>C.</strong> 做成 Skill，固化角色／規則／風格，用 @ 呼叫</label><label><input type="radio" name="pq2" value="D"/> <strong>D.</strong> 關掉所有檔案權限再重貼機密</label>
-  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
-  <div class="feedback"></div>
-</section>
-<section class="quiz" data-quiz="pq3" data-answer="A" data-ok="話題分開。" data-bad="再看一次本章重點。">
-  <h3>隨堂測驗 · PQ3</h3>
-  <p>換了一個完全無關的新主題時，建議？</p>
-  <label><input type="radio" name="pq3" value="A"/> <strong>A.</strong> 開新聊天，避免舊脈絡污染</label><label><input type="radio" name="pq3" value="B"/> <strong>B.</strong> 在同一串無限往下聊</label><label><input type="radio" name="pq3" value="C"/> <strong>C.</strong> 刪除 Google 帳號</label><label><input type="radio" name="pq3" value="D"/> <strong>D.</strong> 一定要先開 Deep Research</label>
-  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
-  <div class="feedback"></div>
-</section>
-<div class="pager">
-  <a class="btn secondary" href="../index.html">← 總覽</a>
-  <a class="btn" href="ch01.html">下一章：上手與介面 →</a>
-</div>
+<div class="pager"><a class="btn secondary" href="../index.html">← 總覽</a><a class="btn" href="ch01.html">下一章：網頁上手 →</a></div>
 
-<div class="footer-note">本站為自寫 Gemini 使用教學摘要，非 Google 官方文件轉載。操作畫面請以 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 與官方 Help 為準（核實日 2026-10-30）。進度存本機瀏覽器，不連 Gemini API。香港／澳門可用地區以 Help 當日為準。</div>
-</div>
-</main>
-</div>
+<div class="footer-note">本站為自寫 Gemini 使用教學摘要（v3）。實作主線：網頁版＋FREE。以 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 為準（2026-10-30）。</div>
+</div></main></div>
 <script src="../js/app.js"></script>
 <script src="../js/quiz.js"></script>
-</body>
-</html>
+</body></html>

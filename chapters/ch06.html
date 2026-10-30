@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>第六章 · Notebook 與 Workspace</title>
+<title>第六章 · Gemini Notebook</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap"/>
 <link rel="stylesheet" href="../css/styles.css"/>
@@ -12,151 +12,78 @@
 <div class="overlay"></div>
 <div class="topbar">
   <button class="menu-btn" data-menu type="button">☰ 目錄</button>
-  <strong>Gemini 使用教學</strong>
+  <strong>Gemini 使用教學 <span class="version-pill">v3</span></strong>
 </div>
 <div class="layout">
 <aside class="sidebar">
-  <div class="brand">
-    <div class="brand-mark">G</div>
-    <div>
-      <h1>Gemini 使用教學</h1>
-      <p>互動教材 · 繁體中文</p>
-    </div>
-  </div>
+  <div class="brand"><div class="brand-mark">G</div><div><h1>Gemini 使用教學</h1><p>v3 · FREE 網頁實作</p></div></div>
   <div class="progress-wrap">
     <div class="progress-label"><span>學習進度</span><span data-progress-text>0%</span></div>
     <div class="progress-bar"><span data-progress-fill></span></div>
   </div>
-  <nav class="nav">
-<div class="nav-section">導覽</div>
+  <nav class="nav"><div class="nav-section">導覽</div>
 <a href="../index.html" data-page="index">總覽</a>
-<a href="../chapters/preface.html" data-page="preface">導讀・選對工具與平台</a>
-<a href="../chapters/ch01.html" data-page="ch01">第一章・上手與介面</a>
-<a href="../chapters/ch02.html" data-page="ch02">第二章・提示詞</a>
+<a href="../chapters/preface.html" data-page="preface">導讀・選工具與平台</a>
+<a href="../chapters/ch01.html" data-page="ch01">第一章・網頁版上手（FREE）</a>
+<a href="../chapters/ch02.html" data-page="ch02">第二章・提示詞 CASE</a>
 <a href="../chapters/ch03.html" data-page="ch03">第三章・Deep Research</a>
 <a href="../chapters/ch04.html" data-page="ch04">第四章・Canvas</a>
 <a href="../chapters/ch05.html" data-page="ch05">第五章・Skill</a>
-<a href="../chapters/ch06.html" data-page="ch06">第六章・Notebook 與 Workspace</a>
-<a href="../chapters/ch07.html" data-page="ch07">第七章・帳號方案與隱私</a>
+<a href="../chapters/ch06.html" data-page="ch06">第六章・Gemini Notebook</a>
+<a href="../chapters/ch07.html" data-page="ch07">第七章・帳號 FREE 與用量</a>
+<a href="../chapters/ch08.html" data-page="ch08">第八章・瀏覽器與 Extension</a>
 <a href="../chapters/epilogue.html" data-page="epilogue">結語・檢查清單</a>
 <div class="nav-section">動手做</div>
-<a href="../practice/index.html" data-page="practice">實作走讀</a>
-  </nav>
+<a href="../practice/index.html" data-page="practice">實作走讀（網頁）</a>
+<a href="../downloads/index.html" data-page="downloads">下載中心</a></nav>
 </aside>
-<main class="main">
-<div class="container">
+<main class="main"><div class="container">
 
 <nav class="breadcrumb"><a href="../index.html">總覽</a> / 第六章</nav>
 <header class="page-head">
-  <div class="eyebrow">第六章 · Gemini Notebook 與 Workspace</div>
-  <h2>接地問答 vs 眼前檔案改寫</h2>
-  <p><strong>Gemini Notebook</strong>（前稱 NotebookLM，2026-07-16 更名）是獨立產品，可與 Gemini App 內筆記本同步。Studio 產物（Audio／Video Overview、資訊圖、投影片等）主要在獨立 Notebook。Workspace 側欄則服務「眼前這份檔」。</p>
+  <div class="eyebrow">第六章 · Gemini Notebook</div>
+  <h2>來源接地的筆記本（前稱 NotebookLM）</h2>
+  <div class="badge-row"><span class="badge mixed">Mixed</span><span class="badge risk">地區可能 unsupported</span></div>
 </header>
-
+<div class="callout warn"><p>正式名 <strong>Gemini Notebook</strong>（2026-07 起由 NotebookLM 改名）。入口常見 <a href="https://notebook.google/" target="_blank" rel="noopener">notebook.google</a>。若你的帳號／地區顯示 unsupported，本課改以「網頁聊天上傳同一批 materials」代替，勿硬做。</p></div>
+<div class="scene"><span class="scene-tag">CASE</span>把導賞稿＋學習重點放進筆記本，練習「只根據來源回答」與點引用核對——精神对齐參考站，但不抄其 57 頁全文。</div>
 <section class="card">
-  <h3>Gemini Notebook</h3>
-  <table class="simple">
-    <thead><tr><th></th><th>Gemini 聊天／Canvas</th><th>Gemini Notebook</th></tr></thead>
-    <tbody>
-      <tr><td>來源</td><td>可含搜尋與上傳</td><td>以你放入的來源為主（接地）</td></tr>
-      <tr><td>創作</td><td>長文、Canvas、產圖等</td><td>Studio：概覽音訊／簡報／Quiz 等</td></tr>
-      <tr><td>入口</td><td>gemini.google.com</td><td>獨立站（舊連結轉向）＋ App 內 Notebooks</td></tr>
-    </tbody>
-  </table>
-  <div class="shot-slot has-shot" data-shot="notebook-in-gemini">
-<figure class="shot"><img src="../assets/shots/51-web-notebook-in-gemini.png" alt="Gemini App 內筆記本入口／側欄（本帳曾出現無法載入 toast）" loading="lazy"/><figcaption>Gemini App 內筆記本入口／側欄（本帳曾出現無法載入 toast）</figcaption></figure>
-</div>
-  <div class="callout warn"><p><strong>地區／帳號可能不可用</strong>：示範帳造訪 notebook.google 顯示 location=unsupported；App 內也可能 splash／toast「無法載入」。獨立 Studio 截圖待補——請學員以自己帳號嘗試，失敗就註記。</p></div>
-  <div class="pending-shot" data-shot="notebook-sources">
-<strong>待補／學員自對照 · 獨立 Gemini Notebook 來源列表</strong>
-<span>能開站者：新建一本練習＋至少一來源。</span>
-</div>
-  <div class="pending-shot" data-shot="notebook-studio">
-<strong>待補／學員自對照 · Studio 產出其一</strong>
-<span>Audio／Quiz／簡報等；截選單或成品。</span>
-</div>
-  <div class="pending-shot" data-shot="gn-home">
-<strong>待補／學員自對照 · 獨立站首屏（新品牌）</strong>
-<span>notebook.google 或轉向後首屏。</span>
-</div>
+  <h3>在 Gemini 生態中的位置</h3>
+  <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/51-web-notebook-in-gemini.png" alt="Notebook 入口" loading="lazy"/><figcaption><span class="badge paid">Paid／示範曾用 Pro；本課主線 FREE</span> Gemini 內／相關入口示意</figcaption></figure></div>
+  <div class="pending-shot"><strong>待補 · 地區／unsupported 畫面</strong><div class="expect">應出現：f10-notebook-region.png：入口或 unsupported 提示<br/>見 SHOTS_NEEDED.md</div></div>
+  <ol class="steps">
+    <li class="step"><h4>新建筆記本，只加 materials 來源</h4>
+      <div class="mat-links"><a href="../materials/tour-script-force-energy.md">tour-script</a><a href="../materials/visit-learning-points.md">學習重點</a></div>
+    </li>
+    <li class="step"><h4>提問並點引用回原文</h4>
+      <div class="callout check"><div class="callout-h">有引用 ≠ 一定對</div>
+      <p>練習 <a href="../outputs/ai-error-example.md">ai-error-example.md</a> 的抓錯方法。</p></div>
+    </li>
+    <li class="step"><h4>（可選）Audio／Quiz 等工作室</h4>
+      <p>Free／Paid 額度不同；以當日介面為準。詳細逐步可參考社群教程思路，本站維持網頁 Gemini 主線。</p>
+    </li>
+  </ol>
 </section>
-
-<section class="card" id="workspace-apps">
-  <h3>Workspace 側欄</h3>
-  <p>Gmail／Docs／Sheets／Slides／Drive／Chat 等側欄：對眼前檔案改寫、摘要、插入。<strong>無</strong>完整 Canvas／Deep Research；受管理員政策限制。</p>
-  <div class="pending-shot" data-shot="ws-gmail">
-<strong>待補／學員自對照 · Gmail 側欄草稿（勿寄）</strong>
-<span>產一則不寄出的回信並人工改。</span>
-</div>
-  <div class="pending-shot" data-shot="ws-docs">
-<strong>待補／學員自對照 · Docs 側欄改寫</strong>
-<span>選段請側欄改語氣。</span>
-</div>
-  <div class="pending-shot" data-shot="ws-sheets">
-<strong>待補／學員自對照 · Sheets 公式說明</strong>
-<span>請側欄解釋一條公式。</span>
-</div>
-  <div class="pending-shot" data-shot="ws-slides">
-<strong>待補／學員自對照 · Slides 大綱</strong>
-<span>大綱變投影片思路。</span>
-</div>
-  <div class="pending-shot" data-shot="ws-drive">
-<strong>待補／學員自對照 · Drive 選檔提問</strong>
-<span>選無機密檔提問。</span>
-</div>
-  <div class="pending-shot" data-shot="ws-chat">
-<strong>待補／學員自對照 · Chat 側欄</strong>
-<span>無權限則截無側欄並註記。</span>
-</div>
-  <p>提示速查：<a href="../assets/downloads/README.md">示範包 README</a>／platforms／account 速查。</p>
+<section class="card">
+  <h3>Workspace 側欄（僅介紹）</h3>
+  <p>Gmail／Docs 側欄適合「眼前這份」改寫；完整 DR／Canvas 仍回網頁。本課不要求跟做。</p>
+  <div class="pending-shot"><strong>待補 · Workspace 側欄</strong><div class="expect">應出現：f15-workspace-sidepanel.png（介紹用）<br/>見 SHOTS_NEEDED.md</div></div>
+  <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/34-web-apps-connections.png" alt="連接器" loading="lazy"/><figcaption><span class="badge paid">Paid／示範曾用 Pro；本課主線 FREE</span> Connected apps／連接</figcaption></figure></div>
 </section>
-
-<section class="card" id="extensions-privacy">
-  <h3>Connected Apps（舊稱 Extensions）與隱私</h3>
-  <div class="shot-slot has-shot" data-shot="apps-connections">
-<figure class="shot"><img src="../assets/shots/34-web-apps-connections.png" alt="已連接應用程式／Apps 開關" loading="lazy"/><figcaption>已連接應用程式／Apps 開關</figcaption></figure>
-</div>
-  <div class="pending-shot" data-shot="activity-privacy">
-<strong>待補／學員自對照 · 活動／隱私設定</strong>
-<span>設定中掃過活動紀錄說明；個資打碼。</span>
-</div>
-  <ul class="clean">
-    <li>只開本課需要的連接。</li>
-    <li>公司／學校帳：對話與上傳常<strong>不用來訓練</strong>基礎模型（合資格 Workspace）——與個人帳條款可能不同。</li>
-    <li>隱私清單可印：下載包 <a href="../assets/downloads/README.md">示範包 README</a>。</li>
-  </ul>
-</section>
-<section class="quiz" data-quiz="c6q1" data-answer="B" data-ok="正式名 Gemini Notebook。" data-bad="再看首段。">
-  <h3>隨堂測驗 · C6Q1</h3>
-  <p>原名 NotebookLM 的產品，2026 現況較正確？</p>
-  <label><input type="radio" name="c6q1" value="A"/> <strong>A.</strong> 已刪除，全世界不能再用</label><label><input type="radio" name="c6q1" value="B"/> <strong>B.</strong> 已改名 Gemini Notebook，仍為獨立產品（可括註前稱）</label><label><input type="radio" name="c6q1" value="C"/> <strong>C.</strong> 變成只能語音的 Live</label><label><input type="radio" name="c6q1" value="D"/> <strong>D.</strong> 等同 Skill</label>
+<section class="quiz" data-quiz="c6q1" data-answer="C" data-ok="對。" data-bad="看章首。">
+  <h3>C6Q1</h3>
+  <p>NotebookLM 現況正確描述是？</p>
+  <label><input type="radio" name="c6q1" value="A"/> <strong>A.</strong> 從未改名</label>
+  <label><input type="radio" name="c6q1" value="B"/> <strong>B.</strong> 已改名 ChatGPT Notebook</label>
+  <label><input type="radio" name="c6q1" value="C"/> <strong>C.</strong> 正式名 Gemini Notebook（前稱 NotebookLM），地區可能限制</label>
+  <label><input type="radio" name="c6q1" value="D"/> <strong>D.</strong> 只能在手機 Live 使用</label>
   <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
   <div class="feedback"></div>
 </section>
-<section class="quiz" data-quiz="c6q2" data-answer="A" data-ok="側欄無完整 Research／Canvas。" data-bad="再看 Workspace。">
-  <h3>隨堂測驗 · C6Q2</h3>
-  <p>Workspace 側欄較適合？</p>
-  <label><input type="radio" name="c6q2" value="A"/> <strong>A.</strong> 對眼前 Docs／Gmail 草稿改寫</label><label><input type="radio" name="c6q2" value="B"/> <strong>B.</strong> 替代完整 Deep Research 半日調查</label><label><input type="radio" name="c6q2" value="C"/> <strong>C.</strong> 保證跨全網無來源限制</label><label><input type="radio" name="c6q2" value="D"/> <strong>D.</strong> 取代手機 Live</label>
-  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
-  <div class="feedback"></div>
-</section>
-<section class="quiz" data-quiz="c6q3" data-answer="C" data-ok="Connected Apps。" data-bad="再看連接一節。">
-  <h3>隨堂測驗 · C6Q3</h3>
-  <p>舊稱 Extensions 的現行用語較接近？</p>
-  <label><input type="radio" name="c6q3" value="A"/> <strong>A.</strong> Auto 模型</label><label><input type="radio" name="c6q3" value="B"/> <strong>B.</strong> Gem 專用密碼</label><label><input type="radio" name="c6q3" value="C"/> <strong>C.</strong> Connected Apps（已連接應用程式）</label><label><input type="radio" name="c6q3" value="D"/> <strong>D.</strong> Canvas Create</label>
-  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
-  <div class="feedback"></div>
-</section>
-<div class="pager">
-  <a class="btn secondary" href="ch05.html">← Skill</a>
-  <a class="btn" href="ch07.html">下一章：帳號方案與隱私 →</a>
-</div>
+<div class="pager"><a class="btn secondary" href="ch05.html">← Skill</a><a class="btn" href="ch07.html">下一章：帳號 →</a></div>
 
-<div class="footer-note">本站為自寫 Gemini 使用教學摘要，非 Google 官方文件轉載。操作畫面請以 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 與官方 Help 為準（核實日 2026-10-30）。進度存本機瀏覽器，不連 Gemini API。香港／澳門可用地區以 Help 當日為準。</div>
-</div>
-</main>
-</div>
+<div class="footer-note">v3 · 網頁＋FREE · <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a>（2026-10-30）</div>
+</div></main></div>
 <script src="../js/app.js"></script>
 <script src="../js/quiz.js"></script>
-</body>
-</html>
+</body></html>

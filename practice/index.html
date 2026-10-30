@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>實作走讀 · Gemini 使用教學</title>
+<title>實作走讀 · Gemini v3</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap"/>
 <link rel="stylesheet" href="../css/styles.css"/>
@@ -12,405 +12,194 @@
 <div class="overlay"></div>
 <div class="topbar">
   <button class="menu-btn" data-menu type="button">☰ 目錄</button>
-  <strong>Gemini 使用教學</strong>
+  <strong>Gemini 使用教學 <span class="version-pill">v3</span></strong>
 </div>
 <div class="layout">
 <aside class="sidebar">
-  <div class="brand">
-    <div class="brand-mark">G</div>
-    <div>
-      <h1>Gemini 使用教學</h1>
-      <p>互動教材 · 繁體中文</p>
-    </div>
-  </div>
+  <div class="brand"><div class="brand-mark">G</div><div><h1>Gemini 使用教學</h1><p>v3 · FREE 網頁實作</p></div></div>
   <div class="progress-wrap">
     <div class="progress-label"><span>學習進度</span><span data-progress-text>0%</span></div>
     <div class="progress-bar"><span data-progress-fill></span></div>
   </div>
-  <nav class="nav">
-<div class="nav-section">導覽</div>
+  <nav class="nav"><div class="nav-section">導覽</div>
 <a href="../index.html" data-page="index">總覽</a>
-<a href="../chapters/preface.html" data-page="preface">導讀・選對工具與平台</a>
-<a href="../chapters/ch01.html" data-page="ch01">第一章・上手與介面</a>
-<a href="../chapters/ch02.html" data-page="ch02">第二章・提示詞</a>
+<a href="../chapters/preface.html" data-page="preface">導讀・選工具與平台</a>
+<a href="../chapters/ch01.html" data-page="ch01">第一章・網頁版上手（FREE）</a>
+<a href="../chapters/ch02.html" data-page="ch02">第二章・提示詞 CASE</a>
 <a href="../chapters/ch03.html" data-page="ch03">第三章・Deep Research</a>
 <a href="../chapters/ch04.html" data-page="ch04">第四章・Canvas</a>
 <a href="../chapters/ch05.html" data-page="ch05">第五章・Skill</a>
-<a href="../chapters/ch06.html" data-page="ch06">第六章・Notebook 與 Workspace</a>
-<a href="../chapters/ch07.html" data-page="ch07">第七章・帳號方案與隱私</a>
+<a href="../chapters/ch06.html" data-page="ch06">第六章・Gemini Notebook</a>
+<a href="../chapters/ch07.html" data-page="ch07">第七章・帳號 FREE 與用量</a>
+<a href="../chapters/ch08.html" data-page="ch08">第八章・瀏覽器與 Extension</a>
 <a href="../chapters/epilogue.html" data-page="epilogue">結語・檢查清單</a>
 <div class="nav-section">動手做</div>
-<a href="../practice/index.html" data-page="practice">實作走讀</a>
-  </nav>
+<a href="../practice/index.html" data-page="practice">實作走讀（網頁）</a>
+<a href="../downloads/index.html" data-page="downloads">下載中心</a></nav>
 </aside>
-<main class="main">
-<div class="container">
+<main class="main"><div class="container">
 
 <nav class="breadcrumb"><a href="../index.html">總覽</a> / 實作走讀</nav>
 <header class="page-head">
-  <div class="eyebrow">動手做 · 全功能走讀</div>
-  <h2>一邊開 Gemini，一邊勾選與對照截圖</h2>
-  <p>對齊任務 0–8。已有實拍直接對照；缺項為「待補／學員自對照」。本頁不自動連 API。</p>
+  <div class="eyebrow">動手做 · 網頁版 CASE</div>
+  <h2>澳門科學館「力與能量」一條龍</h2>
+  <p>只要求在 <strong>gemini.google.com</strong>、以 <strong>FREE</strong> 帳跟做。另開視窗登入；練習檔一律用 materials。</p>
+  <div class="badge-row"><span class="badge free">Free</span><span class="badge info">僅網頁</span></div>
 </header>
-
 <div class="download-banner">
-  <p><strong>下載完整示範包</strong>（brief、會議素材、Skill 指示、帳號／平台速查）。</p>
-  <a class="btn" href="../assets/downloads/gemini-course-practice-pack.zip">gemini-course-practice-pack.zip</a>
+  <p><strong>先下載材料與成品</strong>，逐步對照。</p>
+  <a class="btn" href="../downloads/index.html">打開下載中心</a>
 </div>
-
-<section class="card" id="full-walkthrough">
-  <h3>全功能地圖</h3>
+<section class="card" id="map">
+  <h3>流程地圖</h3>
   <div class="chip-row">
-    <a class="chip" href="#walk-chat">A 聊天</a>
-    <a class="chip" href="#walk-multimodal">B 多模態／模型／匯出</a>
-    <a class="chip" href="#walk-live-create">C Live／產圖</a>
-    <a class="chip" href="#walk-research">D Research</a>
-    <a class="chip" href="#walk-canvas">E Canvas</a>
-    <a class="chip" href="#walk-skill">F Skill</a>
-    <a class="chip" href="#walk-ecosystem">G 生態系</a>
+    <a class="chip" href="#case-a">A 準備</a>
+    <a class="chip" href="#case-b">B 聊天</a>
+    <a class="chip" href="#case-c">C 多模態</a>
+    <a class="chip" href="#case-d">D Research</a>
+    <a class="chip" href="#case-e">E Canvas</a>
+    <a class="chip" href="#case-f">F Skill</a>
+    <a class="chip" href="#case-g">G Notebook</a>
+    <a class="chip" href="#case-h">H 連接／隱私</a>
+    <a class="chip" href="#case-i">I Extension 選裝</a>
   </div>
-  <div class="callout tip"><p>另開視窗登入 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a>。練習只用無機密材料。</p></div>
+  <div class="callout tip"><p>缺截圖處為待補卡（寫清應出現什麼）。舊 Pro 圖已標 Paid。</p></div>
 </section>
 
-<section class="card" id="task0">
-  <h3>任務 0 · 平台與帳號覺察</h3>
+<section class="card" id="case-a">
+  <h3>CASE A · 準備材料與帳號</h3>
+  <ol class="steps">
+    <li class="step"><h4>下載 materials-pack</h4>
+      <div class="mat-links"><a href="../assets/downloads/materials-pack.zip">materials-pack.zip</a><a href="../materials/README-materials.md">README</a></div>
+    </li>
+    <li class="step"><h4>登入網頁版 FREE 帳</h4>
+      <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/01-web-open-gemini.png" alt="開站" loading="lazy"/><figcaption><span class="badge free">Free 對照</span> 首屏</figcaption></figure></div>
+      <div class="pending-shot"><strong>待補 · FREE 首屏特寫</strong><div class="expect">應出現：f01-free-home.png</div></div>
+    </li>
+    <li class="step"><h4>設定 → 用量限制（自截打碼）</h4>
+      <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/43-web-usage-limits.png" alt="用量" loading="lazy"/><figcaption><span class="badge paid">Paid／示範曾用 Pro；本課主線 FREE</span> 用量頁</figcaption></figure></div>
+      <div class="pending-shot"><strong>待補 · FREE 用量</strong><div class="expect">應出現：f02-free-usage.png</div></div>
+    </li>
+  </ol>
   <div class="checklist">
-    <label><input type="checkbox"/> 打開網頁版並登入</label>
-    <label><input type="checkbox"/> 設定 → 用量限制（自截打碼）</label>
-    <label><input type="checkbox"/> （若有手機）打開 App 找到 Live</label>
-    <label><input type="checkbox"/> 勾選主要平台：網頁／桌面／手機</label>
+    <label><input type="checkbox"/> 已下載 materials</label>
+    <label><input type="checkbox"/> 已確認 Free／看過用量</label>
   </div>
-  <div class="shot-slot has-shot" data-shot="usage-limits">
-<figure class="shot"><img src="../assets/shots/43-web-usage-limits.png" alt="用量限制示範畫面" loading="lazy"/><figcaption>用量限制示範畫面</figcaption></figure>
-</div>
-  <p><a href="../assets/downloads/platforms-cheatsheet.md">platforms-cheatsheet.md</a> · <a href="../assets/downloads/account-tiers-cheatsheet.md">account-tiers-cheatsheet.md</a></p>
 </section>
 
-<section class="card" id="walk-chat"><h3>階段 A · 一般聊天（任務 1）</h3>
-<div class="checklist">
-<label><input type="checkbox"/> 開啟並登入</label>
-<label><input type="checkbox"/> 新對話單一主題</label>
-<label><input type="checkbox"/> 編輯提示重跑</label>
-<label><input type="checkbox"/> 要求另一版本比較</label>
-</div>
-<div class="lab-step">
-  <h4>A-1 開站與新對話</h4>
-  <div class="meta">對照：第一章</div>
-  <div class="shot-slot has-shot" data-shot="open-gemini">
-<figure class="shot"><img src="../assets/shots/01-web-open-gemini.png" alt="開啟 gemini.google.com 首屏" loading="lazy"/><figcaption>開啟 gemini.google.com 首屏</figcaption></figure>
-</div>
-  <div class="shot-slot has-shot" data-shot="new-chat">
-<figure class="shot"><img src="../assets/shots/02-web-new-chat.png" alt="新對話空白輸入框" loading="lazy"/><figcaption>新對話空白輸入框</figcaption></figure>
-</div>
-</div>
-<div class="lab-step">
-  <h4>A-2 編輯提示／多答案</h4>
-  <div class="pending-shot" data-shot="edit-prompt">
-<strong>待補／學員自對照 · 編輯已送出提示</strong>
-<span>標出編輯圖示並重跑。</span>
-</div>
-  <div class="pending-shot" data-shot="multi-answer">
-<strong>待補／學員自對照 · 多版本／再生</strong>
-<span>兩版並陳或再生按鈕。</span>
-</div>
-</div>
+<section class="card" id="case-b">
+  <h3>CASE B · 聊天整理導賞稿</h3>
+  <div class="mat-links"><a href="../materials/tour-script-force-energy.md">tour-script</a><a class="out" href="../outputs/tour-script-cleaned.md">對照 cleaned</a></div>
+  <ol class="steps">
+    <li class="step"><h4>新對話，貼角色＋規則＋全文</h4>
+      <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/02-web-new-chat.png" alt="新對話" loading="lazy"/><figcaption><span class="badge free">Free 對照</span> 輸入框</figcaption></figure></div>
+      <div class="pending-shot"><strong>待補 · 整理回覆</strong><div class="expect">應出現：f05-free-prompt-tour.png</div></div>
+    </li>
+    <li class="step"><h4>做一次抓錯對照</h4>
+      <div class="mat-links"><a class="out" href="../outputs/ai-error-example.md">ai-error-example.md</a></div>
+    </li>
+  </ol>
+  <div class="checklist"><label><input type="checkbox"/> 產出含 12 分鐘流程</label><label><input type="checkbox"/> 已對來源句</label></div>
 </section>
 
-<section class="card" id="walk-multimodal"><h3>階段 B · 多模態、模型、匯出（任務 2）</h3>
-<div class="checklist">
-<label><input type="checkbox"/> 上傳無機密圖片並先問「你看到什麼」</label>
-<label><input type="checkbox"/> 上傳 PDF／文件並列章節</label>
-<label><input type="checkbox"/> 打開模型選單（確認無 Auto 等實況）</label>
-<label><input type="checkbox"/> 試匯出 .md／雲端硬碟</label>
-</div>
-<div class="lab-step">
-  <h4>B-1 圖片與 PDF</h4>
-  <div class="shot-slot has-shot" data-shot="upload-image">
-<figure class="shot"><img src="../assets/shots/05-web-upload-image.png" alt="附加圖片後的對話" loading="lazy"/><figcaption>附加圖片後的對話</figcaption></figure>
-</div>
-  <div class="pending-shot" data-shot="upload-pdf">
-<strong>待補／學員自對照 · 附加 PDF</strong>
-<span>檔名與讀到什麼列表。</span>
-</div>
-</div>
-<div class="lab-step">
-  <h4>B-2 影音工具列</h4>
-  <div class="shot-slot has-shot" data-shot="av-toolbar">
-<figure class="shot"><img src="../assets/shots/07-web-av-toolbar.png" alt="工具列／附加選單現況" loading="lazy"/><figcaption>工具列／附加選單現況</figcaption></figure>
-</div>
-</div>
-<div class="lab-step">
-  <h4>B-3 模型切換</h4>
-  <p>記下 Flash-Lite／Flash／Pro／Argon／思考程度——<strong>無 Auto</strong>。</p>
-  <div class="shot-slot has-shot" data-shot="model-menu">
-<figure class="shot"><img src="../assets/shots/08-web-model-menu.png" alt="模型選單展開" loading="lazy"/><figcaption>模型選單展開</figcaption></figure>
-</div>
-</div>
-<div class="lab-step">
-  <h4>B-4 匯出</h4>
-  <div class="shot-slot has-shot" data-shot="export-docs">
-<figure class="shot"><img src="../assets/shots/09-web-export-docs.png" alt="匯出／下載／雲端硬碟" loading="lazy"/><figcaption>匯出／下載／雲端硬碟</figcaption></figure>
-</div>
-</div>
+<section class="card" id="case-c">
+  <h3>CASE C · 多模態／產圖</h3>
+  <ol class="steps">
+    <li class="step"><h4>上傳學習重點或示意圖，先問「你看到什麼」</h4>
+      <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/05-web-upload-image.png" alt="上傳" loading="lazy"/><figcaption><span class="badge free">Free 對照</span> 圖片縮圖</figcaption></figure></div>
+      <div class="mat-links"><a href="../materials/visit-learning-points.md">學習重點</a></div>
+    </li>
+    <li class="step"><h4>產圖（若 Free 開放）或對照課程示意</h4>
+      <div class="mat-links"><a href="../materials/image-gen-prompt.txt">prompt</a><a class="out" href="../outputs/exhibit-zone-demo.png">示意圖（非 Gemini 實產）</a></div>
+      <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/exhibit-zone-demo-course.png" alt="示意" loading="lazy"/><figcaption><span class="badge free">Free 對照</span> 課程示意／非 Gemini 實產</figcaption></figure></div>
+      <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/11-web-image-gen.png" alt="產圖實拍" loading="lazy"/><figcaption><span class="badge paid">Paid／示範曾用 Pro；本課主線 FREE</span> Gemini 產圖（若有）</figcaption></figure></div>
+    </li>
+  </ol>
 </section>
 
-<section class="card" id="walk-live-create"><h3>階段 C · Live（手機）、產圖、影音入口</h3>
-<div class="checklist">
-<label><input type="checkbox"/> 用<strong>手機</strong>找到 Live 並試 30 秒；或註明無裝置</label>
-<label><input type="checkbox"/> 若可產圖：用短提示產非侵權圖</label>
-<label><input type="checkbox"/> 掃視影片／音樂入口</label>
-<label><input type="checkbox"/> 找引導式學習；沒有則用代替提示</label>
-</div>
-<div class="lab-step">
-  <h4>C-1 Gemini Live（手機）</h4>
-  <div class="callout warn"><p>Live 暫非網頁——必須手機示範。本 pack 無手機實拍。</p></div>
-  <div class="pending-shot" data-shot="gemini-live">
-<strong>待補／學員自對照 · 手機 Live 介面</strong>
-<span>Android／iOS App → Live／相機。</span>
-</div>
-</div>
-<div class="lab-step">
-  <h4>C-2 圖像生成</h4>
-  <p>提示範本：<a href="../assets/downloads/sample-image-prompt.txt">sample-image-prompt.txt</a></p>
-  <div class="shot-slot has-shot" data-shot="image-gen">
-<figure class="shot"><img src="../assets/shots/11-web-image-gen.png" alt="產圖結果＋提示" loading="lazy"/><figcaption>產圖結果＋提示</figcaption></figure>
-</div>
-</div>
-<div class="lab-step">
-  <h4>C-3 影片／音樂／引導式學習</h4>
-  <div class="pending-shot" data-shot="av-create-entry">
-<strong>待補／學員自對照 · 影片或音樂入口</strong>
-<span>＋選單有無建立影片／音樂。</span>
-</div>
-  <div class="pending-shot" data-shot="guided-learning">
-<strong>待補／學員自對照 · 引導式學習</strong>
-<span>有按鈕就跟走；否則蘇格拉底式代替提示。</span>
-</div>
-</div>
+<section class="card" id="case-d">
+  <h3>CASE D · Deep Research（視額度）</h3>
+  <div class="mat-links"><a href="../materials/deep-research-brief.txt">brief</a><a class="out" href="../outputs/deep-research-excerpt.md">節錄示範</a></div>
+  <ol class="steps">
+    <li class="step"><h4>嘗試開啟 DR；不行就改手動來源＋聊天</h4>
+      <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/14-web-dr-open.png" alt="DR" loading="lazy"/><figcaption><span class="badge paid">Paid／示範曾用 Pro；本課主線 FREE</span> 入口</figcaption></figure></div>
+      <div class="pending-shot"><strong>待補 · FREE DR／上限</strong><div class="expect">應出現：f06-free-dr-or-limit.png</div></div>
+    </li>
+  </ol>
+  <div class="checklist"><label><input type="checkbox"/> 報告有「不確定」標記</label></div>
 </section>
 
-<section class="card" id="walk-research"><h3>階段 D · Deep Research（任務 3）</h3>
-<div class="checklist">
-<label><input type="checkbox"/> 開啟 Deep Research</label>
-<label><input type="checkbox"/> 來源至少選一；可練習取消搜尋但留其他</label>
-<label><input type="checkbox"/> 編輯計畫再開始</label>
-<label><input type="checkbox"/> 抽查引用</label>
-</div>
-<p>Brief：<a href="../assets/downloads/sample-deep-research-prompt.md">sample-deep-research-prompt.md</a></p>
-<div class="lab-step">
-  <h4>D-1 開 Research 與來源</h4>
-  <div class="shot-slot has-shot" data-shot="dr-open">
-<figure class="shot"><img src="../assets/shots/14-web-dr-open.png" alt="Deep Research 已選" loading="lazy"/><figcaption>Deep Research 已選</figcaption></figure>
-</div>
-  <div class="shot-slot has-shot" data-shot="dr-sources">
-<figure class="shot"><img src="../assets/shots/15-web-dr-sources.png" alt="來源選單" loading="lazy"/><figcaption>來源選單</figcaption></figure>
-</div>
-</div>
-<div class="lab-step">
-  <h4>D-2 關搜尋（可還原）</h4>
-  <div class="shot-slot has-shot" data-shot="dr-no-search">
-<figure class="shot"><img src="../assets/shots/16-web-dr-no-search.png" alt="已取消 Google 搜尋、保留其他來源" loading="lazy"/><figcaption>已取消 Google 搜尋、保留其他來源</figcaption></figure>
-</div>
-</div>
-<div class="lab-step">
-  <h4>D-3 編輯計畫與驗收</h4>
-  <div class="shot-slot has-shot" data-shot="dr-edit-plan">
-<figure class="shot"><img src="../assets/shots/17-web-dr-edit-plan.png" alt="編輯研究計畫" loading="lazy"/><figcaption>編輯研究計畫</figcaption></figure>
-</div>
-  <div class="pending-shot" data-shot="dr-citations">
-<strong>待補／學員自對照 · 報告引用</strong>
-<span>點開一則來源核對。</span>
-</div>
-</div>
+<section class="card" id="case-e">
+  <h3>CASE E · Canvas 單頁</h3>
+  <div class="mat-links"><a class="out" href="../outputs/canvas-force-energy.html">打開示範 HTML</a></div>
+  <ol class="steps">
+    <li class="step"><h4>開 Canvas，生成家庭導賞單頁</h4>
+      <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/19-web-canvas-open.png" alt="Canvas" loading="lazy"/><figcaption><span class="badge paid">Paid／示範曾用 Pro；本課主線 FREE</span> 工作區</figcaption></figure></div>
+      <div class="pending-shot"><strong>待補 · FREE Canvas</strong><div class="expect">應出現：f07-free-canvas.png</div></div>
+    </li>
+    <li class="step"><h4>選取改寫一段</h4>
+      <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/20-web-canvas-select-edit.png" alt="選取" loading="lazy"/><figcaption><span class="badge paid">Paid／示範曾用 Pro；本課主線 FREE</span> 浮動編輯</figcaption></figure></div>
+    </li>
+  </ol>
 </section>
 
-<section class="card" id="walk-canvas"><h3>階段 E · Canvas（任務 4）</h3>
-<div class="checklist">
-<label><input type="checkbox"/> 開 Canvas，短規格產最小版</label>
-<label><input type="checkbox"/> 選段一次只改一類要求</label>
-<label><input type="checkbox"/> （可選）Create；無則註記</label>
-</div>
-<div class="lab-step">
-  <h4>E-1 規格→最小版→迭代</h4>
-  <div class="shot-slot has-shot" data-shot="canvas-open">
-<figure class="shot"><img src="../assets/shots/19-web-canvas-open.png" alt="Canvas 全頁編輯主區" loading="lazy"/><figcaption>Canvas 全頁編輯主區</figcaption></figure>
-</div>
-  <div class="shot-slot has-shot" data-shot="canvas-select-edit">
-<figure class="shot"><img src="../assets/shots/20-web-canvas-select-edit.png" alt="選取段落後微調" loading="lazy"/><figcaption>選取段落後微調</figcaption></figure>
-</div>
-</div>
-<div class="lab-step">
-  <h4>E-2 Create（可能待補）</h4>
-  <div class="callout warn"><p>本示範帳無 Create 下拉——有則自截；無則標待補。</p></div>
-  <div class="pending-shot" data-shot="canvas-create-menu">
-<strong>待補／學員自對照 · Create 下拉</strong>
-<span>標出選項。</span>
-</div>
-  <div class="pending-shot" data-shot="canvas-create-result">
-<strong>待補／學員自對照 · 轉換成品</strong>
-<span>網頁或資訊圖等。</span>
-</div>
-</div>
+<section class="card" id="case-f">
+  <h3>CASE F · Skill @museum-meeting-notes</h3>
+  <div class="mat-links"><a href="../materials/skill-museum-meeting-notes.md">指示</a><a href="../materials/meeting-notes-raw.txt">逐字稿</a><a class="out" href="../outputs/meeting-notes-cleaned.md">對照</a></div>
+  <ol class="steps">
+    <li class="step"><h4>建立 Skill</h4>
+      <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/23-web-skill-create.png" alt="建立" loading="lazy"/><figcaption><span class="badge paid">Paid／示範曾用 Pro；本課主線 FREE</span> 建立 Skill</figcaption></figure></div>
+    </li>
+    <li class="step"><h4>@ 呼叫只貼逐字稿</h4>
+      <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/25-web-skill-invoke.png" alt="呼叫" loading="lazy"/><figcaption><span class="badge paid">Paid／示範曾用 Pro；本課主線 FREE</span> @ 呼叫</figcaption></figure></div>
+      <div class="pending-shot"><strong>待補 · FREE @</strong><div class="expect">應出現：f08-free-skill-at.png</div></div>
+    </li>
+  </ol>
 </section>
 
-<section class="card" id="walk-skill"><h3>階段 F · Skill（任務 5）</h3>
-<div class="checklist">
-<label><input type="checkbox"/> 開啟 Skills 列表並建立練習 Skill</label>
-<label><input type="checkbox"/> 填名稱、說明、使用說明</label>
-<label><input type="checkbox"/> （可選）上傳參考檔／SKILL.md</label>
-<label><input type="checkbox"/> 用 <code>@</code> 呼叫 Skill 完成一句任務</label>
-</div>
-<p>材料：<a href="../assets/downloads/sample-skill-instructions.md">sample-skill-instructions.md</a> · <a href="../assets/downloads/sample-meeting-notes-raw.txt">raw</a> · <a href="../assets/downloads/sample-meeting-notes-cleaned.md">cleaned</a> · <a href="../assets/downloads/sample-brief.md">brief</a></p>
-<div class="lab-step">
-  <h4>F-1 建立並呼叫 Skill</h4>
-  <div class="shot-slot has-shot" data-shot="skills-list">
-<figure class="shot"><img src="../assets/shots/46-web-skills-list.png" alt="Skills 列表" loading="lazy"/><figcaption>Skills 列表</figcaption></figure>
-</div>
-  <div class="shot-slot has-shot" data-shot="skill-create">
-<figure class="shot"><img src="../assets/shots/23-web-skill-create.png" alt="建立表單" loading="lazy"/><figcaption>建立表單</figcaption></figure>
-</div>
-  <div class="shot-slot has-shot" data-shot="skill-files">
-<figure class="shot"><img src="../assets/shots/24-web-skill-files.png" alt="參考檔／上傳" loading="lazy"/><figcaption>參考檔／上傳</figcaption></figure>
-</div>
-  <div class="shot-slot has-shot" data-shot="skill-invoke">
-<figure class="shot"><img src="../assets/shots/25-web-skill-invoke.png" alt="@ 呼叫並完成任務" loading="lazy"/><figcaption>@ 呼叫並完成任務</figcaption></figure>
-</div>
-</div>
+<section class="card" id="case-g">
+  <h3>CASE G · Gemini Notebook（視地區）</h3>
+  <div class="callout warn"><p>若 unsupported：改用網頁聊天上傳同一批來源，仍練習「對來源＋抓錯」。</p></div>
+  <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/51-web-notebook-in-gemini.png" alt="Notebook" loading="lazy"/><figcaption><span class="badge paid">Paid／示範曾用 Pro；本課主線 FREE</span> 入口示意</figcaption></figure></div>
+  <div class="pending-shot"><strong>待補 · 地區提示</strong><div class="expect">應出現：f10-notebook-region.png</div></div>
+  <div class="checklist"><label><input type="checkbox"/> 知道前稱 NotebookLM</label><label><input type="checkbox"/> 做過引用／抓錯</label></div>
 </section>
 
-<section class="card" id="walk-ecosystem"><h3>階段 G · Notebook、Workspace、連接（任務 6–8）</h3>
-<div class="checklist">
-<label><input type="checkbox"/> （視地區）試 Gemini Notebook／App 內筆記本</label>
-<label><input type="checkbox"/> Workspace 側欄：能開幾個試幾個</label>
-<label><input type="checkbox"/> 檢視 Connected Apps 與活動／隱私</label>
-</div>
-<div class="lab-step">
-  <h4>G-1 Gemini Notebook</h4>
-  <div class="callout warn"><p>本示範帳獨立站 unsupported；App 內可能無法載入——失敗請註記。</p></div>
-  <div class="shot-slot has-shot" data-shot="notebook-in-gemini">
-<figure class="shot"><img src="../assets/shots/51-web-notebook-in-gemini.png" alt="App 內筆記本入口" loading="lazy"/><figcaption>App 內筆記本入口</figcaption></figure>
-</div>
-  <div class="pending-shot" data-shot="notebook-sources">
-<strong>待補／學員自對照 · 來源列表</strong>
-<span>獨立站或可用帳號自截。</span>
-</div>
-  <div class="pending-shot" data-shot="notebook-studio">
-<strong>待補／學員自對照 · Studio 其一</strong>
-<span>Audio／Quiz／簡報。</span>
-</div>
-</div>
-<div class="lab-step">
-  <h4>G-2 Workspace 側欄</h4>
-  <div class="pending-shot" data-shot="ws-gmail">
-<strong>待補／學員自對照 · Gmail 側欄（勿寄）</strong>
-<span>草稿未寄出。</span>
-</div>
-  <div class="pending-shot" data-shot="ws-docs">
-<strong>待補／學員自對照 · Docs 側欄</strong>
-<span>改寫或大綱。</span>
-</div>
-  <div class="pending-shot" data-shot="ws-sheets">
-<strong>待補／學員自對照 · Sheets</strong>
-<span>公式說明。</span>
-</div>
-  <div class="pending-shot" data-shot="ws-slides">
-<strong>待補／學員自對照 · Slides</strong>
-<span>大綱。</span>
-</div>
-  <div class="pending-shot" data-shot="ws-drive">
-<strong>待補／學員自對照 · Drive</strong>
-<span>選檔提問。</span>
-</div>
-  <div class="pending-shot" data-shot="ws-chat">
-<strong>待補／學員自對照 · Chat</strong>
-<span>或無權限註記。</span>
-</div>
-</div>
-<div class="lab-step">
-  <h4>G-3 Connected Apps 與隱私</h4>
-  <div class="shot-slot has-shot" data-shot="apps-connections">
-<figure class="shot"><img src="../assets/shots/34-web-apps-connections.png" alt="Apps／連接開關" loading="lazy"/><figcaption>Apps／連接開關</figcaption></figure>
-</div>
-  <div class="pending-shot" data-shot="activity-privacy">
-<strong>待補／學員自對照 · 活動或隱私設定</strong>
-<span>可打碼個資。</span>
-</div>
-</div>
-</section>
-
-<section class="card" id="walk-final-check">
-  <h3>走讀總勾選</h3>
+<section class="card" id="case-h">
+  <h3>CASE H · 連接與隱私</h3>
+  <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/34-web-apps-connections.png" alt="連接" loading="lazy"/><figcaption><span class="badge paid">Paid／示範曾用 Pro；本課主線 FREE</span> Connected apps</figcaption></figure></div>
   <div class="checklist">
-    <label><input type="checkbox"/> 一般聊天：新對話／編輯／多答案</label>
-    <label><input type="checkbox"/> 多模態：圖＋PDF</label>
-    <label><input type="checkbox"/> 模型選單已看過（無 Auto）</label>
-    <label><input type="checkbox"/> 匯出 .md／雲端硬碟試過</label>
-    <label><input type="checkbox"/> Live 已用手機（或註記無裝置）</label>
-    <label><input type="checkbox"/> 產圖（或地區不可用已註記）</label>
-    <label><input type="checkbox"/> Deep Research：來源＋改計畫＋引用</label>
-    <label><input type="checkbox"/> Canvas：迭代（＋Create 或註記）</label>
-    <label><input type="checkbox"/> Skill：建立並 @ 呼叫</label>
-    <label><input type="checkbox"/> Notebook／Workspace／Connected Apps 已掃過</label>
-    <label><input type="checkbox"/> 已下載示範包</label>
+    <label><input type="checkbox"/> 未貼機密</label>
+    <label><input type="checkbox"/> 對外內容已人工核對</label>
   </div>
 </section>
 
-<section class="quiz" data-quiz="prq1" data-answer="B" data-ok="正確：先對齊理解。" data-bad="回到階段 B。">
-  <h3>實作測驗 · PRQ1</h3>
-  <p>剛上傳 PDF 後，較穩的第一步是？</p>
-  <label><input type="radio" name="prq1" value="A"/> <strong>A.</strong> 立刻要求保證法律結論正確</label>
-  <label><input type="radio" name="prq1" value="B"/> <strong>B.</strong> 先讓模型列出讀到的章節與不確定處</label>
-  <label><input type="radio" name="prq1" value="C"/> <strong>C.</strong> 公開分享含個資的連結</label>
-  <label><input type="radio" name="prq1" value="D"/> <strong>D.</strong> 關掉來源核對</label>
-  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
-  <div class="feedback"></div>
-</section>
-<section class="quiz" data-quiz="prq2" data-answer="A" data-ok="對：先改計畫。" data-bad="見階段 D。">
-  <h3>實作測驗 · PRQ2</h3>
-  <p>Deep Research 開始前應？</p>
-  <label><input type="radio" name="prq2" value="A"/> <strong>A.</strong> 檢視並編輯研究計畫</label>
-  <label><input type="radio" name="prq2" value="B"/> <strong>B.</strong> 永遠跳過計畫</label>
-  <label><input type="radio" name="prq2" value="C"/> <strong>C.</strong> 先刪除所有來源</label>
-  <label><input type="radio" name="prq2" value="D"/> <strong>D.</strong> 只開網頁 Live（目前暫無）</label>
-  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
-  <div class="feedback"></div>
-</section>
-<section class="quiz" data-quiz="prq3" data-answer="C" data-ok="用 @ 呼叫 Skill。" data-bad="見階段 F。">
-  <h3>實作測驗 · PRQ3</h3>
-  <p>建立練習 Skill 後，呼叫方式較符合現況？</p>
-  <label><input type="radio" name="prq3" value="A"/> <strong>A.</strong> 只能寄信給自己</label>
-  <label><input type="radio" name="prq3" value="B"/> <strong>B.</strong> 必須先登出</label>
-  <label><input type="radio" name="prq3" value="C"/> <strong>C.</strong> 在對話用 @ 選取該 Skill</label>
-  <label><input type="radio" name="prq3" value="D"/> <strong>D.</strong> Skill 已全面取消無法呼叫</label>
-  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
-  <div class="feedback"></div>
-</section>
-<section class="quiz" data-quiz="prq4" data-answer="B" data-ok="沒有按鈕就略過並註記。" data-bad="見各階段 callout。">
-  <h3>實作測驗 · PRQ4</h3>
-  <p>介面找不到產圖、Create 或獨立 Notebook 時？</p>
-  <label><input type="radio" name="prq4" value="A"/> <strong>A.</strong> 硬說本站保證人人都有</label>
-  <label><input type="radio" name="prq4" value="B"/> <strong>B.</strong> 視為帳號／地區／方案差異，標待補／學員自對照並截現況</label>
-  <label><input type="radio" name="prq4" value="C"/> <strong>C.</strong> 貼上密碼強迫開啟</label>
-  <label><input type="radio" name="prq4" value="D"/> <strong>D.</strong> 刪除 Google 帳號</label>
-  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
-  <div class="feedback"></div>
+<section class="card" id="case-i">
+  <h3>CASE I · Extension 選裝（加分）</h3>
+  <p>主線完成後，可選：Gemini in Chrome 側欄摘要分頁，或 Comet／商店安裝一個匯出／側欄工具——先讀權限。</p>
+  <div class="mat-links"><a class="out" href="../outputs/extensions-cheatsheet.md">extensions-cheatsheet</a><a href="../chapters/ch08.html">第八章</a></div>
+  <div class="pending-shot"><strong>待補 · Chrome 側欄</strong><div class="expect">應出現：f11-chrome-gemini-sidebar.png</div></div>
+  <div class="pending-shot"><strong>待補 · Comet 列表</strong><div class="expect">應出現：f12-comet-extensions.png</div></div>
+  <div class="checklist">
+    <label><input type="checkbox"/> 理解加分非必做</label>
+    <label><input type="checkbox"/> 不安裝不明破解擴充</label>
+  </div>
 </section>
 
-<div class="download-banner">
-  <p>完成後可再下載示範包對照整理結果。</p>
-  <a class="btn" href="../assets/downloads/gemini-course-practice-pack.zip">再次下載 zip</a>
-</div>
+<section class="quiz" data-quiz="pr1" data-answer="B" data-ok="對。" data-bad="看頁首。">
+  <h3>實作測驗</h3>
+  <p>本頁實作範圍是？</p>
+  <label><input type="radio" name="pr1" value="A"/> <strong>A.</strong> 必須完成手機 Live＋桌面 Overlay</label>
+  <label><input type="radio" name="pr1" value="B"/> <strong>B.</strong> 網頁版 CASE；桌面／手機僅介紹</label>
+  <label><input type="radio" name="pr1" value="C"/> <strong>C.</strong> 只能用 Ultra</label>
+  <label><input type="radio" name="pr1" value="D"/> <strong>D.</strong> 不需任何材料檔</label>
+  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
+  <div class="feedback"></div>
+</section>
+<div class="pager"><a class="btn secondary" href="../chapters/epilogue.html">← 結語</a><a class="btn" href="../downloads/index.html">下載中心 →</a></div>
 
-<div class="pager">
-  <a class="btn secondary" href="../chapters/epilogue.html">← 結語</a>
-  <a class="btn" href="../index.html">回總覽 →</a>
-</div>
-
-<div class="footer-note">本站為自寫 Gemini 使用教學摘要，非 Google 官方文件轉載。操作畫面請以 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 與官方 Help 為準（核實日 2026-10-30）。進度存本機瀏覽器，不連 Gemini API。香港／澳門可用地區以 Help 當日為準。</div>
-</div>
-</main>
-</div>
+<div class="footer-note">v3 · 網頁＋FREE · 2026-10-30</div>
+</div></main></div>
 <script src="../js/app.js"></script>
 <script src="../js/quiz.js"></script>
-</body>
-</html>
+</body></html>

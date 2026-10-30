@@ -12,109 +12,72 @@
 <div class="overlay"></div>
 <div class="topbar">
   <button class="menu-btn" data-menu type="button">☰ 目錄</button>
-  <strong>Gemini 使用教學</strong>
+  <strong>Gemini 使用教學 <span class="version-pill">v3</span></strong>
 </div>
 <div class="layout">
 <aside class="sidebar">
-  <div class="brand">
-    <div class="brand-mark">G</div>
-    <div>
-      <h1>Gemini 使用教學</h1>
-      <p>互動教材 · 繁體中文</p>
-    </div>
-  </div>
+  <div class="brand"><div class="brand-mark">G</div><div><h1>Gemini 使用教學</h1><p>v3 · FREE 網頁實作</p></div></div>
   <div class="progress-wrap">
     <div class="progress-label"><span>學習進度</span><span data-progress-text>0%</span></div>
     <div class="progress-bar"><span data-progress-fill></span></div>
   </div>
-  <nav class="nav">
-<div class="nav-section">導覽</div>
+  <nav class="nav"><div class="nav-section">導覽</div>
 <a href="../index.html" data-page="index">總覽</a>
-<a href="../chapters/preface.html" data-page="preface">導讀・選對工具與平台</a>
-<a href="../chapters/ch01.html" data-page="ch01">第一章・上手與介面</a>
-<a href="../chapters/ch02.html" data-page="ch02">第二章・提示詞</a>
+<a href="../chapters/preface.html" data-page="preface">導讀・選工具與平台</a>
+<a href="../chapters/ch01.html" data-page="ch01">第一章・網頁版上手（FREE）</a>
+<a href="../chapters/ch02.html" data-page="ch02">第二章・提示詞 CASE</a>
 <a href="../chapters/ch03.html" data-page="ch03">第三章・Deep Research</a>
 <a href="../chapters/ch04.html" data-page="ch04">第四章・Canvas</a>
 <a href="../chapters/ch05.html" data-page="ch05">第五章・Skill</a>
-<a href="../chapters/ch06.html" data-page="ch06">第六章・Notebook 與 Workspace</a>
-<a href="../chapters/ch07.html" data-page="ch07">第七章・帳號方案與隱私</a>
+<a href="../chapters/ch06.html" data-page="ch06">第六章・Gemini Notebook</a>
+<a href="../chapters/ch07.html" data-page="ch07">第七章・帳號 FREE 與用量</a>
+<a href="../chapters/ch08.html" data-page="ch08">第八章・瀏覽器與 Extension</a>
 <a href="../chapters/epilogue.html" data-page="epilogue">結語・檢查清單</a>
 <div class="nav-section">動手做</div>
-<a href="../practice/index.html" data-page="practice">實作走讀</a>
-  </nav>
+<a href="../practice/index.html" data-page="practice">實作走讀（網頁）</a>
+<a href="../downloads/index.html" data-page="downloads">下載中心</a></nav>
 </aside>
-<main class="main">
-<div class="container">
+<main class="main"><div class="container">
 
 <nav class="breadcrumb"><a href="../index.html">總覽</a> / 第四章</nav>
 <header class="page-head">
   <div class="eyebrow">第四章 · Canvas</div>
-  <h2>全頁編輯器＋浮動聊天（不是左右 50/50）</h2>
-  <p>現行 Canvas 以全頁預覽／編輯為主，聊天以浮動面板輔助。先寫短規格→最小版→一次一事迭代。</p>
+  <h2>邊寫邊改的導賞單頁</h2>
+  <div class="badge-row"><span class="badge free">Free</span></div>
 </header>
-
+<div class="scene"><span class="scene-tag">CASE</span>把整理後的 12 分鐘導賞做成可分享的單頁 HTML 結構（標題／三展項／回家三問）。</div>
 <section class="card">
-  <h3>版面心智</h3>
-  <figure class="figure">
-    <img src="../assets/svg/canvas-layout.svg" alt="Canvas 版面" style="width:100%;max-width:720px"/>
-  </figure>
-  <div class="shot-slot has-shot" data-shot="canvas-open">
-<figure class="shot"><img src="../assets/shots/19-web-canvas-open.png" alt="Canvas 開啟：全頁編輯主區（示範對話可留在歷史）" loading="lazy"/><figcaption>Canvas 開啟：全頁編輯主區（示範對話可留在歷史）</figcaption></figure>
-</div>
-  <div class="shot-slot has-shot" data-shot="canvas-select-edit">
-<figure class="shot"><img src="../assets/shots/20-web-canvas-select-edit.png" alt="選取段落後以聊天微調" loading="lazy"/><figcaption>選取段落後以聊天微調</figcaption></figure>
-</div>
-  <div class="callout warn"><p>本示範帳<strong>未見 Create 下拉</strong>。若你畫面有 Create（網頁／資訊圖／測驗等），請自行截圖對照；沒有就標「待補／學員自對照」，勿假裝一定有。</p></div>
-  <div class="pending-shot" data-shot="canvas-create-menu">
-<strong>待補／學員自對照 · Create 下拉選單</strong>
-<span>若介面有 Create，展開並標選項；無則註記。</span>
-</div>
-  <div class="pending-shot" data-shot="canvas-create-result">
-<strong>待補／學員自對照 · Create 轉換成品</strong>
-<span>完成一種轉換後截成品。</span>
-</div>
-</section>
-
-<section class="card">
-  <h3>最小流程</h3>
+  <figure class="figure"><img src="../assets/svg/canvas-layout.svg" alt="Canvas 佈局" style="width:100%;max-width:720px"/></figure>
   <ol class="steps">
-    <li class="step"><h4>短規格</h4><p>對象、篇幅、必須段落、禁區——一次講清。</p></li>
-    <li class="step"><h4>最小版</h4><p>先要骨架，再加細節。</p></li>
-    <li class="step"><h4>選段微調</h4><p>一次只改語氣或長度。</p></li>
-    <li class="step"><h4>匯出</h4><p>常見 .md／雲端硬碟。</p></li>
+    <li class="step"><h4>＋選單開啟 Canvas</h4>
+      <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/19-web-canvas-open.png" alt="Canvas 開啟" loading="lazy"/><figcaption><span class="badge paid">Paid／示範曾用 Pro；本課主線 FREE</span> Canvas 工作區</figcaption></figure></div>
+      <div class="pending-shot"><strong>待補 · FREE Canvas</strong><div class="expect">應出現：f07-free-canvas.png：Free 帳 Canvas 編輯導賞單頁<br/>見 SHOTS_NEEDED.md</div></div>
+    </li>
+    <li class="step"><h4>貼上導賞要點，要求輸出單頁結構</h4>
+      <div class="mat-links"><a href="../materials/tour-script-force-energy.md">tour-script</a><a class="out" href="../outputs/tour-script-cleaned.md">cleaned</a></div>
+    </li>
+    <li class="step"><h4>選取段落改寫（非 50/50 並排誤解）</h4>
+      <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/20-web-canvas-select-edit.png" alt="選取編輯" loading="lazy"/><figcaption><span class="badge paid">Paid／示範曾用 Pro；本課主線 FREE</span> 選取後浮動修改</figcaption></figure></div>
+    </li>
+    <li class="step"><h4>對照可開的示範 HTML</h4>
+      <div class="mat-links"><a class="out" href="../outputs/canvas-force-energy.html">打開 canvas-force-energy.html</a></div>
+    </li>
   </ol>
 </section>
-<section class="quiz" data-quiz="c4q1" data-answer="B" data-ok="現行非經典左右 50/50。" data-bad="再看版面。">
-  <h3>隨堂測驗 · C4Q1</h3>
-  <p>2026-10 實況 Canvas 較正確的描述？</p>
-  <label><input type="radio" name="c4q1" value="A"/> <strong>A.</strong> 永遠固定左右各一半且無聊天</label><label><input type="radio" name="c4q1" value="B"/> <strong>B.</strong> 全頁編輯器為主，搭配浮動聊天</label><label><input type="radio" name="c4q1" value="C"/> <strong>C.</strong> 只能語音、不能出字</label><label><input type="radio" name="c4q1" value="D"/> <strong>D.</strong> 等同 Deep Research</label>
+<section class="quiz" data-quiz="c4q1" data-answer="B" data-ok="對。" data-bad="再看步驟。">
+  <h3>C4Q1</h3>
+  <p>本課 Canvas CASE 的產出目標是？</p>
+  <label><input type="radio" name="c4q1" value="A"/> <strong>A.</strong> 只回一句「好的」</label>
+  <label><input type="radio" name="c4q1" value="B"/> <strong>B.</strong> 家庭導賞單頁結構（可對照示範 HTML）</label>
+  <label><input type="radio" name="c4q1" value="C"/> <strong>C.</strong> 必須產出付費影片</label>
+  <label><input type="radio" name="c4q1" value="D"/> <strong>D.</strong> 刪除所有材料</label>
   <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
   <div class="feedback"></div>
 </section>
-<section class="quiz" data-quiz="c4q2" data-answer="A" data-ok="一次一事。" data-bad="再看流程。">
-  <h3>隨堂測驗 · C4Q2</h3>
-  <p>迭代時較佳做法？</p>
-  <label><input type="radio" name="c4q2" value="A"/> <strong>A.</strong> 選一段，一次只改一類要求</label><label><input type="radio" name="c4q2" value="B"/> <strong>B.</strong> 一次要求完美終稿＋翻譯＋合規＋插圖</label><label><input type="radio" name="c4q2" value="C"/> <strong>C.</strong> 從不看預覽</label><label><input type="radio" name="c4q2" value="D"/> <strong>D.</strong> 關掉所有匯出</label>
-  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
-  <div class="feedback"></div>
-</section>
-<section class="quiz" data-quiz="c4q3" data-answer="C" data-ok="缺功能就註記。" data-bad="再看 callout。">
-  <h3>隨堂測驗 · C4Q3</h3>
-  <p>畫面沒有 Create 時？</p>
-  <label><input type="radio" name="c4q3" value="A"/> <strong>A.</strong> 硬說課程保證人人都有</label><label><input type="radio" name="c4q3" value="B"/> <strong>B.</strong> 貼密碼強迫開啟</label><label><input type="radio" name="c4q3" value="C"/> <strong>C.</strong> 標待補／學員自對照，改用匯出或手動轉換</label><label><input type="radio" name="c4q3" value="D"/> <strong>D.</strong> 刪除 Google 帳號</label>
-  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
-  <div class="feedback"></div>
-</section>
-<div class="pager">
-  <a class="btn secondary" href="ch03.html">← Research</a>
-  <a class="btn" href="ch05.html">下一章：Skill →</a>
-</div>
+<div class="pager"><a class="btn secondary" href="ch03.html">← DR</a><a class="btn" href="ch05.html">下一章：Skill →</a></div>
 
-<div class="footer-note">本站為自寫 Gemini 使用教學摘要，非 Google 官方文件轉載。操作畫面請以 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 與官方 Help 為準（核實日 2026-10-30）。進度存本機瀏覽器，不連 Gemini API。香港／澳門可用地區以 Help 當日為準。</div>
-</div>
-</main>
-</div>
+<div class="footer-note">v3 · 網頁＋FREE · <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a>（2026-10-30）</div>
+</div></main></div>
 <script src="../js/app.js"></script>
 <script src="../js/quiz.js"></script>
-</body>
-</html>
+</body></html>

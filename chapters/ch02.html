@@ -12,16 +12,13 @@
 <div class="overlay"></div>
 <div class="topbar">
   <button class="menu-btn" data-menu type="button">☰ 目錄</button>
-  <strong>Gemini 使用教學</strong>
+  <strong>Gemini 使用教學 <span class="version-pill">v3</span></strong>
 </div>
 <div class="layout">
 <aside class="sidebar">
   <div class="brand">
     <div class="brand-mark">G</div>
-    <div>
-      <h1>Gemini 使用教學</h1>
-      <p>互動教材 · 繁體中文</p>
-    </div>
+    <div><h1>Gemini 使用教學</h1><p>v3 · FREE 網頁實作</p></div>
   </div>
   <div class="progress-wrap">
     <div class="progress-label"><span>學習進度</span><span data-progress-text>0%</span></div>
@@ -30,105 +27,73 @@
   <nav class="nav">
 <div class="nav-section">導覽</div>
 <a href="../index.html" data-page="index">總覽</a>
-<a href="../chapters/preface.html" data-page="preface">導讀・選對工具與平台</a>
-<a href="../chapters/ch01.html" data-page="ch01">第一章・上手與介面</a>
-<a href="../chapters/ch02.html" data-page="ch02">第二章・提示詞</a>
+<a href="../chapters/preface.html" data-page="preface">導讀・選工具與平台</a>
+<a href="../chapters/ch01.html" data-page="ch01">第一章・網頁版上手（FREE）</a>
+<a href="../chapters/ch02.html" data-page="ch02">第二章・提示詞 CASE</a>
 <a href="../chapters/ch03.html" data-page="ch03">第三章・Deep Research</a>
 <a href="../chapters/ch04.html" data-page="ch04">第四章・Canvas</a>
 <a href="../chapters/ch05.html" data-page="ch05">第五章・Skill</a>
-<a href="../chapters/ch06.html" data-page="ch06">第六章・Notebook 與 Workspace</a>
-<a href="../chapters/ch07.html" data-page="ch07">第七章・帳號方案與隱私</a>
+<a href="../chapters/ch06.html" data-page="ch06">第六章・Gemini Notebook</a>
+<a href="../chapters/ch07.html" data-page="ch07">第七章・帳號 FREE 與用量</a>
+<a href="../chapters/ch08.html" data-page="ch08">第八章・瀏覽器與 Extension</a>
 <a href="../chapters/epilogue.html" data-page="epilogue">結語・檢查清單</a>
 <div class="nav-section">動手做</div>
-<a href="../practice/index.html" data-page="practice">實作走讀</a>
+<a href="../practice/index.html" data-page="practice">實作走讀（網頁）</a>
+<a href="../downloads/index.html" data-page="downloads">下載中心</a>
   </nav>
 </aside>
-<main class="main">
-<div class="container">
+<main class="main"><div class="container">
+
 
 <nav class="breadcrumb"><a href="../index.html">總覽</a> / 第二章</nav>
 <header class="page-head">
-  <div class="eyebrow">第二章 · 提示詞</div>
-  <h2>寫清楚，比寫長更重要</h2>
-  <p>對齊提示策略：結構化分隔、關鍵限制放最前、長文「資料在前、問題在後」、少樣本、一次一事。</p>
+  <div class="eyebrow">第二章 · 提示詞 CASE</div>
+  <h2>角色＋規則＋輸入＋成功標準</h2>
+  <div class="badge-row"><span class="badge free">Free</span></div>
 </header>
-
+<div class="scene"><span class="scene-tag">CASE</span>把導賞短稿收成 12 分鐘家庭版；再把雜亂會議逐字稿收成決議／待辦。</div>
 <section class="card">
-  <h3>最小公式</h3>
-  <figure class="figure">
-    <img src="../assets/svg/prompt-formula.svg" alt="提示公式" style="width:100%;max-width:720px"/>
-  </figure>
-  <ul class="clean">
-    <li><strong>角色</strong>：你是誰（語氣、專業邊界）。</li>
-    <li><strong>任務</strong>：要產出什麼。</li>
-    <li><strong>對象</strong>：給誰看、什麼場合。</li>
-    <li><strong>約束</strong>：字數、禁區、必須／不可。</li>
-    <li><strong>驗收</strong>：欄位、格式、檢查項。</li>
-  </ul>
-  <div class="callout tip"><p>可記 <strong>PARTS</strong>：Persona、Action、Requirements、Target audience、Style／Success。</p></div>
+  <h3>公式</h3>
+  <figure class="figure"><img src="../assets/svg/prompt-formula.svg" alt="提示詞公式" style="width:100%;max-width:720px"/></figure>
+  <div class="prompt-box">角色：展教部助理
+規則：只根據來源；不編造；繁中條列
+輸入：貼上 materials 檔案內容
+成功標準：家庭版 12 分鐘流程表＋白話說明牌建議</div>
 </section>
-
 <section class="card">
-  <h3>進階技巧</h3>
+  <h3>CASE A · 導賞稿整理</h3>
   <ol class="steps">
-    <li class="step"><h4>結構化分隔</h4><p>用 Markdown 或標籤分開指示與材料。</p></li>
-    <li class="step"><h4>關鍵限制放最前</h4><p>角色、安全邊界、輸出格式放開頭。</p></li>
-    <li class="step"><h4>長上下文：資料在前、問題在後</h4><p>先貼文件，最後才問「根據以上…」。</p></li>
-    <li class="step"><h4>少樣本 &gt; 空話</h4><p>貼理想輸出範例，寫「只學格式」。</p></li>
-    <li class="step"><h4>一次一事</h4><p>先大綱→再段落→再縮短。</p></li>
+    <li class="step"><h4>下載並打開材料</h4>
+      <div class="mat-links"><a href="../materials/tour-script-force-energy.md">tour-script</a><a href="../materials/visit-learning-points.md">學習重點</a></div>
+    </li>
+    <li class="step"><h4>在網頁新聊天貼提示＋全文</h4>
+      <div class="pending-shot"><strong>待補 · 導賞整理回覆</strong><div class="expect">應出現：f05-free-prompt-tour.png：回覆含流程表開頭<br/>見 <code>SHOTS_NEEDED.md</code>；請用 FREE 帳自截或等補圖。</div></div>
+    </li>
+    <li class="step"><h4>對照教師成品</h4>
+      <div class="mat-links"><a class="out" href="../outputs/tour-script-cleaned.md">tour-script-cleaned.md</a></div>
+    </li>
   </ol>
 </section>
-
 <section class="card">
-  <h3>可複製範例（科普展導賞）</h3>
-  <div class="prompt-box"><span class="copy-hint">複製用</span>## 角色
-你是科學館展場導賞撰稿，用繁中、國中程度。
-
-## 任務
-寫約 200 字展品導賞稿，再附 3 個互動提問。
-
-## 對象
-家庭觀眾（家長＋孩子）。
-
-## 約束
-- 不捏造科學事實；不確定處標「需查證」
-- 不用表情符號
-
-## 驗收
-正文一段＋「互動提問」編號清單。</div>
-  <p>示範素材亦可見下載包內 sample 檔；會議紀錄範本見第五章 Skill。</p>
+  <h3>CASE B · 會議整理（為 Skill 鋪路）</h3>
+  <div class="mat-links"><a href="../materials/meeting-notes-raw.txt">meeting-notes-raw.txt</a><a class="out" href="../outputs/meeting-notes-cleaned.md">cleaned 對照</a></div>
+  <div class="callout check"><div class="callout-h">有輸出仍可能錯</div>
+  <p>請打開 <a href="../outputs/ai-error-example.md">ai-error-example.md</a>：對照「錯誤摘要 vs 來源句」。</p></div>
 </section>
-<section class="quiz" data-quiz="c2q1" data-answer="B" data-ok="長上下文時問題放最後。" data-bad="再看本章。">
-  <h3>隨堂測驗 · C2Q1</h3>
-  <p>長文件貼進提示時，較佳順序？</p>
-  <label><input type="radio" name="c2q1" value="A"/> <strong>A.</strong> 先問問題，再慢慢貼資料</label><label><input type="radio" name="c2q1" value="B"/> <strong>B.</strong> 資料／上下文在前，具體問題在後</label><label><input type="radio" name="c2q1" value="C"/> <strong>C.</strong> 把限制寫在最末且用暗號</label><label><input type="radio" name="c2q1" value="D"/> <strong>D.</strong> 完全不給任何分隔</label>
+<section class="quiz" data-quiz="c2q1" data-answer="C" data-ok="對，要對來源。" data-bad="看抓錯 callout。">
+  <h3>C2Q2</h3>
+  <p>模型整理導賞稿後，上牆前應？</p>
+  <label><input type="radio" name="c2q1" value="A"/> <strong>A.</strong> 直接列印張貼</label>
+  <label><input type="radio" name="c2q1" value="B"/> <strong>B.</strong> 刪掉來源檔</label>
+  <label><input type="radio" name="c2q1" value="C"/> <strong>C.</strong> 人工對照 materials 原文再核對</label>
+  <label><input type="radio" name="c2q1" value="D"/> <strong>D.</strong> 只看有沒有條列就當正確</label>
   <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
   <div class="feedback"></div>
 </section>
-<section class="quiz" data-quiz="c2q2" data-answer="C" data-ok="少樣本有效。" data-bad="再看本章。">
-  <h3>隨堂測驗 · C2Q2</h3>
-  <p>想固定輸出格式，最有效做法之一？</p>
-  <label><input type="radio" name="c2q2" value="A"/> <strong>A.</strong> 只說「寫好看一點」</label><label><input type="radio" name="c2q2" value="B"/> <strong>B.</strong> 重複貼「請務必」十次</label><label><input type="radio" name="c2q2" value="C"/> <strong>C.</strong> 給少樣本範例並說明只學格式</label><label><input type="radio" name="c2q2" value="D"/> <strong>D.</strong> 關掉網路</label>
-  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
-  <div class="feedback"></div>
-</section>
-<section class="quiz" data-quiz="c2q3" data-answer="A" data-ok="約束放前。" data-bad="再看本章。">
-  <h3>隨堂測驗 · C2Q3</h3>
-  <p>「關鍵行為約束」較建議放在？</p>
-  <label><input type="radio" name="c2q3" value="A"/> <strong>A.</strong> 提示開頭</label><label><input type="radio" name="c2q3" value="B"/> <strong>B.</strong> 永遠省略</label><label><input type="radio" name="c2q3" value="C"/> <strong>C.</strong> 只放在 Skill 名稱裡</label><label><input type="radio" name="c2q3" value="D"/> <strong>D.</strong> 只能語音說一次</label>
-  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
-  <div class="feedback"></div>
-</section>
-<div class="pager">
-  <a class="btn secondary" href="ch01.html">← 介面</a>
-  <a class="btn" href="ch03.html">下一章：Deep Research →</a>
-</div>
+<div class="pager"><a class="btn secondary" href="ch01.html">← 上手</a><a class="btn" href="ch03.html">下一章：Deep Research →</a></div>
 
-<div class="footer-note">本站為自寫 Gemini 使用教學摘要，非 Google 官方文件轉載。操作畫面請以 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 與官方 Help 為準（核實日 2026-10-30）。進度存本機瀏覽器，不連 Gemini API。香港／澳門可用地區以 Help 當日為準。</div>
-</div>
-</main>
-</div>
+<div class="footer-note">本站為自寫 Gemini 使用教學摘要（v3）。實作主線：網頁版＋FREE。以 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 為準（2026-10-30）。</div>
+</div></main></div>
 <script src="../js/app.js"></script>
 <script src="../js/quiz.js"></script>
-</body>
-</html>
+</body></html>

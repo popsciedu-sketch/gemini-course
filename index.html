@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Gemini 使用教學 · 互動教材</title>
+<title>Gemini 使用教學 v3 · 總覽</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap"/>
 <link rel="stylesheet" href="css/styles.css"/>
@@ -12,7 +12,7 @@
 <div class="overlay"></div>
 <div class="topbar">
   <button class="menu-btn" data-menu type="button">☰ 目錄</button>
-  <strong>Gemini 使用教學</strong>
+  <strong>Gemini 使用教學 <span class="version-pill">v3</span></strong>
 </div>
 <div class="layout">
 <aside class="sidebar">
@@ -20,7 +20,7 @@
     <div class="brand-mark">G</div>
     <div>
       <h1>Gemini 使用教學</h1>
-      <p>互動教材 · 繁體中文</p>
+      <p>v3 · FREE 網頁實作</p>
     </div>
   </div>
   <div class="progress-wrap">
@@ -30,93 +30,89 @@
   <nav class="nav">
 <div class="nav-section">導覽</div>
 <a href="index.html" data-page="index">總覽</a>
-<a href="chapters/preface.html" data-page="preface">導讀・選對工具與平台</a>
-<a href="chapters/ch01.html" data-page="ch01">第一章・上手與介面</a>
-<a href="chapters/ch02.html" data-page="ch02">第二章・提示詞</a>
+<a href="chapters/preface.html" data-page="preface">導讀・選工具與平台</a>
+<a href="chapters/ch01.html" data-page="ch01">第一章・網頁版上手（FREE）</a>
+<a href="chapters/ch02.html" data-page="ch02">第二章・提示詞 CASE</a>
 <a href="chapters/ch03.html" data-page="ch03">第三章・Deep Research</a>
 <a href="chapters/ch04.html" data-page="ch04">第四章・Canvas</a>
 <a href="chapters/ch05.html" data-page="ch05">第五章・Skill</a>
-<a href="chapters/ch06.html" data-page="ch06">第六章・Notebook 與 Workspace</a>
-<a href="chapters/ch07.html" data-page="ch07">第七章・帳號方案與隱私</a>
+<a href="chapters/ch06.html" data-page="ch06">第六章・Gemini Notebook</a>
+<a href="chapters/ch07.html" data-page="ch07">第七章・帳號 FREE 與用量</a>
+<a href="chapters/ch08.html" data-page="ch08">第八章・瀏覽器與 Extension</a>
 <a href="chapters/epilogue.html" data-page="epilogue">結語・檢查清單</a>
 <div class="nav-section">動手做</div>
-<a href="practice/index.html" data-page="practice">實作走讀</a>
+<a href="practice/index.html" data-page="practice">實作走讀（網頁）</a>
+<a href="downloads/index.html" data-page="downloads">下載中心</a>
   </nav>
 </aside>
 <main class="main">
 <div class="container">
 
+
 <header class="hero">
-  <div class="eyebrow">互動教材 · 繁體中文（香港／澳門）</div>
-  <h2>把 Gemini 變成可練習的工作流</h2>
-  <p>從平台選擇、一般聊天、提示詞、Deep Research、Canvas 到 <strong>Skill</strong> 與 <strong>Gemini Notebook</strong>，對齊 2026-10 實況介面。本站<strong>不</strong>自動連 Gemini API。</p>
+  <div class="eyebrow">互動教材 v3 · 繁中（香港／澳門）· 科學館展教 CASE</div>
+  <h2>Gemini 網頁版實作課（FREE 主線）</h2>
+  <p>介紹可談多平台；<strong>跟做只集中 gemini.google.com</strong>。對齊參考站模式：materials／outputs、逐步截圖、Free／Paid 標、AI 抓錯。情境貫穿：澳門科學館「力與能量」公眾導賞。</p>
   <div class="hero-actions">
     <a class="btn" href="chapters/preface.html">從導讀開始 →</a>
     <a class="btn secondary" href="practice/index.html">實作走讀</a>
-    <a class="btn secondary" href="assets/downloads/gemini-course-practice-pack.zip">下載示範包</a>
+    <a class="btn secondary" href="downloads/index.html">下載中心</a>
   </div>
 </header>
 
+<section class="card">
+  <div class="badge-row"><span class="badge free">Free 主線</span><span class="badge mixed">介紹多平台</span><span class="badge info">實作＝網頁</span><span class="badge paid">Pro 之後補</span></div>
+  <h3>真實介面一瞥</h3>
+  <div class="shot-slot has-shot">
+<figure class="shot"><img src="assets/shots/00-gemini-landing.png" alt="Gemini 網頁首屏" loading="lazy"/><figcaption><span class="badge free">Free 可用對照</span> Gemini 網頁首屏實拍（點圖可放大）</figcaption></figure>
+</div>
+</section>
 
 <section class="card">
-  <h3>真實介面一瞥</h3>
-  <div class="shot-slot has-shot" data-shot="landing">
-  <figure class="shot"><img src="assets/shots/00-gemini-landing.png" alt="Gemini 網頁登入後首屏實拍" loading="lazy"/><figcaption>Gemini 網頁首屏實拍（2026-10）</figcaption></figure>
-  </div>
-</section>
-<section class="card">
-  <h3>本課怎麼用</h3>
+  <h3>本課怎麼用（對齊參考站）</h3>
   <div class="grid-3">
-    <div class="mini-card"><strong>① 選對工具與平台</strong><p>先選網頁／桌面／手機，再選聊天、Research、Canvas、Skill、Notebook。</p></div>
-    <div class="mini-card"><strong>② 跟章節走</strong><p>含真實截圖、帳號額度（設定→用量）、Connected Apps；每章小測，進度存本機。</p></div>
-    <div class="mini-card"><strong>③ 全功能走讀</strong><p><a href="practice/index.html#full-walkthrough">實作 A→G</a>＋可下載示範結果；缺畫面標「待補／學員自對照」。</p></div>
+    <div class="mini-card"><strong>① materials／outputs</strong><p>下載來源材料，對照教師預跑成品；可打包 ZIP。</p></div>
+    <div class="mini-card"><strong>② 每步有圖或待補卡</strong><p>實拍可點放大；缺圖寫清「應出現什麼」，不空槽充數。</p></div>
+    <div class="mini-card"><strong>③ 一條 CASE 貫穿</strong><p>展教會議→導賞稿→Research→Canvas→Skill→（Notebook 視地區）→瀏覽器加分。</p></div>
   </div>
 </section>
 
 <div class="download-banner">
-  <p><strong>實操示範包</strong>：會議紀錄、Deep Research brief、Skill 指示、帳號／平台速查等（zip）。</p>
-  <a class="btn" href="assets/downloads/gemini-course-practice-pack.zip">下載 gemini-course-practice-pack.zip</a>
+  <p><strong>下載中心</strong>：materials-pack、outputs-pack、full-pack；含導賞稿、會議逐字稿、Canvas HTML、示意圖。</p>
+  <a class="btn" href="downloads/index.html">打開下載中心</a>
 </div>
 
 <section class="card">
   <h3>學習地圖</h3>
   <figure class="figure">
     <img src="assets/svg/learning-map.svg" alt="學習地圖" style="width:100%;max-width:720px"/>
-    <figcaption>導讀 → 介面 → 提示 → 研究 → Canvas → Skill → Notebook／Workspace → 帳號隱私 → 結語／實作</figcaption>
+    <figcaption>導讀 → 網頁上手 → 提示 → DR → Canvas → Skill → Notebook → FREE 用量 → 瀏覽器 → 結語／實作</figcaption>
   </figure>
   <div class="path">
-    <a class="path-item" href="chapters/preface.html"><span class="num">00</span><div><strong>導讀・選對工具與平台</strong><span>聊天／Research／Canvas／Skill／Notebook</span></div></a>
-    <a class="path-item" href="chapters/ch01.html"><span class="num">01</span><div><strong>上手・介面</strong><span>網頁為主＋三平台對照</span></div></a>
-    <a class="path-item" href="chapters/ch02.html"><span class="num">02</span><div><strong>提示詞</strong><span>公式、長上下文、少樣本</span></div></a>
-    <a class="path-item" href="chapters/ch03.html"><span class="num">03</span><div><strong>Deep Research</strong><span>改計畫、來源至少一項</span></div></a>
-    <a class="path-item" href="chapters/ch04.html"><span class="num">04</span><div><strong>Canvas</strong><span>全頁編輯＋浮動聊天</span></div></a>
-    <a class="path-item" href="chapters/ch05.html"><span class="num">05</span><div><strong>Skill</strong><span>@ 呼叫；Gems 過渡</span></div></a>
-    <a class="path-item" href="chapters/ch06.html"><span class="num">06</span><div><strong>Notebook 與 Workspace</strong><span>Gemini Notebook（前稱 NotebookLM）</span></div></a>
-    <a class="path-item" href="chapters/ch07.html"><span class="num">07</span><div><strong>帳號方案與隱私</strong><span>Free／Plus／Pro／Ultra；看用量</span></div></a>
-    <a class="path-item" href="chapters/epilogue.html"><span class="num">終</span><div><strong>檢查清單</strong><span>常見坑＋延伸連結</span></div></a>
-    <a class="path-item" href="practice/index.html"><span class="num">實</span><div><strong>實作走讀</strong><span>任務 0–8 × 真實截圖</span></div></a>
+    <a class="path-item" href="chapters/preface.html"><span class="num">00</span><div><strong>導讀</strong><span>選工具＋平台一覽（不要求跟做桌面／手機）</span></div></a>
+    <a class="path-item" href="chapters/ch01.html"><span class="num">01</span><div><strong>網頁版上手（FREE）</strong><span>介面、模型、多模態</span></div></a>
+    <a class="path-item" href="chapters/ch02.html"><span class="num">02</span><div><strong>提示詞 CASE</strong><span>導賞稿／會議整理</span></div></a>
+    <a class="path-item" href="chapters/ch03.html"><span class="num">03</span><div><strong>Deep Research</strong><span>Free 額度覺察</span></div></a>
+    <a class="path-item" href="chapters/ch04.html"><span class="num">04</span><div><strong>Canvas</strong><span>導賞單頁</span></div></a>
+    <a class="path-item" href="chapters/ch05.html"><span class="num">05</span><div><strong>Skill（@）</strong><span>Gem 僅過渡一句</span></div></a>
+    <a class="path-item" href="chapters/ch06.html"><span class="num">06</span><div><strong>Gemini Notebook</strong><span>前稱 NotebookLM；地區限制</span></div></a>
+    <a class="path-item" href="chapters/ch07.html"><span class="num">07</span><div><strong>帳號 FREE＋用量</strong><span>Pro 之後補</span></div></a>
+    <a class="path-item" href="chapters/ch08.html"><span class="num">08</span><div><strong>瀏覽器／Extension</strong><span>Chrome 內建＋Comet＋熱門</span></div></a>
+    <a class="path-item" href="practice/index.html"><span class="num">實</span><div><strong>網頁 CASE 走讀</strong><span>逐步＋下載連結</span></div></a>
   </div>
 </section>
 
 <section class="card">
-  <h3>2026-10 用語提醒</h3>
+  <h3>2026-10 用語</h3>
   <ul class="clean">
-    <li><strong>Skills 為主、Gems 過渡中</strong>——呼叫鍵已改 <code>@</code>（舊 <code>/</code> 心智可對照）；設定仍可能見 Gem。</li>
-    <li><strong>Gemini Notebook</strong>（前稱 NotebookLM）——獨立產品；地區／帳號可能 unsupported。</li>
-    <li><strong>Live 暫非網頁</strong>——語音 Live 請用手機 App 示範。</li>
-    <li>模型選單<strong>無 Auto</strong>：常見 Flash-Lite／Flash／Pro／Argon＋思考程度（以你畫面為準）。</li>
+    <li><strong>Skills</strong> 為主（<code>@</code> 呼叫）；Gems 過渡並存一句帶過。</li>
+    <li><strong>Gemini Notebook</strong>（前稱 NotebookLM）。</li>
+    <li>實作只網頁；Live／手機／桌面＝介紹＋待補。</li>
+    <li>示範帳 <strong>FREE</strong>；舊 Pro 截圖必標 Paid。</li>
   </ul>
 </section>
 
-<section class="card">
-  <h3>與其他站的關係</h3>
-  <ul class="clean">
-    <li>可與實體課／HCIA／AI 應用術配套：那邊偏書本與實驗，本站專做 <strong>Gemini 產品操作節奏</strong>。</li>
-    <li>內容為教學摘要；介面改版以線上與官方 Help 為準。</li>
-  </ul>
-</section>
-
-<div class="footer-note">本站為自寫 Gemini 使用教學摘要，非 Google 官方文件轉載。操作畫面請以 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 與官方 Help 為準（核實日 2026-10-30）。進度存本機瀏覽器，不連 Gemini API。香港／澳門可用地區以 Help 當日為準。</div>
+<div class="footer-note">本站為自寫 Gemini 使用教學摘要（v3），非 Google 官方文件。實作主線：<strong>網頁版＋FREE 帳</strong>。畫面以 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 與官方 Help 為準（核實日 2026-10-30）。進度存本機，不連 Gemini API。</div>
 </div>
 </main>
 </div>

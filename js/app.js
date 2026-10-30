@@ -1,7 +1,7 @@
 (function () {
-  const KEY = "gemini-course-progress-v2";
+  const KEY = "gemini-course-progress-v3";
   const PAGES = [
-    "index", "preface", "ch01", "ch02", "ch03", "ch04", "ch05", "ch06", "ch07", "epilogue", "practice"
+    "index", "preface", "ch01", "ch02", "ch03", "ch04", "ch05", "ch06", "ch07", "ch08", "epilogue", "practice", "downloads"
   ];
 
   function load() {
@@ -51,6 +51,32 @@
     if (overlay) overlay.classList.toggle("show", open);
   }
 
+  function setupLightbox() {
+    let lb = document.querySelector(".lb");
+    if (!lb) {
+      lb = document.createElement("div");
+      lb.className = "lb";
+      lb.innerHTML = '<button type="button" class="lb-close" aria-label="關閉">×</button><img alt=""/><div class="lb-cap"></div>';
+      document.body.appendChild(lb);
+    }
+    const img = lb.querySelector("img");
+    const cap = lb.querySelector(".lb-cap");
+    const close = () => lb.classList.remove("open");
+    lb.addEventListener("click", close);
+    lb.querySelector(".lb-close").addEventListener("click", (e) => { e.stopPropagation(); close(); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
+    document.querySelectorAll("figure.shot img").forEach((el) => {
+      el.addEventListener("click", (e) => {
+        e.stopPropagation();
+        img.src = el.src;
+        img.alt = el.alt || "";
+        const fc = el.closest("figure")?.querySelector("figcaption");
+        cap.textContent = fc ? fc.textContent : (el.alt || "");
+        lb.classList.add("open");
+      });
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     const id = document.body.dataset.page || "index";
     markVisited(id);
@@ -60,13 +86,14 @@
     document.querySelectorAll(".overlay").forEach((o) => {
       o.addEventListener("click", () => toggleNav(false));
     });
+    setupLightbox();
   });
 
   window.GeminiCourse = { markVisited, load, PAGES };
 })();
 
 (function () {
-  const CK = "gemini-course-checklist-v2";
+  const CK = "gemini-course-checklist-v3";
   document.addEventListener("DOMContentLoaded", () => {
     let data = {};
     try { data = JSON.parse(localStorage.getItem(CK) || "{}"); } catch {}

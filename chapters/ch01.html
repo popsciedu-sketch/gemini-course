@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>第一章 · 上手與介面</title>
+<title>第一章 · 網頁版上手</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap"/>
 <link rel="stylesheet" href="../css/styles.css"/>
@@ -12,16 +12,13 @@
 <div class="overlay"></div>
 <div class="topbar">
   <button class="menu-btn" data-menu type="button">☰ 目錄</button>
-  <strong>Gemini 使用教學</strong>
+  <strong>Gemini 使用教學 <span class="version-pill">v3</span></strong>
 </div>
 <div class="layout">
 <aside class="sidebar">
   <div class="brand">
     <div class="brand-mark">G</div>
-    <div>
-      <h1>Gemini 使用教學</h1>
-      <p>互動教材 · 繁體中文</p>
-    </div>
+    <div><h1>Gemini 使用教學</h1><p>v3 · FREE 網頁實作</p></div>
   </div>
   <div class="progress-wrap">
     <div class="progress-label"><span>學習進度</span><span data-progress-text>0%</span></div>
@@ -30,175 +27,93 @@
   <nav class="nav">
 <div class="nav-section">導覽</div>
 <a href="../index.html" data-page="index">總覽</a>
-<a href="../chapters/preface.html" data-page="preface">導讀・選對工具與平台</a>
-<a href="../chapters/ch01.html" data-page="ch01">第一章・上手與介面</a>
-<a href="../chapters/ch02.html" data-page="ch02">第二章・提示詞</a>
+<a href="../chapters/preface.html" data-page="preface">導讀・選工具與平台</a>
+<a href="../chapters/ch01.html" data-page="ch01">第一章・網頁版上手（FREE）</a>
+<a href="../chapters/ch02.html" data-page="ch02">第二章・提示詞 CASE</a>
 <a href="../chapters/ch03.html" data-page="ch03">第三章・Deep Research</a>
 <a href="../chapters/ch04.html" data-page="ch04">第四章・Canvas</a>
 <a href="../chapters/ch05.html" data-page="ch05">第五章・Skill</a>
-<a href="../chapters/ch06.html" data-page="ch06">第六章・Notebook 與 Workspace</a>
-<a href="../chapters/ch07.html" data-page="ch07">第七章・帳號方案與隱私</a>
+<a href="../chapters/ch06.html" data-page="ch06">第六章・Gemini Notebook</a>
+<a href="../chapters/ch07.html" data-page="ch07">第七章・帳號 FREE 與用量</a>
+<a href="../chapters/ch08.html" data-page="ch08">第八章・瀏覽器與 Extension</a>
 <a href="../chapters/epilogue.html" data-page="epilogue">結語・檢查清單</a>
 <div class="nav-section">動手做</div>
-<a href="../practice/index.html" data-page="practice">實作走讀</a>
+<a href="../practice/index.html" data-page="practice">實作走讀（網頁）</a>
+<a href="../downloads/index.html" data-page="downloads">下載中心</a>
   </nav>
 </aside>
-<main class="main">
-<div class="container">
+<main class="main"><div class="container">
+
 
 <nav class="breadcrumb"><a href="../index.html">總覽</a> / 第一章</nav>
 <header class="page-head">
-  <div class="eyebrow">第一章 · 上手與介面</div>
-  <h2>網頁為主課室，對照桌面與手機</h2>
-  <p>目標：登入節奏、模型選單（無 Auto）、多模態、匯出、產圖／影音入口；Live 標手機；並養成看「設定→用量限制」的習慣。</p>
+  <div class="eyebrow">第一章 · 網頁版上手（FREE）</div>
+  <h2>登入、介面、模型與多模態</h2>
+  <p>目標：在 FREE 帳熟悉首屏、＋選單、模型（無 Auto）、上傳與匯出。用量養成看「設定→用量」。</p>
+  <div class="badge-row"><span class="badge free">Free</span></div>
 </header>
-
+<div class="scene"><span class="scene-tag">CASE</span>打開網頁，確認你登入的是練習用 FREE Google 帳，準備稍後上傳導賞稿。</div>
 <section class="card">
   <h3>開站與首屏</h3>
-  <div class="shot-slot has-shot" data-shot="open-gemini">
-<figure class="shot"><img src="../assets/shots/01-web-open-gemini.png" alt="已登入的 gemini.google.com 首屏（與 landing 同源實拍）" loading="lazy"/><figcaption>已登入的 gemini.google.com 首屏（與 landing 同源實拍）</figcaption></figure>
-</div>
-  <div class="shot-slot has-shot" data-shot="home-annotated">
-<figure class="shot"><img src="../assets/shots/36-web-home-annotated.png" alt="首屏標註：側欄、輸入框、工具、Customize 方向" loading="lazy"/><figcaption>首屏標註：側欄、輸入框、工具、Customize 方向</figcaption></figure>
-</div>
   <ol class="steps">
-    <li class="step"><h4>開站與登入</h4><p>前往 <code>gemini.google.com</code>。未登入常無法保存對話與進階功能。</p></li>
-    <li class="step"><h4>新聊天</h4><p>一個主題一串；換題就新開。</p>
-      <div class="shot-slot has-shot" data-shot="new-chat">
-<figure class="shot"><img src="../assets/shots/02-web-new-chat.png" alt="新對話／空白輸入框與工具列位置" loading="lazy"/><figcaption>新對話／空白輸入框與工具列位置</figcaption></figure>
-</div>
+    <li class="step"><h4>開啟 gemini.google.com 並登入</h4>
+      <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/01-web-open-gemini.png" alt="開啟 Gemini" loading="lazy"/><figcaption><span class="badge free">Free 對照</span> 已登入首屏（點圖放大）</figcaption></figure></div>
+      <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/36-web-home-annotated.png" alt="首屏標註" loading="lazy"/><figcaption><span class="badge free">Free 對照</span> 側欄、輸入框、工具方向</figcaption></figure></div>
     </li>
-    <li class="step"><h4>附加與工具（＋選單）</h4><p>常見含：上傳、雲端硬碟、建立圖像／影片／音樂、Canvas、Deep Research、引導式學習——以你帳號顯示為準。</p>
-      <div class="shot-slot has-shot" data-shot="av-toolbar">
-<figure class="shot"><img src="../assets/shots/07-web-av-toolbar.png" alt="附加／工具列現況（含影音相關入口與否）" loading="lazy"/><figcaption>附加／工具列現況（含影音相關入口與否）</figcaption></figure>
-</div>
+    <li class="step"><h4>新聊天＝一個主題一串</h4>
+      <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/02-web-new-chat.png" alt="新對話" loading="lazy"/><figcaption><span class="badge free">Free 對照</span> 空白輸入與工具列</figcaption></figure></div>
+    </li>
+    <li class="step"><h4>打開＋選單看工具</h4>
+      <p>常見：上傳、雲端硬碟、圖像、Canvas、Deep Research 等——以 FREE 帳實際顯示為準。</p>
+      <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/07-web-av-toolbar.png" alt="工具列" loading="lazy"/><figcaption><span class="badge paid">Paid／示範曾用 Pro；本課主線 FREE</span> 附加／工具列現況</figcaption></figure></div>
+      <div class="pending-shot"><strong>待補 · FREE 帳＋選單特寫</strong><div class="expect">應出現：f03-free-tools-plus.png：Free 可見的工具清單<br/>見 <code>SHOTS_NEEDED.md</code>；請用 FREE 帳自截或等補圖。</div></div>
     </li>
   </ol>
 </section>
-
-<section class="card" id="model-switch">
+<section class="card">
   <h3>模型選單（無 Auto）</h3>
-  <p>2026-10 實拍帳號選單<strong>沒有 Auto</strong>。常見可見：Flash-Lite、3.8 Flash、3.1 Pro、4 Argon，以及<strong>思考程度</strong>。名稱會變，請以畫面為準。</p>
-  <div class="shot-slot has-shot" data-shot="model-menu">
-<figure class="shot"><img src="../assets/shots/08-web-model-menu.png" alt="模型選單展開（無 Auto）" loading="lazy"/><figcaption>模型選單展開（無 Auto）</figcaption></figure>
-</div>
-  <div class="callout tip"><p>達用量上限可改較輕模型，或等重置／升級——見<a href="ch07.html">第七章</a>與設定→用量限制。</p></div>
-  <div class="shot-slot has-shot" data-shot="usage-limits">
-<figure class="shot"><img src="../assets/shots/43-web-usage-limits.png" alt="設定 → 用量限制（示範帳為 Pro；請學員自截並打碼）" loading="lazy"/><figcaption>設定 → 用量限制（示範帳為 Pro；請學員自截並打碼）</figcaption></figure>
-</div>
+  <p>2026-10 實況常見無 Auto；可見 Flash-Lite／Flash／Pro／Argon 與思考程度。FREE 碰到上限就改較輕模型。</p>
+  <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/08-web-model-menu.png" alt="模型選單" loading="lazy"/><figcaption><span class="badge paid">Paid／示範曾用 Pro；本課主線 FREE</span> 模型選單展開（無 Auto）</figcaption></figure></div>
 </section>
-
-<section class="card" id="multimodal">
+<section class="card">
   <h3>多模態與匯出</h3>
   <ol class="steps">
-    <li class="step"><h4>上傳圖片</h4><p>先問「你看到什麼／讀出圖上文字」再下任務。</p>
-      <div class="shot-slot has-shot" data-shot="upload-image">
-<figure class="shot"><img src="../assets/shots/05-web-upload-image.png" alt="附加圖片後的對話縮圖與理解" loading="lazy"/><figcaption>附加圖片後的對話縮圖與理解</figcaption></figure>
-</div>
+    <li class="step"><h4>上傳圖片先問「你看到什麼」</h4>
+      <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/05-web-upload-image.png" alt="上傳圖" loading="lazy"/><figcaption><span class="badge free">Free 對照</span> 附加圖片後縮圖</figcaption></figure></div>
     </li>
-    <li class="step"><h4>上傳 PDF</h4><p>先列「讀到的章節／不確定處」。</p>
-      <div class="pending-shot" data-shot="upload-pdf">
-<strong>待補／學員自對照 · 附加 PDF</strong>
-<span>請自行上傳練習 PDF，截檔名與摘要列表。</span>
-</div>
+    <li class="step"><h4>上傳導賞稿（materials）</h4>
+      <div class="mat-links"><a href="../materials/tour-script-force-energy.md">tour-script-force-energy.md</a><a href="../materials/visit-learning-points.md">visit-learning-points.md</a></div>
+      <div class="pending-shot"><strong>待補 · 附加 MD／PDF</strong><div class="expect">應出現：f04-free-upload-pdf.png：檔名縮圖＋模型已讀摘要<br/>見 <code>SHOTS_NEEDED.md</code>；請用 FREE 帳自截或等補圖。</div></div>
     </li>
-    <li class="step"><h4>匯出</h4><p>常見 <strong>.md／雲端硬碟</strong>；未必見「Google 文件」——勿硬找不存在的按鈕。</p>
-      <div class="shot-slot has-shot" data-shot="export-docs">
-<figure class="shot"><img src="../assets/shots/09-web-export-docs.png" alt="匯出／下載／雲端硬碟相關選單" loading="lazy"/><figcaption>匯出／下載／雲端硬碟相關選單</figcaption></figure>
-</div>
+    <li class="step"><h4>匯出</h4>
+      <p>常見 .md／雲端硬碟；勿硬找不存在的「Google 文件」按鈕。</p>
+      <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/09-web-export-docs.png" alt="匯出" loading="lazy"/><figcaption><span class="badge free">Free 對照</span> 匯出／下載選單</figcaption></figure></div>
     </li>
   </ol>
 </section>
-
-<section class="card" id="gemini-live">
-  <h3>Live、產圖、引導式學習</h3>
-  <div class="callout warn"><p><strong>Gemini Live 暫時不在網頁版</strong>（官方 Help）。語音 Live／相機請用<strong>手機 App</strong>示範。本 pack 無手機實拍。</p></div>
-  <div class="pending-shot" data-shot="gemini-live">
-<strong>待補／學員自對照 · 手機 Live 介面</strong>
-<span>打開 Android／iOS Gemini App → Live；截首屏並標 Live／相機入口。</span>
-</div>
-  <p>產圖（視地區；常見英文提示較穩）：</p>
-  <div class="shot-slot has-shot" data-shot="image-gen">
-<figure class="shot"><img src="../assets/shots/11-web-image-gen.png" alt="圖像生成結果與提示" loading="lazy"/><figcaption>圖像生成結果與提示</figcaption></figure>
-</div>
-  <div class="pending-shot" data-shot="av-create-entry">
-<strong>待補／學員自對照 · 影片／音樂建立入口</strong>
-<span>＋選單若有「建立影片／音樂」請截；無則截工具列並註記。</span>
-</div>
-  <div class="pending-shot" data-shot="guided-learning">
-<strong>待補／學員自對照 · 引導式學習</strong>
-<span>＋選單「引導式學習」或用蘇格拉底式代替提示截對話。</span>
-</div>
-  <div class="pending-shot" data-shot="edit-prompt">
-<strong>待補／學員自對照 · 編輯已送出提示</strong>
-<span>送出後點編輯圖示重跑並截圖。</span>
-</div>
-  <div class="pending-shot" data-shot="multi-answer">
-<strong>待補／學員自對照 · 多版本／再生</strong>
-<span>要求另一語氣版本或再生按鈕並陳。</span>
-</div>
-</section>
-
 <section class="card">
-  <h3>平台對照（桌面／手機待補）</h3>
-  <table class="simple">
-    <thead><tr><th>表面</th><th>特點</th><th>本課狀態</th></tr></thead>
-    <tbody>
-      <tr><td>網頁</td><td>功能最齊</td><td>已有實拍</td></tr>
-      <tr><td>Mac／Windows 桌面</td><td>Overlay、視窗上下文</td><td>待補／學員自對照</td></tr>
-      <tr><td>手機</td><td>Live、相機</td><td>待補／學員自對照</td></tr>
-      <tr><td>Workspace 側欄</td><td>眼前檔案改寫</td><td>待補／學員自對照</td></tr>
-    </tbody>
-  </table>
-  <div class="pending-shot" data-shot="mac-overlay">
-<strong>待補／學員自對照 · Mac Overlay（Option+Space）</strong>
-<span>有 Mac 者自截浮層。</span>
-</div>
-  <div class="pending-shot" data-shot="ios-home">
-<strong>待補／學員自對照 · iOS Gemini 首屏</strong>
-<span>與 Android 對照 Live／相機位置。</span>
-</div>
+  <h3>產圖／Live（介紹）</h3>
+  <div class="callout warn"><p><strong>Live 暫非網頁</strong>——語音 Live 用手機 App 示範即可，本課不要求跟做。</p></div>
+  <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/11-web-image-gen.png" alt="產圖" loading="lazy"/><figcaption><span class="badge paid">Paid／示範曾用 Pro；本課主線 FREE</span> 圖像生成（若 Free 地區開放）</figcaption></figure></div>
+  <p>課程示意成品（非 Gemini 實產，供對照風格）：</p>
+  <div class="shot-slot has-shot"><figure class="shot"><img src="../assets/shots/exhibit-zone-demo-course.png" alt="展區示意" loading="lazy"/><figcaption><span class="badge free">Free 對照</span> 課程示意圖／非 Gemini 實產</figcaption></figure></div>
+  <div class="mat-links"><a href="../materials/image-gen-prompt.txt">image-gen-prompt.txt</a><a class="out" href="../outputs/exhibit-zone-demo.png">exhibit-zone-demo.png</a></div>
+  <div class="pending-shot"><strong>待補 · 手機 Live</strong><div class="expect">應出現：f13-mobile-live.png：App Live 首屏（介紹用）<br/>見 <code>SHOTS_NEEDED.md</code>；請用 FREE 帳自截或等補圖。</div></div>
 </section>
+<section class="quiz" data-quiz="c1q1" data-answer="B" data-ok="正確。" data-bad="再看模型一節。">
+  <h3>C1Q1</h3>
+  <p>本課實作主線帳號等級是？</p>
+  <label><input type="radio" name="c1q1" value="A"/> <strong>A.</strong> 必須 Ultra</label>
+  <label><input type="radio" name="c1q1" value="B"/> <strong>B.</strong> FREE（Pro 之後補）</label>
+  <label><input type="radio" name="c1q1" value="C"/> <strong>C.</strong> 只能企業 Workspace</label>
+  <label><input type="radio" name="c1q1" value="D"/> <strong>D.</strong> 不需登入</label>
+  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
+  <div class="feedback"></div>
+</section>
+<div class="pager"><a class="btn secondary" href="preface.html">← 導讀</a><a class="btn" href="ch02.html">下一章：提示詞 →</a></div>
 
-<section class="card">
-  <h3>安全三條</h3>
-  <ul class="clean">
-    <li><strong>幻覺</strong>：重要數字與引用要核對來源。</li>
-    <li><strong>勿當專業意見</strong>：醫療、法律、稅務、投資最多當草稿。</li>
-    <li><strong>勿貼機密</strong>：密碼、未公開財報、個資——先問資料政策。</li>
-  </ul>
-</section>
-<section class="quiz" data-quiz="c1q1" data-answer="B" data-ok="正確：無 Auto，以畫面為準。" data-bad="再看模型選單一節。">
-  <h3>隨堂測驗 · C1Q1</h3>
-  <p>2026-10 實況模型選單的正確描述是？</p>
-  <label><input type="radio" name="c1q1" value="A"/> <strong>A.</strong> 一定有 Auto，且只有一個模型</label><label><input type="radio" name="c1q1" value="B"/> <strong>B.</strong> 常見無 Auto；可見 Flash-Lite／Flash／Pro／Argon 與思考程度</label><label><input type="radio" name="c1q1" value="C"/> <strong>C.</strong> 只能用未登入訪客</label><label><input type="radio" name="c1q1" value="D"/> <strong>D.</strong> 模型選單已全面取消</label>
-  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
-  <div class="feedback"></div>
-</section>
-<section class="quiz" data-quiz="c1q2" data-answer="A" data-ok="Live 請用手機。" data-bad="再看 Live 一節。">
-  <h3>隨堂測驗 · C1Q2</h3>
-  <p>要示範完整 Gemini Live 語音對話，應優先？</p>
-  <label><input type="radio" name="c1q2" value="A"/> <strong>A.</strong> 手機 Gemini App</label><label><input type="radio" name="c1q2" value="B"/> <strong>B.</strong> 只靠網頁版（目前暫無 Live）</label><label><input type="radio" name="c1q2" value="C"/> <strong>C.</strong> 刪除帳號後再試</label><label><input type="radio" name="c1q2" value="D"/> <strong>D.</strong> 一定要開 Deep Research</label>
-  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
-  <div class="feedback"></div>
-</section>
-<section class="quiz" data-quiz="c1q3" data-answer="C" data-ok="先對齊理解。" data-bad="再看多模態。">
-  <h3>隨堂測驗 · C1Q3</h3>
-  <p>剛上傳檔案後較穩的第一步？</p>
-  <label><input type="radio" name="c1q3" value="A"/> <strong>A.</strong> 立刻保證法律結論正確</label><label><input type="radio" name="c1q3" value="B"/> <strong>B.</strong> 公開分享含個資連結</label><label><input type="radio" name="c1q3" value="C"/> <strong>C.</strong> 先問模型讀到什麼／不確定處</label><label><input type="radio" name="c1q3" value="D"/> <strong>D.</strong> 關掉所有匯出</label>
-  <div class="quiz-actions"><button type="button" class="btn" data-check>核對答案</button></div>
-  <div class="feedback"></div>
-</section>
-<div class="pager">
-  <a class="btn secondary" href="preface.html">← 導讀</a>
-  <a class="btn" href="ch02.html">下一章：提示詞 →</a>
-</div>
-
-<div class="footer-note">本站為自寫 Gemini 使用教學摘要，非 Google 官方文件轉載。操作畫面請以 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 與官方 Help 為準（核實日 2026-10-30）。進度存本機瀏覽器，不連 Gemini API。香港／澳門可用地區以 Help 當日為準。</div>
-</div>
-</main>
-</div>
+<div class="footer-note">本站為自寫 Gemini 使用教學摘要（v3）。實作主線：網頁版＋FREE。以 <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> 為準（2026-10-30）。</div>
+</div></main></div>
 <script src="../js/app.js"></script>
 <script src="../js/quiz.js"></script>
-</body>
-</html>
+</body></html>

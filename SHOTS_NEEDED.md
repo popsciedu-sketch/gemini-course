@@ -10,6 +10,8 @@
 | `f01-free-home.png` | 網頁首屏（側欄＋輸入框） | ✅ 已嵌入（個資遮黑） |
 | `f02-free-usage.png` | 設定→用量限制 | ✅ 已嵌入（個資遮黑） |
 | `f03-free-tools-plus.png` | ＋選單工具 | ✅ 已嵌入（個資遮黑） |
+| `f04-free-upload-pdf.png` | 附加 materials 導賞稿／PDF 後縮圖 | ✅ 已嵌入（個資遮黑） |
+| `f05-free-prompt-tour.png` | 貼上導賞整理提示後的回覆開頭 | ✅ 已嵌入（個資遮黑） |
 | `f06-free-dr-or-limit.png` | Deep Research 入口／額度提示 | ✅ 已嵌入（個資遮黑） |
 | `f07-free-canvas.png` | Canvas 工作區 | ✅ 已嵌入（個資遮黑） |
 | `f08-free-skill-at.png` | Skill／`@` 呼叫列 | ✅ 已嵌入（個資遮黑） |
@@ -18,8 +20,6 @@
 
 | 建議檔名 | 應出現什麼 | 優先 |
 |---|---|---|
-| `f04-free-upload-pdf.png` | 附加 materials 導賞稿／PDF 後縮圖 | P1 |
-| `f05-free-prompt-tour.png` | 貼上導賞整理提示後的回覆開頭 | P1 |
 | `f09-free-image-gen.png` | Free 產圖（若地區開放） | P2 |
 | `f10-notebook-region.png` | Notebook 入口或 unsupported／地區提示 | P1 |
 | `f11-chrome-gemini-sidebar.png` | Gemini in Chrome 側欄（Ask about tab） | P2 |
